@@ -1,0 +1,15 @@
+name: srh-poc
+channels:
+  - conda-forge
+  - default
+
+dependencies:
+  - python=3
+  - numpy
+  - matplotlib
+  - pandas
+  - jupyterlab
+  - nb_black
+  - jupyter-book
+  - jupyterlab-git
+  - seaborn
