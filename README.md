@@ -1,7 +1,12 @@
-# Project SRH
+# Project SRH - Proof of concept
 
-The goal is to set up a script for Data Science.
+https://ixians.atlassian.net/browse/SRH-1
 
-This is a collaborative effort. 
+For a first iteration we need a PoC that consists of a nice and informative chapter that we can showcase with JupyterBook, interactive computing and deployment.
 
-here is an online edit.
+Deadline: March 1st
+
+
+To set up the conda environment run `conda env create -f environment.yml`. This will create an environment `srh-poc`, run `conda activate srh-poc` and you are ready to go.
+
+*Make sure that you are in the folder that conrtains the `environment.yml` file, otherwise use the right file path*
