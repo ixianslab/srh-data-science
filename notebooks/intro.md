@@ -1,4 +1,4 @@
-# Welcome to the proof oc concept for the section Central Limit Theorem
+# Proof of concept Kapitel Zentraler Grenzwertsatz
 
 
 :::{note}

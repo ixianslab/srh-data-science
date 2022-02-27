@@ -3,6 +3,22 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: getting_started
-- file: 7_central_limit_theorem
+parts:
+  - caption: Lernziele
+    chapters:
+    - file: 00_Lernziele
+  - caption: Der Zentrale Grenzwertsatz
+    chapters:
+    - file: 01_Zentraler_Grenzwertsatz
+    - file: 02_Grundgesamtheitsverteilung
+    - file: 03_Stichprobenverteilung
+    - file: 04_Standardfehler
+    - file: 05_Stichproben_normalverteilte_Grundgesamtheit
+    - file: 06_Stichproben_nicht-normalverteilte_Grundgesamtheit
+  - caption: Übungsaufgaben
+    chapters:
+    - file: 90_Aufgaben
+  - caption: Literaturverzeichnis
+    chapters:
+    - file:  99_Literaturverzeichnis
+

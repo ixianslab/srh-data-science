@@ -1,22 +1,5 @@
-import os
 import sys
-from pathlib import Path
 import socket
-
-# machine/server
-print(
-    f"\n---------------------------------\nWorking on the host: {socket.gethostname()}"
-)
-
-# Python version
-print(f"\n---------------------------------\nPython version: {sys.version}")
-
-# Python kernel
-print(f"\n---------------------------------\nPython interpreter: {sys.executable}")
-
-# set root directory
-ROOT = Path.cwd().parents[0]
-print(f"\n---------------------------------\nRoot (ROOT) directory is set to {ROOT}")
 
 # set plotting font style
 from matplotlib import rcParams
@@ -36,3 +19,16 @@ pd.options.display.max_columns = 999
 
 # clean namespace
 del rcParams
+
+# machine/server
+print(
+    f"\n---------------------------------\nWorking on the host: {socket.gethostname()}"
+)
+
+# Python version
+print(f"\n---------------------------------\nPython version: {sys.version}")
+
+# Python kernel
+print(f"\n---------------------------------\nPython interpreter: {sys.executable}")
+
+
