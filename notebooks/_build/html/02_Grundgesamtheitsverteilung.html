@@ -142,7 +142,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Stichproben_nihct-normalverteilte_Grundgesamtheit.html">
+  <a class="reference internal" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html">
    Stichproben aus einer nicht normalverteilten Grundgesamtheit
   </a>
  </li>
@@ -323,36 +323,7 @@
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="c1"># Load the &quot;autoreload&quot; extension</span>
-<span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="c1"># always reload modules</span>
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># black formatter for jupyter notebooks</span>
-<span class="c1">#%load_ext nb_black</span>
-<span class="c1"># black formatter for jupyter lab</span>
-<span class="o">%</span><span class="k">load_ext</span> lab_black
-
-<span class="o">%</span><span class="k">run</span> ../src/notebook_env.py
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: unknownA07817A930E2
-
----------------------------------
-Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
-
----------------------------------
-Python interpreter: /opt/miniconda3/envs/srh/bin/python
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="die-grundgesamtheitsverteilung">
+  <div class="tex2jax_ignore mathjax_ignore section" id="die-grundgesamtheitsverteilung">
 <h1>Die Grundgesamtheitsverteilung<a class="headerlink" href="#die-grundgesamtheitsverteilung" title="Permalink to this headline">¶</a></h1>
 <p><strong>Importiere Module</strong></p>
 <div class="cell docutils container">
@@ -394,7 +365,7 @@ Standartabweichung (Grundgesamtheit): 2.8722813232690143
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([6, 2, 5])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([6, 2, 9])
 </pre></div>
 </div>
 </div>
@@ -411,8 +382,8 @@ Standartabweichung (Grundgesamtheit): 2.8722813232690143
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mittelwert (Stichprobe):         4.333333333333333
-Standartabweichung (Stichprobe): 2.0816659994661326
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mittelwert (Stichprobe):         5.666666666666667
+Standartabweichung (Stichprobe): 3.511884584284246
 </pre></div>
 </div>
 </div>
@@ -427,16 +398,16 @@ Standartabweichung (Stichprobe): 2.0816659994661326
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
     <span class="n">my_sample</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">my_sample</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Die </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. Stichprobe hat einen Mittelwert von </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Die </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. Stichprobe hat einen Mittelwert von </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Die 0. Stichprobe hat einen Mittelwert von 5.666666666666667
-Die 1. Stichprobe hat einen Mittelwert von 6.666666666666667
-Die 2. Stichprobe hat einen Mittelwert von 6.666666666666667
-Die 3. Stichprobe hat einen Mittelwert von 5.666666666666667
-Die 4. Stichprobe hat einen Mittelwert von 6.333333333333333
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Die 1. Stichprobe hat einen Mittelwert von 5.0
+Die 2. Stichprobe hat einen Mittelwert von 4.0
+Die 3. Stichprobe hat einen Mittelwert von 6.333333333333333
+Die 4. Stichprobe hat einen Mittelwert von 5.0
+Die 5. Stichprobe hat einen Mittelwert von 7.666666666666667
 </pre></div>
 </div>
 </div>
@@ -458,30 +429,27 @@ Die 4. Stichprobe hat einen Mittelwert von 6.333333333333333
         <span class="n">my_sample</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
         <span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">my_sample</span><span class="p">)</span>
         <span class="n">error_sample</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">mean_pop</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Stichprobenfehler (n=</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">):&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">error_sample</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Stichprobenfehler (n=</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">):&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">error_sample</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=10): 7.0068600000000005
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=10): 6.851
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=25):
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=25): 4.01
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 4.029167999999999
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=50): 2.351
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=50): 2.324092
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=75): 1.3273093333333335
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stichprobenfehler (n=75): 1.319
 </pre></div>
 </div>
 </div>
 </div>
 <p>Aus dem obigen Experiment können wir schließen, dass der Stichprobenfehler umso kleiner ist, je größer der Stichprobenumfang ist. Mit anderen Worten: Je größer der Stichprobenumfang ist, desto mehr nähert sich der Stichprobenmittelwert <span class="math notranslate nohighlight">\(\bar{x}\)</span> dem Grundgesamtheitsmittelwert <span class="math notranslate nohighlight">\(μ\)</span> an. Dies ist eine wichtige Erkenntnis, die im Abschnitt über die <em>Inferenzstatistik</em> ausführlicher behandelt werden wird.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 

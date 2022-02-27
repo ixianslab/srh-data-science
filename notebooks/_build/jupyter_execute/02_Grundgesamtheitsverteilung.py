@@ -79,7 +79,7 @@ print(f"Standartabweichung (Stichprobe): {s}")
 for i in range(5):
     my_sample = np.random.choice(population, size=3, replace=False)
     mean = np.mean(my_sample)
-    print(f"Die {i}. Stichprobe hat einen Mittelwert von {mean}")
+    print(f"Die {i+1}. Stichprobe hat einen Mittelwert von {mean}")
 
 
 # Es liegt auf der Hand, dass verschiedene Stichproben (mit derselben Länge), die aus derselben Grundgesamtheit ausgewählt wurden, unterschiedliche Stichprobenstatistiken ergeben, da sie unterschiedliche Elemente enthalten. Darüber hinaus unterscheidet sich jede aus einer Stichprobe gewonnene Stichprobenstatistik, z. B. der Stichprobenmittelwert $\bar{x}$, von dem Ergebnis, das aus der entsprechenden Grundgesamtheit, dem Grundgesamtheitsmittelwert $μ$, gewonnen wird. Die Differenz zwischen dem Wert einer aus einer Stichprobe gewonnenen Statistik und dem Wert des entsprechenden, aus der Grundgesamtheit gewonnenen Parameters wird als **<a href="https://en.wikipedia.org/wiki/Sampling_error">Stichprobenfehler</a>** bezeichnet. Im Fall des Mittelwerts kann der Stichprobenfehler wie folgt geschrieben werden
@@ -103,7 +103,7 @@ for n in SAMPLE_SIZE:
         my_sample = np.random.choice(population, size=n, replace=False)
         mean = np.mean(my_sample)
         error_sample.append(abs(mean - mean_pop))
-    print(f"Stichprobenfehler (n={n}):", np.mean(error_sample))
+    print(f"Stichprobenfehler (n={n}):", np.round(np.mean(error_sample), 3))
 
 
 # Aus dem obigen Experiment können wir schließen, dass der Stichprobenfehler umso kleiner ist, je größer der Stichprobenumfang ist. Mit anderen Worten: Je größer der Stichprobenumfang ist, desto mehr nähert sich der Stichprobenmittelwert $\bar{x}$ dem Grundgesamtheitsmittelwert $μ$ an. Dies ist eine wichtige Erkenntnis, die im Abschnitt über die *Inferenzstatistik* ausführlicher behandelt werden wird.

@@ -142,7 +142,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Stichproben_nihct-normalverteilte_Grundgesamtheit.html">
+  <a class="reference internal" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html">
    Stichproben aus einer nicht normalverteilten Grundgesamtheit
   </a>
  </li>
@@ -287,36 +287,7 @@
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="c1"># Load the &quot;autoreload&quot; extension</span>
-<span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="c1"># always reload modules</span>
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># black formatter for jupyter notebooks</span>
-<span class="c1">#%load_ext nb_black</span>
-<span class="c1"># black formatter for jupyter lab</span>
-<span class="o">%</span><span class="k">load_ext</span> lab_black
-
-<span class="o">%</span><span class="k">run</span> ../src/notebook_env.py
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: unknownA07817A930E2
-
----------------------------------
-Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
-
----------------------------------
-Python interpreter: /opt/miniconda3/envs/srh/bin/python
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="die-stichprobenverteilung">
+  <div class="tex2jax_ignore mathjax_ignore section" id="die-stichprobenverteilung">
 <h1>Die Stichprobenverteilung<a class="headerlink" href="#die-stichprobenverteilung" title="Permalink to this headline">¶</a></h1>
 <p><strong>Importiere Module</strong></p>
 <div class="cell docutils container">
@@ -337,7 +308,7 @@ Python interpreter: /opt/miniconda3/envs/srh/bin/python
 \[\{43, 52, 56, 8, 65, 60, 46, 15, 64, 19, 82, 91, 88, 1, 5, 9, 4, 92, 67, 36, 72, 31, 50, 96, 87, 6, 93, 84, 78, 16\}\]</div>
 <p>… etc.</p>
 <p>Für jede Stichprobe berechnen wir eine Stichprobenstatistik. In diesem Beispiel nehmen wir den Mittelwert, <span class="math notranslate nohighlight">\(\bar{x}\)</span>, jeder Stichprobe. Beachten Sie jedoch, dass es sich bei der Stichprobenstatistik um eine beliebige deskriptive Statistik handeln kann, z. B. um den Median, die Standardabweichung, einen Anteil usw. Sobald wir die Stichprobenmittelwerte für alle Stichproben erhalten haben, listen wir alle ihre verschiedenen Werte und die Anzahl ihres Auftretens (Häufigkeiten) auf, um relative Häufigkeiten oder <strong>empirische Wahrscheinlichkeiten</strong> zu erhalten.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dot_diagram</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">min_max</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">70</span><span class="p">)):</span>
     <span class="sd">&quot;&quot;&quot;Function to compute a dotplot.</span>
@@ -372,7 +343,7 @@ Python interpreter: /opt/miniconda3/envs/srh/bin/python
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">population</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">))</span>
 <span class="n">mean_pop</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>

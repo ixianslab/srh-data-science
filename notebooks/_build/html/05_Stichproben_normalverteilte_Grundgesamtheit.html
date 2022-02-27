@@ -53,7 +53,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Stichproben aus einer nicht normalverteilten Grundgesamtheit" href="06_Stichproben_nihct-normalverteilte_Grundgesamtheit.html" />
+    <link rel="next" title="Stichproben aus einer nicht normalverteilten Grundgesamtheit" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html" />
     <link rel="prev" title="Der Standardfehler" href="04_Standardfehler.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -142,7 +142,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Stichproben_nihct-normalverteilte_Grundgesamtheit.html">
+  <a class="reference internal" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html">
    Stichproben aus einer nicht normalverteilten Grundgesamtheit
   </a>
  </li>
@@ -323,36 +323,7 @@
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="c1"># Load the &quot;autoreload&quot; extension</span>
-<span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="c1"># always reload modules</span>
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># black formatter for jupyter notebooks</span>
-<span class="c1">#%load_ext nb_black</span>
-<span class="c1"># black formatter for jupyter lab</span>
-<span class="o">%</span><span class="k">load_ext</span> lab_black
-
-<span class="o">%</span><span class="k">run</span> ../src/notebook_env.py
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: unknownA07817A930E2
-
----------------------------------
-Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
-
----------------------------------
-Python interpreter: /opt/miniconda3/envs/srh/bin/python
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="stichproben-aus-einer-normalverteilten-grundgesamtheit">
+  <div class="tex2jax_ignore mathjax_ignore section" id="stichproben-aus-einer-normalverteilten-grundgesamtheit">
 <h1>Stichproben aus einer normalverteilten Grundgesamtheit<a class="headerlink" href="#stichproben-aus-einer-normalverteilten-grundgesamtheit" title="Permalink to this headline">¶</a></h1>
 <p><strong>Importiere Module</strong></p>
 <div class="cell docutils container">
@@ -395,7 +366,7 @@ ist normal, unabhängig vom Wert von <span class="math notranslate nohighlight">
 \[ \sigma_{\bar x_{n=30}} = \frac{\sigma}{\sqrt{n}} = \frac{1}{\sqrt{30}}\approx 0.183 \]</div>
 <div class="math notranslate nohighlight">
 \[ \sigma_{\bar x_{n=50}} = \frac{\sigma}{\sqrt{n}} = \frac{1}{\sqrt{50}} \approx 0.141 \]</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">mu</span> <span class="o">-</span> <span class="mf">2.5</span><span class="p">,</span> <span class="n">mu</span> <span class="o">+</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
@@ -425,7 +396,7 @@ ist normal, unabhängig vom Wert von <span class="math notranslate nohighlight">
 <li><p>Die Standardabweichung der Stichprobenverteilung nimmt mit zunehmendem Stichprobenumfang ab.</p></li>
 </ol>
 <p>Um die 3. Behauptung von oben, dass die Form der Stichprobenverteilung von <span class="math notranslate nohighlight">\(\bar{x}\)</span> unabhängig vom Wert von <span class="math notranslate nohighlight">\(n\)</span> normal ist, zu überprüfen, führen wir eine numerische Simulation durch. Für eine ausreichend große Anzahl von Versuchen (Versuche = 1000) ziehen wir Stichproben aus der Standardnormalverteilung <span class="math notranslate nohighlight">\(N∼(\mu=0,\sigma=1)\)</span>, wobei jede einzelne Stichprobe einen Stichprobenumfang von <span class="math notranslate nohighlight">\(n=5,15,30,50\)</span> hat. Für jede Stichprobe berechnen wir den Stichprobenmittelwert <span class="math notranslate nohighlight">\(\bar{x}\)</span> und stellen die empirischen Wahrscheinlichkeiten dar. Anschließend vergleichen wir die empirische Verteilung dieser Wahrscheinlichkeiten mit den aus den obigen Gleichungen berechneten Stichprobenverteilungen.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">mu</span> <span class="o">-</span> <span class="mf">2.5</span><span class="p">,</span> <span class="n">mu</span> <span class="o">+</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
@@ -486,7 +457,7 @@ ist normal, unabhängig vom Wert von <span class="math notranslate nohighlight">
             <p class="prev-next-title">Der Standardfehler</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="06_Stichproben_nihct-normalverteilte_Grundgesamtheit.html" title="next page">
+    <a class='right-next' id="next-link" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Stichproben aus einer nicht normalverteilten Grundgesamtheit</p>

@@ -142,7 +142,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Stichproben_nihct-normalverteilte_Grundgesamtheit.html">
+  <a class="reference internal" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html">
    Stichproben aus einer nicht normalverteilten Grundgesamtheit
   </a>
  </li>
@@ -287,36 +287,7 @@
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="c1"># Load the &quot;autoreload&quot; extension</span>
-<span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="c1"># always reload modules</span>
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># black formatter for jupyter notebooks</span>
-<span class="c1">#%load_ext nb_black</span>
-<span class="c1"># black formatter for jupyter lab</span>
-<span class="o">%</span><span class="k">load_ext</span> lab_black
-
-<span class="o">%</span><span class="k">run</span> ../src/notebook_env.py
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: unknownA07817A930E2
-
----------------------------------
-Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
-
----------------------------------
-Python interpreter: /opt/miniconda3/envs/srh/bin/python
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="der-standardfehler">
+  <div class="tex2jax_ignore mathjax_ignore section" id="der-standardfehler">
 <h1>Der Standardfehler<a class="headerlink" href="#der-standardfehler" title="Permalink to this headline">¶</a></h1>
 <p>Ebenso wie die Verteilungen der Grundgesamtheit können auch die Stichprobenverteilungen mit Parametern beschrieben werden. Der Erwartungswert (Mittelwert) einer beliebigen Verteilung kann durch das Symbol <span class="math notranslate nohighlight">\(\mu\)</span> dargestellt werden. Im Falle der Stichprobenverteilung wird der Mittelwert <span class="math notranslate nohighlight">\(\mu\)</span> oft mit einem tiefgestellten Index geschrieben, um anzugeben, welche Stichprobenverteilung beschrieben wird. Der Erwartungswert der Stichprobenverteilung des Mittelwerts wird zum Beispiel durch das Symbol <span class="math notranslate nohighlight">\(\mu_{\bar{x}}\)</span> dargestellt. Der Wert von <span class="math notranslate nohighlight">\(\mu_{\bar{x}}\)</span> kann als der theoretische Mittelwert der Verteilung der Stichprobenmittelwerte angesehen werden.</p>
 <p>Wenn wir aus einer Grundgesamtheit eine ausreichend große Anzahl von Stichproben (mit gleichem Umfang) auswählen und deren Mittelwerte berechnen, dann nähert sich der Mittelwert (<span class="math notranslate nohighlight">\(\mu_{\bar{x}}\)</span>) all dieser Stichprobenmittelwerte dem Mittelwert (<span class="math notranslate nohighlight">\(\mu\)</span>) der Grundgesamtheit an. Deshalb wird der Stichprobenmittelwert <span class="math notranslate nohighlight">\(\bar{x}\)</span> als Schätzer des Populationsmittelwertes <span class="math notranslate nohighlight">\(\mu\)</span> bezeichnet. Somit ist der Mittelwert der Stichprobenverteilung gleich dem Mittelwert der Grundgesamtheit.</p>
