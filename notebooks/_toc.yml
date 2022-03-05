@@ -18,6 +18,10 @@ parts:
   - caption: Übungsaufgaben
     chapters:
     - file: 90_Aufgaben
+    - file: 91_CLT
+    - file: 92_Bedingung
+    - file: 93_Wuerfel
+    - file: 94_Test_auf_Normalverteilung
   - caption: Literaturverzeichnis
     chapters:
     - file:  99_Literaturverzeichnis
