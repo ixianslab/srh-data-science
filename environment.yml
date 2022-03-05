@@ -1,16 +1,20 @@
 name: srh-poc
 channels:
-  - conda-forge
-  - default
+- conda-forge
+- default
 
 dependencies:
-  - python=3
-  - numpy
-  - matplotlib
-  - pandas
-  - jupyterlab
-  - nb_black
+- python=3
+- numpy
+- matplotlib
+- pandas
+- jupyterlab
+- nb_black
+- jupyterlab-git
+- seaborn
+- scipy
+- pip
+
+- pip:
   - jupyter-book
-  - jupyterlab-git
-  - seaborn
-  - scipy
+  - sphinx-thebe
