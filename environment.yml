@@ -13,3 +13,4 @@ dependencies:
   - jupyter-book
   - jupyterlab-git
   - seaborn
+  - scipy
