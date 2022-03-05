@@ -1,4 +1,4 @@
 .ipynb_checkpoints
 .DS_Store
-_build/
+notebooks/_build/
 .doctrees/
