@@ -7,11 +7,12 @@ Work in progress
 
 ## Offene Fragen/Abstimmungsbedarf
 
-* Umfang und Strutkur Lernziele
+* Umfang und Struktur Lernziele
 * Code in Deutsch? 
 * Bedienelemente von JupyterBook in Deutsch
 * Interaktive Code Inhalte via Thebe
 * Binder 
+* lab vs classic
 
 
 **Kontakt:**
