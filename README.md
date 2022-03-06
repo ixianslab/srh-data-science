@@ -27,7 +27,7 @@ The repository should have the following structure:
     ├── .gitignore           # Specifies files and folders that should be ignored by git.
     ├── requirements.yml     # The requirements file for reproducing the analysis environment. 
     ├── notebooks            # Find all Jupyter notebooks here.
-    │   └── Kapitel_00       # Servers as a template. Copy and paste this folder to get staretd
+    │   └── Kapitel_00       # Serves as a template. Copy and paste this folder to get staretd
     │   │   └── _img         # Rendered images/pdfs/videos within notebooks are placed here.
     │   └── Kapitel_xxx      # Any topic of interest
     │   │   └── _img         # Rendered images/pdfs/videos within notebooks are placed here.
