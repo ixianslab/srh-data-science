@@ -3,7 +3,7 @@
 
 title: Kapitel 000
 author: ixians
-copyright: 2022 
+copyright: "2022" 
 logo: _img/srh_logo.png
 
 # Force re-execution of notebooks on each build.
