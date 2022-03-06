@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# jupyter book
+_build
+
+# mac stuff
+.DS_Store
+
