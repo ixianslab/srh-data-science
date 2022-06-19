@@ -11,6 +11,7 @@ dependencies:
 - jupyterlab
 - nb_black
 - jupyterlab-git
+- seaborn
 - scipy
 - pip
 
