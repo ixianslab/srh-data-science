@@ -7,6 +7,8 @@ from matplotlib import rcParams
 rcParams["font.family"] = "sans-serif"
 rcParams["font.sans-serif"] = ["Arial"]
 rcParams["figure.figsize"] = (12, 6)
+rcParams["axes.labelsize"] = 16
+rcParams["axes.titlesize"] = 17
 rcParams["xtick.labelsize"] = 16
 rcParams["ytick.labelsize"] = 16
 rcParams["legend.fontsize"] = "large"
