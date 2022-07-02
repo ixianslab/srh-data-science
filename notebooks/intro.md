@@ -22,7 +22,6 @@ Work in progress
 
 - verstecken von code Blöcken @joe
 - interaktiver Run @joe
-- Lernziele einfügen @joe
 
 
 **Kontakt:**
