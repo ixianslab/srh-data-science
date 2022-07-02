@@ -1,0 +1,55 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Einführung in die Statistik
+    chapters:
+    - file: Kapitel01/01_Deskriptive_Statistik
+    - file: Kapitel01/02_Maße_der_zentralen_Tendenz
+    - file: Kapitel01/03_Streuungsmaße
+    - file: Kapitel01/04_Maße_der_Position
+    - file: Kapitel01/05_Maße_der_Relation_zwischen_Variablen
+  - caption: Diskrete Zufallsvariablen
+    chapters: 
+    - file: Kapitel02/01_Diskrete_Zufallsvariablen
+    - file: Kapitel02/02_Die_Binomialverteilung
+    - file: Kapitel02/03_Die_Poisson_Verteilung
+  - caption: Stetige Zufallsvariablen
+    chapters: 
+    - file: Kapitel03/01_stetige_Zufallsvariablen
+    - file: Kapitel03/02_Die Normalverteilung
+    - file: Kapitel03/03_Die_kontinuierliche_gleichmäßige_Verteilung
+    - file: Kapitel03/04_Die_Student_t_Verteilung
+    - file: Kapitel03/05_Die_Chi_Quadrat_Verteilung
+    - file: Kapitel03/06_Die_F_Verteilung
+  - caption: Der Zentrale Grenzwertsatz
+    chapters:   
+    - file: Kapitel04/01_Zentraler_Grenzwertsatz
+  - caption: Inferenzstatistik und Konfidenzintervalle
+    chapters:   
+    - file: Kapitel05/01_Inferenzstatistik_und_Konfidenzintervalle
+  - caption: Hypothesentests
+    chapters:   
+    - file: Kapitel06/01_Hypothesentests
+    - file: Kapitel06/02_Hypothesentests_Mittelwert_einer_Grundgesamtheit
+    - file: Kapitel06/03_Hypothesentests_zwei_Grundgesamtheitsmittelwerte
+    - file: Kapitel06/04_Standardabweichung_der_Grundgesamtheit
+    - file: Kapitel06/05_Chi_Quadrat_Tests
+    - file: Kapitel06/06_Inferenz_Regression_und_Korrelation
+    - file: Kapitel06/07_Wahrscheinlichkeitstabellen
+  - caption: Varianzanalyse - ANOVA
+    chapters:   
+    - file: Kapitel07/01_Analyse_der_Varianz_ANOVA
+  - caption: Lineare Regression
+    chapters:   
+    - file: Kapitel08/01_Lineare_Regression
+    - file: Kapitel08/02_Polynomiale_Regression
+  - caption: Logistische Regression
+    chapters:   
+    - file: Kapitel09/01_Logistische_Regression
+  - caption: Literaturverzeichnis
+    chapters:
+    - file:  Literaturverzeichnis
+
