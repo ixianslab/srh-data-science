@@ -12,13 +12,18 @@ Work in progress
 -   Binder
 -   lab vs classic
 
-## Probleme
-- Bibliography uneiheitlich @jan (https://scholar.google.com/)
-- Rendering Probleme zb ANOVA order DISKRETE ZUFALLSVARIABLEN @jan
+## ToDos
+- Bibliography uneiheitlich (https://scholar.google.com/) @jan 
+- Inhalte durchlesen, wenn Rendering Probleme zb ANOVA order DISKRETE ZUFALLSVARIABLEN dann notieren @jan
 - Prüfen auf unnötge imports @jan
+- Check Zitate Formatierung (https://jupyterbook.org/en/stable/content/citations.html?highlight=citation#change-the-in-line-citation-style) @Jan
+- Formulierungen ändern, verbesserter Stil @jan
+- Aufgaben review @jan
+
 - verstecken von code Blöcken @joe
 - interaktiver Run @joe
-- Check Zitate Formatierung (https://jupyterbook.org/en/stable/content/citations.html?highlight=citation#change-the-in-line-citation-style) @Jan
+- Lernziele einfügen @joe
+
 
 **Kontakt:**
 ixians UG (haftungsbeschränkt)\

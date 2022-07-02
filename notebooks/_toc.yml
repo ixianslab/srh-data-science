@@ -6,6 +6,7 @@ root: intro
 parts:
   - caption: Einführung in die Statistik
     chapters:
+    - file: Lernziele/Kapitel1_Lernziele
     - file: Kapitel01/01_Deskriptive_Statistik
     - file: Kapitel01/02_Maße_der_zentralen_Tendenz
     - file: Kapitel01/03_Streuungsmaße
@@ -13,11 +14,13 @@ parts:
     - file: Kapitel01/05_Maße_der_Relation_zwischen_Variablen
   - caption: Diskrete Zufallsvariablen
     chapters: 
+    - file: Lernziele/Kapitel2_Lernziele
     - file: Kapitel02/01_Diskrete_Zufallsvariablen
     - file: Kapitel02/02_Die_Binomialverteilung
     - file: Kapitel02/03_Die_Poisson_Verteilung
   - caption: Stetige Zufallsvariablen
     chapters: 
+    - file: Lernziele/Kapitel3_Lernziele
     - file: Kapitel03/01_stetige_Zufallsvariablen
     - file: Kapitel03/02_Die Normalverteilung
     - file: Kapitel03/03_Die_kontinuierliche_gleichmäßige_Verteilung
@@ -26,12 +29,15 @@ parts:
     - file: Kapitel03/06_Die_F_Verteilung
   - caption: Der Zentrale Grenzwertsatz
     chapters:   
+    - file: Lernziele/Kapitel4_Lernziele
     - file: Kapitel04/01_Zentraler_Grenzwertsatz
   - caption: Inferenzstatistik und Konfidenzintervalle
     chapters:   
+    - file: Lernziele/Kapitel5_Lernziele
     - file: Kapitel05/01_Inferenzstatistik_und_Konfidenzintervalle
   - caption: Hypothesentests
     chapters:   
+    - file: Lernziele/Kapitel6_Lernziele
     - file: Kapitel06/01_Hypothesentests
     - file: Kapitel06/02_Hypothesentests_Mittelwert_einer_Grundgesamtheit
     - file: Kapitel06/03_Hypothesentests_zwei_Grundgesamtheitsmittelwerte
@@ -41,13 +47,16 @@ parts:
     - file: Kapitel06/07_Wahrscheinlichkeitstabellen
   - caption: Varianzanalyse - ANOVA
     chapters:   
+    - file: Lernziele/Kapitel7_Lernziele
     - file: Kapitel07/01_Analyse_der_Varianz_ANOVA
   - caption: Lineare Regression
-    chapters:   
+    chapters:  
+    - file: Lernziele/Kapitel8_Lernziele
     - file: Kapitel08/01_Lineare_Regression
     - file: Kapitel08/02_Polynomiale_Regression
   - caption: Logistische Regression
     chapters:   
+    - file: Lernziele/Kapitel9_Lernziele
     - file: Kapitel09/01_Logistische_Regression
   - caption: Literaturverzeichnis
     chapters:
