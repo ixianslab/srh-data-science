@@ -51,8 +51,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Lineare Regression" href="LineareReg.html" />
@@ -556,6 +554,38 @@ const thebe_selector_output = ".output, .cell_output"
    Logistische Regression
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Kapitel09/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Kapitel09/LogReg_basics.html">
+     Logistische Regression - Grundbegriffe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Kapitel09/logit_funktion.html">
+     Logistische Funktion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Kapitel09/logodds.html">
+     Odds und Log-Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Kapitel09/logregmodell.html">
+     Einfaches logistisches Regressionsmodell
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -724,13 +754,6 @@ const thebe_selector_output = ".output, .cell_output"
 <hr class="docutils" />
 <div class="section" id="losungen">
 <h2>Lösungen<a class="headerlink" href="#losungen" title="Permalink to this headline">¶</a></h2>
-<p>Residuen sind die Abweichungen der beobachteten <span class="math notranslate nohighlight">\(y\)</span>-Werten zu den durch die berechnete Regressionsgerade vorhergesagten <span class="math notranslate nohighlight">\(y\)</span>-Werten und sind gegeben durch:</p>
-<div class="math notranslate nohighlight">
-\[\hat \epsilon_i = y_i - \hat y_i \ , \ i = 1, \cdots, n\]</div>
-<p>Sie ermöglichen es ein Maß für die Güte eines Regressionsmodells zu definieren.</p>
-<p>(<span id="id1">[<a class="reference internal" href="../../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.149)</p>
-<p>Homoskedastizität ist dann gegeben, wenn die Varianz der Residuen ungefähr konstant ist. Alle Datenpunkte liegen in etwa in gleichem Abstand zur Regressionsgeraden.</p>
-<p>Hebelpunkte sind einzelne Datenpunkt, die weit außerhalb der Datenmenge liegen. Durch ihr hohes Residuum, dass quadratische in die Methode der kleinsten Quadrate eingeht, haben sie einen überproportionale Effekt auf die resultierende Regressionskurve.</p>
 </div>
 </div>
 
