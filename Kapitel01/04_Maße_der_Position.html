@@ -1,0 +1,1111 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Das Positionsmaß &#8212; Modul Statistik und Machine Learning Modelle</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Maße für die Relation zwischen Variablen" href="05_Ma%C3%9Fe_der_Relation_zwischen_Variablen.html" />
+    <link rel="prev" title="Streuungsmaße" href="03_Streuungsma%C3%9Fe.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/srh_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Modul Statistik und Machine Learning Modelle</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Modul Statistik und Machine Learning Modelle
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Einführung in die Statistik
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel1_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_Deskriptive_Statistik.html">
+   Deskriptive Statistik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Ma%C3%9Fe_der_zentralen_Tendenz.html">
+   Maße der zentralen Tendenz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_Streuungsma%C3%9Fe.html">
+   Streuungsmaße
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Das Positionsmaß
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_Ma%C3%9Fe_der_Relation_zwischen_Variablen.html">
+   Maße für die Relation zwischen Variablen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Diskrete Zufallsvariablen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel2_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel02/01_Diskrete_Zufallsvariablen.html">
+   Diskrete Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel02/02_Die_Binomialverteilung.html">
+   Die Binomialverteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel02/03_Die_Poisson_Verteilung.html">
+   Die Poisson-Verteilung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Stetige Zufallsvariablen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel3_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/01_stetige_Zufallsvariablen.html">
+   Stetige Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/02_Die%20Normalverteilung.html">
+   Die Normalverteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/03_Die_kontinuierliche_gleichm%C3%A4%C3%9Fige_Verteilung.html">
+   Die kontinuierliche gleichmäßige Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/04_Die_Student_t_Verteilung.html">
+   Die Student t-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/05_Die_Chi_Quadrat_Verteilung.html">
+   Die Chi-Quadrat-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/06_Die_F_Verteilung.html">
+   Die F-Verteilung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Der Zentrale Grenzwertsatz
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel4_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel04/01_Zentraler_Grenzwertsatz.html">
+   Der zentrale Grenzwertsatz
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Inferenzstatistik und Konfidenzintervalle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel5_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel05/01_Inferenzstatistik_und_Konfidenzintervalle.html">
+   Inferenzstatistik und Konfidenzintervalle
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Hypothesentests
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel6_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/01_Hypothesentests.html">
+   Hypothesentests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/02_Hypothesentests_Mittelwert_einer_Grundgesamtheit.html">
+   Hypothesentests für den Mittelwert einer Grundgesamtheit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/03_Hypothesentests_zwei_Grundgesamtheitsmittelwerte.html">
+   Hypothesentests für zwei Grundgesamtheitsmittelwerte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/04_Standardabweichung_der_Grundgesamtheit.html">
+   Inferenz für die Standardabweichung der Grundgesamtheit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/05_Chi_Quadrat_Tests.html">
+   Chi-Quadrat-Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/06_Inferenz_Regression_und_Korrelation.html">
+   Inferenzmethoden in Regression und Korrelation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel06/07_Wahrscheinlichkeitstabellen.html">
+   Wahrscheinlichkeits-Tabellen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Varianzanalyse - ANOVA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel7_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel07/01_Analyse_der_Varianz_ANOVA.html">
+   Varianzanalyse - ANOVA
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lineare Regression
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel08/01_Lineare_Regression.html">
+   Lineare Regression
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel08/02_Polynomiale_Regression.html">
+   Polynomiale Regression
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Logistische Regression
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel9_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel09/01_Logistische_Regression.html">
+   Logistische Regression
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Literaturverzeichnis
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Literaturverzeichnis.html">
+   Literaturverzeichnis
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Kapitel01/04_Maße_der_Position.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ixianslab/srh-data-science"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ixianslab/srh-data-science/issues/new?title=Issue%20on%20page%20%2FKapitel01/04_Maße_der_Position.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ixianslab/srh-data-science/main?urlpath=tree/notebooks/Kapitel01/04_Maße_der_Position.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quartile-und-interquartilsbereich">
+   Quartile und Interquartilsbereich
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#die-5-punkte-zusammenfassung">
+   Die 5-Punkte-Zusammenfassung
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#perzentile-und-perzentilrang">
+   Perzentile und Perzentilrang
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ausreiszer-und-boxplots">
+   Ausreißer und Boxplots
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ausreiszer">
+     Ausreißer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplots">
+     Boxplots
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Das Positionsmaß</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quartile-und-interquartilsbereich">
+   Quartile und Interquartilsbereich
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#die-5-punkte-zusammenfassung">
+   Die 5-Punkte-Zusammenfassung
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#perzentile-und-perzentilrang">
+   Perzentile und Perzentilrang
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ausreiszer-und-boxplots">
+   Ausreißer und Boxplots
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ausreiszer">
+     Ausreißer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplots">
+     Boxplots
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="das-positionsmasz">
+<h1>Das Positionsmaß<a class="headerlink" href="#das-positionsmasz" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ein Positionsmaß bestimmt die Position eines einzelnen Wertes im Verhältnis zu anderen Werten in einer Stichprobe oder einem Populationsdatensatz. Anders als der Mittelwert und die Standardabweichung sind auf <strong>Quantilen</strong> basierende deskriptive Maße nicht empfindlich gegenüber dem Einfluss einiger weniger extremer Beobachtungen. Aus diesem Grund werden deskriptive Maße, die auf Quantilen basieren, häufig denjenigen vorgezogen, die auf dem Mittelwert und der Standardabweichung basieren (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.60).</p>
+<p>Quantile sind Punkte, die den Bereich der Daten in zusammenhängende Intervalle mit gleichen Wahrscheinlichkeiten unterteilen. Bestimmte <a href="https://de.wikipedia.org/wiki/Quantil_(Wahrscheinlichkeitstheorie)">Quantile</a> sind besonders wichtig: Der <strong>Median</strong> eines Datensatzes unterteilt die Daten in zwei gleiche Teile: die unteren <span class="math notranslate nohighlight">\(50 \%\)</span> und die oberen <span class="math notranslate nohighlight">\(50 \%\)</span>. <strong>Quartile</strong> unterteilen die Daten in vier gleiche Teile und <strong>Perzentile</strong> unterteilen sie in Hundertstel oder <span class="math notranslate nohighlight">\(100\)</span> gleiche Teile. Beachten Sie, dass der Median auch das <span class="math notranslate nohighlight">\(50\)</span>-te Perzentil ist. <strong>Dezile</strong> unterteilen einen Datensatz in Zehntel (<span class="math notranslate nohighlight">\(10\)</span> gleiche Teile), und die <strong>Quintile</strong> unterteilen einen Datensatz in Fünftel (<span class="math notranslate nohighlight">\(5\)</span> gleiche Teile). Es gibt immer ein Quantil weniger als die Anzahl der gebildeten Gruppen (z. B. gibt es <strong>3</strong> Quartile, die die Daten in <strong>4</strong> gleiche Teile unterteilen!).</p>
+<div class="section" id="quartile-und-interquartilsbereich">
+<h2>Quartile und Interquartilsbereich<a class="headerlink" href="#quartile-und-interquartilsbereich" title="Permalink to this headline">¶</a></h2>
+<p><strong>Quartile</strong> unterteilen einen geordneten Datensatz in <strong>vier gleiche Teile</strong>. Diese drei Maße werden als <strong>erstes Quartil</strong> <span class="math notranslate nohighlight">\((Q1)\)</span>, <strong>zweites Quartil</strong> <span class="math notranslate nohighlight">\((Q2)\)</span> und <strong>drittes Quartil</strong> <span class="math notranslate nohighlight">\((Q3)\)</span> bezeichnet. Das zweite Quartil ist dasselbe wie der Median eines Datensatzes. Das erste Quartil ist der Wert des mittleren Terms unter den Beobachtungen, die kleiner als der Median sind, und das dritte Quartil ist der Wert des mittleren Terms unter den Beobachtungen, die größer als der Median sind (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.59).</p>
+<p><img alt="Alt-Text" src="../_images/median.png" /></p>
+<p>Ungefähr <span class="math notranslate nohighlight">\(25 \%\)</span> der Werte in einem geordneten Datensatz sind kleiner als <span class="math notranslate nohighlight">\(Q1\)</span> und etwa <span class="math notranslate nohighlight">\(75 \%\)</span> sind größer als <span class="math notranslate nohighlight">\(Q1\)</span>. Das zweite Quartil, <span class="math notranslate nohighlight">\(Q2\)</span>, unterteilt einen geordneten Datensatz in zwei gleiche Teile; daher sind das zweite Quartil und der Median identisch. Etwa <span class="math notranslate nohighlight">\(75 \%\)</span> der Datenwerte sind kleiner als <span class="math notranslate nohighlight">\(Q3\)</span> und etwa <span class="math notranslate nohighlight">\(25 \%\)</span> sind größer als <span class="math notranslate nohighlight">\(Q3\)</span>. Die Differenz zwischen dem dritten Quartil und dem ersten Quartil eines Datensatzes wird als <strong>Interquartilsbereich</strong> (<span class="math notranslate nohighlight">\(IQR\)</span>) bezeichnet (<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.61).</p>
+<div class="math notranslate nohighlight">
+\[ IQR=Q3−Q1 \]</div>
+<p>Wechseln wir zu Python und testen wir seine Funktionalität zur Berechnung von Quantilen/Quartilen. Wir werden die <code class="docutils literal notranslate"><span class="pre">nc.score</span></code>-Variable des <code class="docutils literal notranslate"><span class="pre">students</span></code> Datensatzes verwenden, um Quartile und den <span class="math notranslate nohighlight">\(IQR\)</span> zu berechnen. Die <code class="docutils literal notranslate"><span class="pre">nc.score</span></code>-Variable entspricht der <a href="https://de.wikipedia.org/wiki/Numerus_clausus">Numerus-Clausus</a>-Punktzahl jedes Studenten.</p>
+<p>Zunächst werden die Daten unterteilt und ein Histogramm erstellt, um die Verteilung der Variablen genauer zu untersuchen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lese Daten ein</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Histogramm</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Numerus Clausus&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Häufigkeit&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Histogramm von &#39;nc.score&#39;&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/04_Maße_der_Position_11_0.png" src="../_images/04_Maße_der_Position_11_0.png" />
+</div>
+</div>
+<p>Um die Quartile für die Variable nc.score zu berechnen, wenden wir die Funktion <code class="docutils literal notranslate"><span class="pre">np.quantile</span></code> an. Um die Quartile für die Variable <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> zu berechnen, schreiben wir also einfach:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">e</span><span class="p">,</span> <span class="n">q</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. Quantil des nc.score: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;nc.score&#39;</span><span class="p">],</span> <span class="n">q</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Quantil des nc.score: 1.46
+2. Quantil des nc.score: 2.04
+3. Quantil des nc.score: 2.78
+4. Quantil des nc.score: 4.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Hinweis:</strong> Nicht alle Statistiker definieren Quartile auf genau dieselbe Weise. Eine ausführliche Diskussion der verschiedenen Methoden zur Berechnung von Quartilen finden Sie in dem Online-Artikel <a href="http://jse.amstat.org/v14n3/langford.html">”Quartiles in Elementary Statistics” von E. Langford (2006)</a>.</p>
+<p>Um den <span class="math notranslate nohighlight">\(IQR\)</span> für die Variable <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> zu berechnen, schreiben wir entweder…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Berechne Interquartil Abstand mit Funktion np.percentile()</span>
+<span class="n">q1</span><span class="p">,</span> <span class="n">q3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">],</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">])</span>
+<span class="n">iqr</span> <span class="o">=</span> <span class="n">q3</span> <span class="o">-</span> <span class="n">q1</span>
+<span class="n">iqr</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.3199999999999998
+</pre></div>
+</div>
+</div>
+</div>
+<p>…oder wir wenden die eingebaute Funktion <code class="docutils literal notranslate"><span class="pre">iqr</span></code> aus dem Modul <code class="docutils literal notranslate"><span class="pre">scipy.stats</span></code> an:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">iqr</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">],</span> <span class="n">rng</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.3199999999999998
+</pre></div>
+</div>
+</div>
+</div>
+<p>Wir können die Aufteilung der Variablen <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> in Quartile visualisieren, indem wir ein Histogramm erstellen und ein paar zusätzliche Codezeilen hinzufügen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotte die Liste als Histogramm mit Quartilen</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;nc.score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Häufigkeit&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Histogramm der Variable Numerus Clausus&quot;</span><span class="p">)</span>
+
+<span class="c1"># Zeiche vertikale Linien bei Q1, Q2, Q3, Q4</span>
+<span class="k">for</span> <span class="n">e</span><span class="p">,</span> <span class="n">q</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">]):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">],</span> <span class="n">q</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;C</span><span class="si">{</span><span class="n">e</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Q</span><span class="si">{</span><span class="n">e</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x16ce333d0&gt;
+</pre></div>
+</div>
+<img alt="../_images/04_Maße_der_Position_20_1.png" src="../_images/04_Maße_der_Position_20_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="die-5-punkte-zusammenfassung">
+<h2>Die 5-Punkte-Zusammenfassung<a class="headerlink" href="#die-5-punkte-zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Aus den drei Quartilen <span class="math notranslate nohighlight">\((Q1, Q2, Q3)\)</span>können wir ein Maß für die Lage der Mitte (den Median, <span class="math notranslate nohighlight">\(Q2\)</span>) und ein Maß für die Variation der beiden mittleren Quartale der Daten, <span class="math notranslate nohighlight">\(Q2-Q1\)</span> für die zweite Quartile und <span class="math notranslate nohighlight">\(Q3-Q2\)</span> für die dritte Quartile ableiten. Die drei Quartilen sagen jedoch nichts über die Variation der ersten und vierten Quartile aus.</p>
+<p>Um diese Informationen zu erhalten, beziehen wir auch die Beobachtungen des Minimums und des Maximums mit ein. Die Variation der ersten Quartile kann als Differenz zwischen dem Minimum und der ersten Quartile, <span class="math notranslate nohighlight">\(Q1-Min\)</span>, gemessen werden, und die Variation der vierten Quartile kann als Differenz zwischen der dritten Quartile und dem Maximum, <span class="math notranslate nohighlight">\(Max-Q3\)</span>, gemessen werden. Somit liefern das Minimum, das Maximum und die Quartile zusammen unter anderem Informationen über Zentrum und Variation (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.62).</p>
+<p>Die so genannte <strong>Tukey-Fünf-Punkte-Zusammenfassung</strong> (nach dem Mathematiker <a href="https://de.wikipedia.org/wiki/John_W._Tukey">John Wilder Tukey</a>) eines Datensatzes besteht aus den Werten <span class="math notranslate nohighlight">\(Min, Q1, Q2, Q3\)</span> und <span class="math notranslate nohighlight">\(Max\)</span> des Datensatzes.</p>
+<p>Die Fünf-Punkte-Zusammenfassung lässt sich in Python durch <code class="docutils literal notranslate"><span class="pre">np.percentile</span></code> und die <code class="docutils literal notranslate"><span class="pre">min()</span></code>, <code class="docutils literal notranslate"><span class="pre">max()</span></code> Funktionen berechnen. Zu Demonstrationszwecken berechnen wir die Fünf-Punkte-Zusammenfassung für die Variable <code class="docutils literal notranslate"><span class="pre">nc.score</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lese Datei students.csv als Dataframe ein; Indexspalte wird übersprungen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Berechne Fünf-Zahlen-Zusammenfassung</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">]</span>
+
+<span class="c1"># Berechne die Quartilen</span>
+<span class="n">q1</span><span class="p">,</span> <span class="n">median</span><span class="p">,</span> <span class="n">q3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">75</span><span class="p">])</span>
+
+<span class="c1"># Berechne minimal/maximal Datenpunkte</span>
+<span class="n">data_min</span><span class="p">,</span> <span class="n">data_max</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">scores</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+<span class="c1"># Ausgabe der Daten</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Min:    </span><span class="si">{</span><span class="n">data_min</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Q1:     </span><span class="si">{</span><span class="n">q1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Median: </span><span class="si">{</span><span class="n">median</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Q3:     </span><span class="si">{</span><span class="n">q3</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Max:    </span><span class="si">{</span><span class="n">data_max</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Min:    1.0
+Q1:     1.46
+Median: 2.04
+Q3:     2.78
+Max:    4.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Diese Funktion liefert Minimum, untere Quartile, Median, obere Quartile und Maximum für die Eingabedaten.</p>
+<p>In Python gibt es eine ähnliche Methode namens <code class="docutils literal notranslate"><span class="pre">describe()</span></code>, die ähnliche Statistiken liefert.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    8239.000000
+mean        2.166481
+std         0.811548
+min         1.000000
+25%         1.460000
+50%         2.040000
+75%         2.780000
+max         4.000000
+Name: nc.score, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="perzentile-und-perzentilrang">
+<h2>Perzentile und Perzentilrang<a class="headerlink" href="#perzentile-und-perzentilrang" title="Permalink to this headline">¶</a></h2>
+<p><strong>Perzentile</strong> unterteilen einen geordneten Datensatz in <span class="math notranslate nohighlight">\(100\)</span> gleiche Teile. Jeder (geordnete) Datensatz hat <span class="math notranslate nohighlight">\(99\)</span> Perzentile, die ihn in <span class="math notranslate nohighlight">\(100\)</span> gleiche Teile unterteilen. Das <strong>k-te</strong> Perzentil wird mit <span class="math notranslate nohighlight">\(P_k\)</span> bezeichnet, wobei <span class="math notranslate nohighlight">\(k\)</span> eine ganze Zahl im Bereich von <span class="math notranslate nohighlight">\(1\)</span> bis <span class="math notranslate nohighlight">\(99\)</span> ist. Das <span class="math notranslate nohighlight">\(25\)</span>-te Perzentil wird zum Beispiel mit <span class="math notranslate nohighlight">\(P_{25}\)</span> bezeichnet.</p>
+<p>So kann das <strong>k-te</strong> Perzentil, <span class="math notranslate nohighlight">\(P_k\)</span>, als ein Wert in einem Datensatz definiert werden, bei dem etwa <span class="math notranslate nohighlight">\(k\%\)</span> der Messungen kleiner als der Wert von <span class="math notranslate nohighlight">\(P_k\)</span> und etwa <span class="math notranslate nohighlight">\((100-k)\)</span> der Messungen größer als der Wert von <span class="math notranslate nohighlight">\(P_k\)</span> sind</p>
+<p>.</p>
+<p>Der ungefähre Wert des <strong>k-ten</strong>.
+Perzentils, bezeichnet mit <span class="math notranslate nohighlight">\(P_k\)</span>, ist</p>
+<div class="math notranslate nohighlight">
+\[ P_k = \frac{kn}{100} \]</div>
+<p>wobei <strong>k</strong> die Nummer des Perzentils bezeichnet und <strong>n</strong> den Stichprobenumfang darstellt.</p>
+<p>Als Übung berechnen wir das 38-te, das 50-te und das 73-te Perzentil der Variablen <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> in Python. Zunächst berechnen wir das 38. Perzentil gemäß der oben angegebenen Gleichung. Dann wenden wir die <code class="docutils literal notranslate"><span class="pre">np.percentile()</span></code>-Funktion von Python an, um das 38-te, 50-te und 73-te Perzentil der Variablen <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> zu ermitteln.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lese Datei students.csv als Dataframe ein; Indexspalte wird übersprungen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">scores</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
+
+<span class="c1"># Berechne 38-te Perzentile</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">38</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Die </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">-te Perzentile ist </span><span class="si">{</span><span class="nb">round</span><span class="p">((</span><span class="n">k</span><span class="o">*</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Die 38-te Perzentile ist 3131.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6616    1.0
+4488    1.0
+4813    1.0
+2131    1.0
+2407    1.0
+       ... 
+8156    4.0
+36      4.0
+3784    4.0
+6290    4.0
+3868    4.0
+Name: nc.score, Length: 8239, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Wir wählen den Wert anhand dieser Zahl in der geordneten Liste <code class="docutils literal notranslate"><span class="pre">nc_score</span></code> aus und vergleichen ihn mit den Perzentilwerten.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">3131</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.74
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quartiles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="p">[</span><span class="mi">38</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">73</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">quartiles</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1.74 2.04 2.71]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Das hat gut funktioniert! Sie können prüfen, ob der Median der Variablen <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> dem <span class="math notranslate nohighlight">\(50\)</span>-te Perzentil <span class="math notranslate nohighlight">\((2,04)\)</span> entspricht, wie oben berechnet.</p>
+<p>Wir können auch den <strong>Perzentilrang</strong> für einen bestimmten Wert <span class="math notranslate nohighlight">\(x_i\)</span>
+eines Datensatzes mit der folgenden Gleichung berechnen:</p>
+<div class="math notranslate nohighlight">
+\[ \text{Perzentil Rang für} \   x_i = \frac{ \text{Werte kleiner als} \ x_i}{ \text{Gesamtanzahl der Werte im Datensatz}} \]</div>
+<p>Der Perzentilrang von <span class="math notranslate nohighlight">\(x_i\)</span> gibt den Prozentsatz der Werte im Datensatz an, die kleiner als <span class="math notranslate nohighlight">\(x_i\)</span> sind.</p>
+<p>In Python gibt es keine eingebaute Funktion zur Berechnung des Perzentilrangs. Es ist jedoch relativ einfach, eine solche Funktion selbst zu schreiben.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definiere Funktion my_percentile_rank</span>
+<span class="k">def</span> <span class="nf">my_percentile_rank</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Computes the percentile rank</span>
+<span class="sd">    Args:</span>
+<span class="sd">       x: int or float number</span>
+<span class="sd">       data: Pandas Series</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jetzt berechnen wir zum Beispiel den Perzentilrang für einen Numerus clausus von 2,5.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_percentile_rank</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">scores</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6627017841971113
+</pre></div>
+</div>
+</div>
+</div>
+<p>Wenn wir das Ergebnis auf den nächsten ganzzahligen Wert runden, können wir feststellen, dass etwa <span class="math notranslate nohighlight">\(66 \%\)</span> der Studenten in unserem Datensatz einen Numerus clausus von mehr als <span class="math notranslate nohighlight">\(2,5\)</span> hatten.</p>
+</div>
+<div class="section" id="ausreiszer-und-boxplots">
+<h2>Ausreißer und Boxplots<a class="headerlink" href="#ausreiszer-und-boxplots" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ausreiszer">
+<h3>Ausreißer<a class="headerlink" href="#ausreiszer" title="Permalink to this headline">¶</a></h3>
+<p>Bei der Datenanalyse ist die Identifizierung von Ausreißern und damit von Beobachtungen, die deutlich aus dem Gesamtmuster der Daten herausfallen, sehr wichtig. Ein Ausreißer erfordert besondere Aufmerksamkeit. Er kann das Ergebnis eines Mess- oder Aufzeichnungsfehlers, einer Beobachtung aus einer anderen Population oder einer ungewöhnlich extremen Beobachtung sein. Beachten Sie, dass eine extreme Beobachtung nicht zwangsläufig ein Ausreißer sein muss, sondern auch ein Hinweis auf eine Schieflage sein kann (<span id="id5">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.62).</p>
+<p>Wenn wir einen Ausreißer beobachten, sollten wir versuchen, seine Ursache zu ermitteln. Ist ein Ausreißer auf einen Mess- oder Aufzeichnungsfehler zurückzuführen oder gehört er aus einem anderen Grund eindeutig nicht zum Datensatz, kann er einfach entfernt werden. Wenn jedoch keine Erklärung für einen Ausreißer ersichtlich ist, ist die Entscheidung, ob er im Datensatz verbleiben soll, eine schwierige Ermessensentscheidung.</p>
+<p>Als Diagnoseinstrument zum Aufspüren von Beobachtungen, die Ausreißer sein könnten, können wir Quartile und den <strong>IQR</strong> verwenden. Daher definieren wir die <strong>Untergrenze</strong> und die <strong>Obergrenze</strong> eines Datensatzes. Die untere Grenze ist die Zahl, die <span class="math notranslate nohighlight">\(1,5×IQRs\)</span> unter dem ersten Quartil liegt; die obere Grenze ist die Zahl, die <span class="math notranslate nohighlight">\(1,5×IQRs\)</span></p>
+<p>über dem dritten Quartil liegt. Beobachtungen, die unterhalb der Untergrenze oder oberhalb der Obergrenze liegen, sind potenzielle Ausreißer (<span id="id6">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.61).</p>
+<div class="math notranslate nohighlight">
+\[\text{Untere Grenze}=Q1-1,5×IQR\]</div>
+<div class="math notranslate nohighlight">
+\[\text{Obere Grenze}=Q3+1,5×IQR\]</div>
+</div>
+<div class="section" id="boxplots">
+<h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">¶</a></h3>
+<p>Das Boxplot-Diagramm, auch <strong>Box-and-Whisker-Diagramm</strong> genannt, basiert auf der Fünf-Punkte-Zusammenfassung (<span id="id7">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.62) und kann zur grafischen Darstellung von Zentrum und Variation eines Datensatzes verwendet werden. Diese Diagramme wurden von dem Mathematiker <a href="https://de.wikipedia.org/wiki/John_W._Tukey">John Wilder Tukey</a> erfunden. Es sind mehrere <a href="https://de.wikipedia.org/wiki/Box-Plot">Arten von Boxplots</a> gebräuchlich.</p>
+<p>Box-and-Whisker-Plots bieten eine grafische Darstellung der Daten anhand von fünf Maßzahlen: dem Median, dem ersten Quartil, dem dritten Quartil sowie dem kleinsten und dem größten Wert des Datensatzes zwischen der unteren und der oberen Grenze. Der Abstand zwischen den verschiedenen Teilen des Kastens zeigt den Grad der Streuung und Schiefe der Daten an. Durch die Erstellung von Box-and-Whisker-Diagrammen können verschiedene Verteilungen miteinander verglichen werden. Es hilft auch, Ausreißer zu erkennen (<span id="id8">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.62). Box-Plots können entweder horizontal oder vertikal gezeichnet werden.</p>
+<p><img alt="Alt-Text" src="../_images/boxplot.png" />
+Die Ränder der Box sind immer das erste und dritte Quartil, und der Bereich innerhalb der Box ist immer das zweite Quartil (der Median). Die von den Boxen ausgehenden Linien (Whisker) zeigen die Variabilität außerhalb des oberen und unteren Quartils an. Um einen Boxplot zu erstellen, benötigen wir auch das Konzept der benachbarten Werte. Die <strong>angrenzenden Werte</strong> eines Datensatzes sind die extremsten Beobachtungen, die noch innerhalb der unteren und oberen Grenzen liegen; sie sind die extremsten Beobachtungen, die keine potenziellen Ausreißer sind. Ausreißer können als einzelne Punkte aufgetragen werden. Wenn es in einem Datensatz keine potenziellen Ausreißer gibt, sind die angrenzenden Werte lediglich das Minimum und das Maximum der Beobachtungen (Weiss 2010).</p>
+<p>Lassen Sie uns nun eine Reihe von Boxplots erstellen, um den Datensatz <code class="docutils literal notranslate"><span class="pre">students</span></code> eingehender zu analysieren. Wir beginnen mit der Erstellung eines Boxplots für die Variable <code class="docutils literal notranslate"><span class="pre">nc.score</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lese der Datei students.csv; nur Spalten &#39;nc.score&#39;,&#39;semester&#39;,&#39;gender&#39;,&#39;height&#39; werden verwendet</span>
+<span class="n">students</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">,</span> <span class="s2">&quot;semester&quot;</span><span class="p">,</span> <span class="s2">&quot;gender&quot;</span><span class="p">,</span> <span class="s2">&quot;height&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">students</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gender</th>
+      <th>height</th>
+      <th>nc.score</th>
+      <th>semester</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Female</td>
+      <td>160</td>
+      <td>1.91</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Female</td>
+      <td>172</td>
+      <td>1.56</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Female</td>
+      <td>168</td>
+      <td>1.24</td>
+      <td>3rd</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Male</td>
+      <td>183</td>
+      <td>1.37</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Female</td>
+      <td>175</td>
+      <td>1.46</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>8235</th>
+      <td>Male</td>
+      <td>181</td>
+      <td>2.91</td>
+      <td>6th</td>
+    </tr>
+    <tr>
+      <th>8236</th>
+      <td>Male</td>
+      <td>178</td>
+      <td>2.03</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <th>8237</th>
+      <td>Female</td>
+      <td>169</td>
+      <td>3.72</td>
+      <td>3rd</td>
+    </tr>
+    <tr>
+      <th>8238</th>
+      <td>Male</td>
+      <td>195</td>
+      <td>2.74</td>
+      <td>4th</td>
+    </tr>
+    <tr>
+      <th>8239</th>
+      <td>Female</td>
+      <td>170</td>
+      <td>3.29</td>
+      <td>&gt;6th</td>
+    </tr>
+  </tbody>
+</table>
+<p>8239 rows × 4 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/04_Maße_der_Position_57_0.png" src="../_images/04_Maße_der_Position_57_0.png" />
+</div>
+</div>
+<p>Wir erhalten sofort einen Eindruck von der Streuung und Schiefe der Daten. Durch Hinzufügen des Arguments <code class="docutils literal notranslate"><span class="pre">vert</span> <span class="pre">=</span> <span class="pre">False</span></code> zum Boxplot drehen wir den Boxplot um <span class="math notranslate nohighlight">\(90^∘\)</span> und färben die Box ein, um einen besseren visuellen Eindruck zu erhalten.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="s2">&quot;nc.score&quot;</span><span class="p">],</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Scores&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Numerus Clausus&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Numerus Clausus&#39;)
+</pre></div>
+</div>
+<img alt="../_images/04_Maße_der_Position_59_1.png" src="../_images/04_Maße_der_Position_59_1.png" />
+</div>
+</div>
+<p>Boxplots sind eine sehr leistungsfähige Technik für die explorative Datenanalyse, da es sehr einfach ist, die Variable von Interesse, in unserem Fall die <code class="docutils literal notranslate"><span class="pre">nc.score</span></code>-Variable, auf andere Variablen zu beziehen und in ihrer Relation darstellen. In Python können wir das erreichen indem wir das Argument <code class="docutils literal notranslate"><span class="pre">by</span></code> in der <code class="docutils literal notranslate"><span class="pre">boxplot</span></code> Methode anwenden.</p>
+<p>Zeichnen wir einen Boxplot der Variable <code class="docutils literal notranslate"><span class="pre">nc.score</span></code> in Abhängigkeit von der Variable <code class="docutils literal notranslate"><span class="pre">semester</span></code>. Die <code class="docutils literal notranslate"><span class="pre">semester</span></code>-Variable entspricht dem Semester, in dem der jeweilige Student studiert. Zu Ihrer Information: Die Mindeststudienzeit für die untersuchten Studiengänge ist auf 4 Semester festgelegt.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">students</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s2">&quot;nc.score&quot;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s2">&quot;semester&quot;</span><span class="p">,</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">notch</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/04_Maße_der_Position_61_0.png" src="../_images/04_Maße_der_Position_61_0.png" />
+</div>
+</div>
+<p>Interessant, nicht wahr? Die Grafik zeigt, dass Studierende höherer Semester (<span class="math notranslate nohighlight">\(&gt;5\)</span>-tes Semester) beim <em>Numerus clausus</em> tendenziell schlechter abschneiden. Mit anderen Worten: Studierende, die ihr Studium innerhalb der Mindeststudienzeit abschließen, haben tendenziell eine höhere <em>Numerus-clausus</em>-Punktzahl.</p>
+<p>Doch damit sind wir noch nicht fertig. Wir wollen wissen, ob das Geschlecht einen Einfluss auf diese Beobachtung hat. Wir können ganz einfach eine Interaktionsvariable einfügen, indem wir die Variable nach den gruppiert werden soll in eckige Klammern setzen : <code class="docutils literal notranslate"><span class="pre">[var1,</span> <span class="pre">var2]</span></code>. Außerdem verwenden wir das Argument <code class="docutils literal notranslate"><span class="pre">notch</span></code> in der <code class="docutils literal notranslate"><span class="pre">boxplot</span></code> Methode. Wenn sich die notches zweier Diagramme nicht überschneiden, ist dies ein “starker Beweis” dafür, dass sich die beiden Mediane unterscheiden <a href="https://fu-berlin.primo.exlibrisgroup.com/discovery/search?vid=49KOBV_FUB:FUBFUB:FUB_ALMA_DS21929110200002883">(Chambers, et al. (1983): Graphical Methods for Data Analysis. Wadsworth &amp; Brooks/Cole, S. 62)</a>.
+Bitte beachten Sie, dass wir eine zusätzliche Zeile Code schreiben müssen, um ein schöneres <span class="math notranslate nohighlight">\(y\)</span>-Label zu erhalten.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">students</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span>
+    <span class="n">column</span><span class="o">=</span><span class="s2">&quot;nc.score&quot;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;semester&quot;</span><span class="p">,</span> <span class="s2">&quot;gender&quot;</span><span class="p">],</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">notch</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/04_Maße_der_Position_63_0.png" src="../_images/04_Maße_der_Position_63_0.png" />
+</div>
+</div>
+<p>Dieses Diagramm ist nicht so einfach zu interpretieren. Es scheint jedoch, dass die oben gemachte Beobachtung bestätigt wird: Studierende aus höheren Semestern (<span class="math notranslate nohighlight">\(&gt;5\)</span>-tes) schneiden beim <em>Numerus clausus</em> tendenziell schlechter ab. Der Einfluss des Geschlechts auf die <em>Numerus-Clausus</em>-Werte ist jedoch nicht so eindeutig. Wir werden Methoden der <strong>Inferenzstatistik</strong> anwenden müssen, um zu beurteilen, ob diese Unterschiede <em>statistisch signifikant</em> sind oder ob diese Schwankungen um den Median auch rein zufällig sein könnten.</p>
+<p>Zum Abschluss dieses Abschnitts und um auch einen Boxplot mit Ausreißern zu sehen, stellen wir die Variable <code class="docutils literal notranslate"><span class="pre">height</span></code> gegen die Variable <code class="docutils literal notranslate"><span class="pre">gender</span></code> dar.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">students</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s2">&quot;gender&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/04_Maße_der_Position_65_0.png" src="../_images/04_Maße_der_Position_65_0.png" />
+</div>
+</div>
+<p>Offensichtlich, und sicherlich nicht unerwartet, gibt es einen Unterschied in der Größe der Studenten zwischen den verschiedenen Gruppen (männlich oder weiblich). Weibliche Studenten sind tendenziell kleiner als männliche, aber wenn wir uns die Extreme ansehen, gibt es in beiden Gruppen große und kleine Personen. Wie bereits erwähnt, müssen wir jedoch zunächst die Daten auf <em>statistische Signifikanz</em> prüfen, um sicher zu sein, dass der beobachtete Größenunterschied nicht nur zufällig ist.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ixianslab/srh-data-science",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Kapitel01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="03_Streuungsma%C3%9Fe.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Streuungsmaße</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="05_Ma%C3%9Fe_der_Relation_zwischen_Variablen.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Maße für die Relation zwischen Variablen</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By ixians<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

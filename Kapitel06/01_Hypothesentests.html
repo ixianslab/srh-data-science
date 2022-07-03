@@ -1,0 +1,1087 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypothesentests &#8212; Modul Statistik und Machine Learning Modelle</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hypothesentests für den Mittelwert einer Grundgesamtheit" href="02_Hypothesentests_Mittelwert_einer_Grundgesamtheit.html" />
+    <link rel="prev" title="Lernziele" href="../Lernziele/Kapitel6_Lernziele.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/srh_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Modul Statistik und Machine Learning Modelle</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Modul Statistik und Machine Learning Modelle
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Einführung in die Statistik
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel1_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel01/01_Deskriptive_Statistik.html">
+   Deskriptive Statistik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel01/02_Ma%C3%9Fe_der_zentralen_Tendenz.html">
+   Maße der zentralen Tendenz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel01/03_Streuungsma%C3%9Fe.html">
+   Streuungsmaße
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel01/04_Ma%C3%9Fe_der_Position.html">
+   Das Positionsmaß
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel01/05_Ma%C3%9Fe_der_Relation_zwischen_Variablen.html">
+   Maße für die Relation zwischen Variablen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Diskrete Zufallsvariablen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel2_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel02/01_Diskrete_Zufallsvariablen.html">
+   Diskrete Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel02/02_Die_Binomialverteilung.html">
+   Die Binomialverteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel02/03_Die_Poisson_Verteilung.html">
+   Die Poisson-Verteilung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Stetige Zufallsvariablen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel3_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/01_stetige_Zufallsvariablen.html">
+   Stetige Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/02_Die%20Normalverteilung.html">
+   Die Normalverteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/03_Die_kontinuierliche_gleichm%C3%A4%C3%9Fige_Verteilung.html">
+   Die kontinuierliche gleichmäßige Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/04_Die_Student_t_Verteilung.html">
+   Die Student t-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/05_Die_Chi_Quadrat_Verteilung.html">
+   Die Chi-Quadrat-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel03/06_Die_F_Verteilung.html">
+   Die F-Verteilung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Der Zentrale Grenzwertsatz
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel4_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel04/01_Zentraler_Grenzwertsatz.html">
+   Der zentrale Grenzwertsatz
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Inferenzstatistik und Konfidenzintervalle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel5_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel05/01_Inferenzstatistik_und_Konfidenzintervalle.html">
+   Inferenzstatistik und Konfidenzintervalle
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Hypothesentests
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel6_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Hypothesentests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Hypothesentests_Mittelwert_einer_Grundgesamtheit.html">
+   Hypothesentests für den Mittelwert einer Grundgesamtheit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_Hypothesentests_zwei_Grundgesamtheitsmittelwerte.html">
+   Hypothesentests für zwei Grundgesamtheitsmittelwerte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_Standardabweichung_der_Grundgesamtheit.html">
+   Inferenz für die Standardabweichung der Grundgesamtheit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_Chi_Quadrat_Tests.html">
+   Chi-Quadrat-Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_Inferenz_Regression_und_Korrelation.html">
+   Inferenzmethoden in Regression und Korrelation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07_Wahrscheinlichkeitstabellen.html">
+   Wahrscheinlichkeits-Tabellen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Varianzanalyse - ANOVA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel7_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel07/01_Analyse_der_Varianz_ANOVA.html">
+   Varianzanalyse - ANOVA
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lineare Regression
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel08/01_Lineare_Regression.html">
+   Lineare Regression
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel08/02_Polynomiale_Regression.html">
+   Polynomiale Regression
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Logistische Regression
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lernziele/Kapitel9_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Kapitel09/01_Logistische_Regression.html">
+   Logistische Regression
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Literaturverzeichnis
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Literaturverzeichnis.html">
+   Literaturverzeichnis
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Kapitel06/01_Hypothesentests.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ixianslab/srh-data-science"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ixianslab/srh-data-science/issues/new?title=Issue%20on%20page%20%2FKapitel06/01_Hypothesentests.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ixianslab/srh-data-science/main?urlpath=tree/notebooks/Kapitel06/01_Hypothesentests.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Hypothesentests
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#einfuhrung-in-hypothesentests">
+   Einführung in Hypothesentests
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formulierung-der-hypothese">
+   Formulierung der Hypothese
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fehler-vom-typ-i-fehler-vom-typ-ii-und-signifikanzniveau">
+   Fehler vom Typ I, Fehler vom Typ II und Signifikanzniveau
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#der-kritische-wert-und-der-p-wert-ansatz-bei-der-hypothesenprufung">
+   Der kritische Wert und der
+   <span class="math notranslate nohighlight">
+    \(p\)
+   </span>
+   -Wert-Ansatz bei der Hypothesenprüfung
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#der-ansatz-des-kritischen-wertes">
+     Der Ansatz des kritischen Wertes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#der-p-wert-ansatz">
+     Der
+     <span class="math notranslate nohighlight">
+      \(p\)
+     </span>
+     -Wert-Ansatz
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Hypothesentests</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Hypothesentests
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#einfuhrung-in-hypothesentests">
+   Einführung in Hypothesentests
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formulierung-der-hypothese">
+   Formulierung der Hypothese
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fehler-vom-typ-i-fehler-vom-typ-ii-und-signifikanzniveau">
+   Fehler vom Typ I, Fehler vom Typ II und Signifikanzniveau
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#der-kritische-wert-und-der-p-wert-ansatz-bei-der-hypothesenprufung">
+   Der kritische Wert und der
+   <span class="math notranslate nohighlight">
+    \(p\)
+   </span>
+   -Wert-Ansatz bei der Hypothesenprüfung
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#der-ansatz-des-kritischen-wertes">
+     Der Ansatz des kritischen Wertes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#der-p-wert-ansatz">
+     Der
+     <span class="math notranslate nohighlight">
+      \(p\)
+     </span>
+     -Wert-Ansatz
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="hypothesentests">
+<h1>Hypothesentests<a class="headerlink" href="#hypothesentests" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>Ein sehr häufiges Problem, mit dem Wissenschaftler konfrontiert sind, ist die <strong>Bewertung der Signifikanz</strong> von verstreuten statistischen Daten. Aufgrund der begrenzten Verfügbarkeit von Beobachtungsdaten wenden Wissenschaftler inferenzstatistische Methoden an, um zu entscheiden, ob die beobachteten Daten signifikante Informationen enthalten oder ob die verstreuten Daten nichts weiter als die Manifestation der inhärent probabilistischen Natur des Datenerzeugungsprozesses sind.</p>
+<p>Im Allgemeinen formuliert ein Wissenschaftler ein solches Problem wie folgt. Der Wissenschaftler erstellt ein Modell, das lediglich eine Vereinfachung des Datenerzeugungsprozesses darstellt, und betrachtet eine bestimmte Annahme - eine so genannte <a href="https://de.wikipedia.org/wiki/Hypothese">Hypothese</a> - dieses Modells. Anhand von Daten will er diese vorläufige Hypothese bewerten.</p>
+<p>Bei der Hypothesenprüfung geht es darum, <strong>auf der Grundlage von Stichproben aus der Grundgesamtheit statistische Rückschlüsse auf diese Grundgesamtheit zu ziehen</strong>. Eine Möglichkeit zur Schätzung eines Grundgesamtheitsparameters ist die Erstellung von Konfidenzintervallen. Eine andere Möglichkeit besteht darin, eine Entscheidung über einen Parameter in Form eines Tests zu treffen. Jeder Hypothesentest erfordert die Erhebung von Daten (Stichproben). Wenn die Hypothese als richtig angenommen wird, kann der Wissenschaftler die erwarteten Ergebnisse eines Experiments berechnen. Weichen die beobachteten Daten erheblich von den erwarteten Ergebnissen ab, so gilt die Annahme als falsch. Auf der Grundlage der beobachteten Daten trifft der Wissenschaftler also eine Entscheidung darüber, ob es aufgrund der Analyse der Daten genügend Beweise dafür gibt, dass das Modell - die Hypothese - verworfen werden sollte, oder ob es keine ausreichenden Beweise für die Verwerfung der angegebenen Hypothese gibt.</p>
+</div>
+<div class="section" id="einfuhrung-in-hypothesentests">
+<h1>Einführung in Hypothesentests<a class="headerlink" href="#einfuhrung-in-hypothesentests" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>In der <strong>Inferenzstatistik</strong> geht es darum, Entscheidungen oder Urteile über den Wert einer bestimmten Beobachtung oder Messung zu treffen. Eine der am häufigsten verwendeten Methoden, um solche Entscheidungen zu treffen, ist die Durchführung eines <a href="https://de.wikipedia.org/wiki/Statistischer_Test">Hypothesentests</a>. Eine <a href="https://de.wikipedia.org/wiki/Hypothese">Hypothese</a> ist ein Erklärungsvorschlag für ein Phänomen. Im Zusammenhang mit statistischen Hypothesentests ist der Begriff Hypothese eine Aussage über etwas, von dem angenommen wird, dass es wahr ist.</p>
+<p>Zu einem Hypothesentest gehören zwei Hypothesen: die <strong>Nullhypothese</strong> und die <strong>Alternativhypothese</strong>. Die Nullhypothese (<span class="math notranslate nohighlight">\(H_0\)</span>) ist eine zu prüfende Aussage. Die Alternativhypothese (<span class="math notranslate nohighlight">\(H_A\)</span>) ist eine Aussage, die als Alternative zur Nullhypothese betrachtet wird.</p>
+<p>Mit dem Hypothesentest soll geprüft werden, ob die Nullhypothese zugunsten der Alternativhypothese verworfen werden sollte. Die grundlegende Logik eines Hypothesentests besteht darin, zwei statistische Datensätze zu vergleichen. Ein Datensatz wird durch eine Stichprobe gewonnen, der andere Datensatz stammt aus einem idealisierten Modell. Wenn die Stichprobendaten mit dem idealisierten Modell übereinstimmen, wird die Nullhypothese nicht verworfen; wenn die Stichprobendaten nicht mit dem idealisierten Modell übereinstimmen und somit eine Alternativhypothese unterstützen, wird die Nullhypothese zugunsten der Alternativhypothese verworfen.</p>
+<p>Das Kriterium für die Entscheidung über die Ablehnung der Nullhypothese ist eine so genannte <a href="https://de.wikipedia.org/wiki/Teststatistik">Teststatistik</a>. Die Teststatistik ist eine Zahl, die aus dem Datensatz berechnet wird, der durch Messungen und Beobachtungen oder, allgemeiner, durch Stichproben gewonnen wird.</p>
+</div>
+<div class="section" id="formulierung-der-hypothese">
+<h1>Formulierung der Hypothese<a class="headerlink" href="#formulierung-der-hypothese" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>Jeder Hypothesentest beginnt mit der Formulierung der Nullhypothese und der Alternativhypothese. Dieser Abschnitt konzentriert sich auf Hypothesentests für einen Grundgesamtheitsmittelwert, <span class="math notranslate nohighlight">\(\mu\)</span> jedoch gilt das allgemeine Verfahren für jeden Hypothesentest.</p>
+<p>Die Nullhypothese für einen Hypothesentest für einen Mittelwert der Grundgesamtheit, <span class="math notranslate nohighlight">\(\mu\)</span>
+wird ausgedrückt als</p>
+<div class="math notranslate nohighlight">
+\[ H_0: \mu = \mu_0, \]</div>
+<p>wobei <span class="math notranslate nohighlight">\(\mu_0\)</span> eine Zahl ist.</p>
+<p>Die Formulierung der Alternativhypothese hängt vom Zweck des Hypothesentests ab. Es gibt drei Möglichkeiten, eine Alternativhypothese zu formulieren (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.369, <span id="id2">P. Bruce [<a class="reference internal" href="../Literaturverzeichnis.html#id13" title="P. Gedeck P. Bruce, A. Bruce. Praktische Statistik für Data Scientists. dpunkt.verlag, 2021.">2021</a>]</span> s.97).</p>
+<p>Wenn es bei dem Hypothesentest darum geht, zu entscheiden, ob ein Grundgesamtheitsmittelwert von dem angegebenen Wert <span class="math notranslate nohighlight">\(\mu_0\)</span> abweicht, wird die Alternativhypothese wie folgt formuliert</p>
+<div class="math notranslate nohighlight">
+\[H_A: \mu  \ne \mu_0\text{.}\]</div>
+<p>Ein solcher Hypothesentest wird als <strong>zweiseitiger Test</strong> bezeichnet.</p>
+<p>Wenn es bei dem Hypothesentest darum geht, zu entscheiden, ob der Mittelwert der Grundgesamtheit, <span class="math notranslate nohighlight">\(\mu\)</span>
+kleiner ist als der angegebene Wert <span class="math notranslate nohighlight">\(\mu_0\)</span>, wird die Alternativhypothese wie folgt ausgedrückt</p>
+<div class="math notranslate nohighlight">
+\[H_A: \mu &lt; \mu_0\text{.}\]</div>
+<p>Ein solcher Hypothesentest wird als <strong>linksseitiger Test</strong> bezeichnet.</p>
+<p>Geht es bei dem Hypothesentest darum, zu entscheiden, ob der Mittelwert der Grundgesamtheit, <span class="math notranslate nohighlight">\(\mu\)</span>
+größer als ein bestimmter Wert <span class="math notranslate nohighlight">\(\mu_0\)</span> ist, wird die Alternativhypothese wie folgt ausgedrückt</p>
+<div class="math notranslate nohighlight">
+\[H_A: \mu &gt; \mu_0\text{.}\]</div>
+<p>Ein solcher Hypothesentest wird als <strong>rechtsseitiger Test</strong> bezeichnet.</p>
+<p>Man beachte, dass ein Hypothesentest als <strong>einseitiger</strong> Test bezeichnet wird, wenn er entweder “linksseitig” oder “rechtsseitig” ist.</p>
+<p>\begin{array}{|l|c|c|}
+\hline
+&amp; \text{zweiseitiger Test} &amp;   \text{linksseitiger Test}  &amp; \text{rechtsseitiger Test}  \
+\hline
+\text{Beziehung zwischen } \mu , \mu_0 &amp; \ne &amp; &lt; &amp; &gt;  \
+\text{Ablehnung } &amp; \text{Beide Seiten} &amp; \text{Linke Seite} &amp; \text{Rechte Seite} \
+\hline
+\end{array}</p>
+</div>
+<div class="section" id="fehler-vom-typ-i-fehler-vom-typ-ii-und-signifikanzniveau">
+<h1>Fehler vom Typ I, Fehler vom Typ II und Signifikanzniveau<a class="headerlink" href="#fehler-vom-typ-i-fehler-vom-typ-ii-und-signifikanzniveau" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>Jede Entscheidung, die auf der Grundlage eines Hypothesentests getroffen wird, kann falsch sein. Im Rahmen von Hypothesentests gibt es zwei Arten von Fehlern: <a href="https://de.wikipedia.org/wiki/Fehler_1._und_2._Art">Fehler vom Typ I und Fehler vom Typ II</a>. Ein Fehler vom Typ I tritt auf, wenn eine wahre Nullhypothese abgelehnt wird (ein “falsches Positiv”), während ein Fehler vom Typ II auftritt, wenn eine falsche Nullhypothese nicht abgelehnt wird (ein “falsches Negativ”). Mit anderen Worten, ein Fehler vom Typ I besteht darin, dass ein Effekt festgestellt wird, der nicht vorhanden ist, während ein Fehler vom Typ II darin besteht, dass ein Effekt nicht festgestellt wird, der vorhanden ist.</p>
+<p>\begin{array}{l|ll}
+&amp; H_0 \text{ trifft zu} &amp; H_0 \text{ trifft nicht zu}  \
+\hline
+H_0 \text{ nicht ablehnen }  &amp; \text{korrekte Entscheidung} &amp; \text{Typ II Fehler}  \
+H_0 \text{ ablehnen }  &amp; \text{Typ I Fehler} &amp; \text{korrekte Entscheidung} \
+\hline
+\end{array}</p>
+<p>Wenn Sie sich nicht sicher sind, ob es sich um einen Fehler des Typs I oder des Typs II handelt, hilft Ihnen vielleicht diese Illustration (<a href="https://effectsizefaq.com/2010/05/31/i-always-get-confused-about-type-i-and-ii-errors-can-you-show-me-something-to-help-me-remember-the-difference/">hier</a>).</p>
+<p>Die Durchführung eines Hypothesentests bedeutet immer, dass die Möglichkeit besteht, eine falsche Entscheidung zu treffen. Die Wahrscheinlichkeit eines Fehlers vom Typ I (eine wahre Nullhypothese wird abgelehnt) wird allgemein als <a href="https://de.wikipedia.org/wiki/Statistische_Signifikanz">Signifikanzniveau</a> des Hypothesentests bezeichnet und mit <span class="math notranslate nohighlight">\(\alpha\)</span> angegeben. Die Wahrscheinlichkeit eines Fehlers vom Typ II (eine falsche Nullhypothese wird nicht abgelehnt) wird mit <span class="math notranslate nohighlight">\(\beta\)</span> angegeben. Beachten Sie, dass bei einem festen Stichprobenumfang die Wahrscheinlichkeit <span class="math notranslate nohighlight">\(\beta\)</span> umso größer ist, je kleiner das Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> ist, eine falsche Nullhypothese nicht zurückzuweisen (<span id="id3">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.385).</p>
+<p>Das Ergebnis eines Hypothesentests ist eine Aussage zu Gunsten der Nullhypothese oder zu Gunsten der Alternativhypothese. Wenn die Nullhypothese abgelehnt wird, liefern die Daten genügend Beweise, um die Alternativhypothese zu stützen. Wenn die Nullhypothese nicht verworfen wird, liefern die Daten keine ausreichenden Beweise für die Alternativhypothese. Wenn der Hypothesentest auf dem Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> durchgeführt wird, kann man sagen, dass die Testergebnisse auf dem <strong><span class="math notranslate nohighlight">\(\alpha\)</span>-Niveau statistisch signifikant sind</strong>. Wenn die Nullhypothese auf dem Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> nicht abgelehnt wird, kann man sagen, dass die Testergebnisse auf dem <strong><span class="math notranslate nohighlight">\(\alpha\)</span>-Niveau statistisch nicht signifikant sind</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="c1"># Load the &quot;autoreload&quot; extension</span>
+<span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="c1"># always reload modules</span>
+<span class="o">%</span><span class="k">autoreload</span> 2
+<span class="c1"># black formatter for jupyter notebooks</span>
+<span class="c1">#%load_ext nb_black</span>
+<span class="c1"># black formatter for jupyter lab</span>
+<span class="o">%</span><span class="k">load_ext</span> lab_black
+
+<span class="o">%</span><span class="k">run</span> ../../src/notebook_env.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
+Working on the host: Joachims-MacBook-Pro.local
+
+---------------------------------
+Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
+
+---------------------------------
+Python interpreter: /opt/miniconda3/envs/srh/bin/python
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="der-kritische-wert-und-der-p-wert-ansatz-bei-der-hypothesenprufung">
+<h1>Der kritische Wert und der <span class="math notranslate nohighlight">\(p\)</span>-Wert-Ansatz bei der Hypothesenprüfung<a class="headerlink" href="#der-kritische-wert-und-der-p-wert-ansatz-bei-der-hypothesenprufung" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>Um zu entscheiden, ob die Nullhypothese abzulehnen ist, wird eine <strong>Teststatistik</strong> berechnet. Die Entscheidung wird auf der Grundlage des numerischen Wertes der Teststatistik getroffen. Es gibt zwei Ansätze, um zu dieser Entscheidung zu gelangen: Der Ansatz des <strong>kritischen Wertes</strong> und der Ansatz des <strong><span class="math notranslate nohighlight">\(p\)</span>-Wertes</strong>.</p>
+<div class="section" id="der-ansatz-des-kritischen-wertes">
+<h2>Der Ansatz des kritischen Wertes<a class="headerlink" href="#der-ansatz-des-kritischen-wertes" title="Permalink to this headline">¶</a></h2>
+<p>Mit dem Ansatz des <strong>kritischen Wertes</strong> wird festgestellt, ob die beobachtete Teststatistik zu stark von einem definiertem kritischen Wert abweicht oder nicht. Dazu wird die beobachtete Teststatistik (berechnet auf der Grundlage der Stichprobendaten) mit dem kritischen Wert, einer Art Grenzwert, verglichen. Wenn die Teststatistik extremer ist als der kritische Wert, wird die Nullhypothese abgelehnt. Wenn die Teststatistik nicht so extrem ist wie der kritische Wert, wird die Nullhypothese nicht verworfen. Der kritische Wert wird auf der Grundlage des vorgegebenen Signifikanzniveaus <span class="math notranslate nohighlight">\(\alpha\)</span> und der Art der Wahrscheinlichkeitsverteilung des idealisierten Modells berechnet. Der kritische Wert teilt die Fläche unter der Wahrscheinlichkeitsverteilungskurve in die <strong>Ablehnungsregion(en)</strong> und in die <strong>Nichtablehnungsregion</strong>.</p>
+<p>Die folgenden drei Abbildungen zeigen einen rechtsseitigen Test, einen linksseitigen Test und einen zweiseitigen Test. Das idealisierte Modell in den Abbildungen, und damit <span class="math notranslate nohighlight">\(H_0\)</span> wird durch eine glockenförmige normale Wahrscheinlichkeitskurve beschrieben.</p>
+<p>Bei einem <strong>zweiseitigen</strong> Test wird die Nullhypothese abgelehnt, wenn die Teststatistik entweder zu klein oder zu groß ist. Der Ablehnungsbereich für einen solchen Test besteht also aus zwei Teilen: einem links und einem rechts.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<span class="k">def</span> <span class="nf">range_brace</span><span class="p">(</span>
+    <span class="n">x_min</span><span class="p">,</span>
+    <span class="n">x_max</span><span class="p">,</span>
+    <span class="n">mid</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span>
+    <span class="n">beta1</span><span class="o">=</span><span class="mf">50.0</span><span class="p">,</span>
+    <span class="n">beta2</span><span class="o">=</span><span class="mf">100.0</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">initial_divisions</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span>
+    <span class="n">resolution_factor</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="c1"># determine x0 adaptively values using second derivitive</span>
+    <span class="c1"># could be replaced with less snazzy:</span>
+    <span class="c1">#   x0 = np.arange(0, 0.5, .001)</span>
+    <span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(())</span>
+    <span class="n">tmpx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">initial_divisions</span><span class="p">)</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">beta1</span><span class="o">**</span><span class="mi">2</span>
+        <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">beta1</span> <span class="o">*</span> <span class="n">tmpx</span><span class="p">))</span>
+        <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">beta1</span> <span class="o">*</span> <span class="n">tmpx</span><span class="p">))</span>
+        <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">((</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">beta1</span> <span class="o">*</span> <span class="n">tmpx</span><span class="p">)),</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">tmp</span> <span class="o">+=</span> <span class="p">(</span>
+        <span class="n">beta2</span><span class="o">**</span><span class="mi">2</span>
+        <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">beta2</span> <span class="o">*</span> <span class="p">(</span><span class="n">tmpx</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)))</span>
+        <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">beta2</span> <span class="o">*</span> <span class="p">(</span><span class="n">tmpx</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)))</span>
+        <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">((</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">beta2</span> <span class="o">*</span> <span class="p">(</span><span class="n">tmpx</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">))),</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tmpx</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span>
+                <span class="n">resolution_factor</span>
+                <span class="o">*</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">tmp</span><span class="p">[</span><span class="n">i</span> <span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]))</span>
+                <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">initial_divisions</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">tmpx</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tmpx</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">t</span><span class="p">))</span>
+    <span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">x0</span><span class="p">))</span>  <span class="c1"># sort and remove dups</span>
+    <span class="c1"># half brace using sum of two logistic functions</span>
+    <span class="n">y0</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">((</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">beta1</span> <span class="o">*</span> <span class="n">x0</span><span class="p">)))</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">y0</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">mid</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">beta2</span> <span class="o">*</span> <span class="p">(</span><span class="n">x0</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">))))</span>
+    <span class="c1"># concat and scale x</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">x0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">x0</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="o">*</span> <span class="nb">float</span><span class="p">((</span><span class="n">x_max</span> <span class="o">-</span> <span class="n">x_min</span><span class="p">))</span> <span class="o">+</span> <span class="n">x_min</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">y0</span><span class="p">,</span> <span class="n">y0</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">height</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">x_min</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
+<span class="n">x_max</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;C0&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="n">ticks</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">_x</span> <span class="ow">in</span> <span class="n">ticks</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">_x</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">where</span><span class="o">=</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">where</span><span class="o">=</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">ticks</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">x_min</span><span class="p">,</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">x_max</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">3.9</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Nicht ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">3.9</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Nicht-Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$1-\alpha$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;$\alpha/2$&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">2.4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;$\alpha/2$&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">2.6</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;Kritischer Wert&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ticks</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;Kritischer Wert&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">3.4</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-0.05, 0.5)
+</pre></div>
+</div>
+<img alt="../_images/01_Hypothesentests_26_1.png" src="../_images/01_Hypothesentests_26_1.png" />
+</div>
+</div>
+<p>Bei einem <strong>linksseitigen Test</strong> wird die Nullhypothese abgelehnt, wenn die Teststatistik zu klein ist. Der Ablehnungsbereich für einen solchen Test besteht also aus einem Teil, der links von der Mitte liegt.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">x_min</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
+<span class="n">x_max</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;C0&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="n">ticks</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">_x</span> <span class="ow">in</span> <span class="n">ticks</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">_x</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">where</span><span class="o">=</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">x_max</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">x_min</span><span class="p">,</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">3.9</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Nicht ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">3.9</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Nicht-Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$1-\alpha$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;$\alpha$&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">2.6</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;Kritischer Wert&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">3.4</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-0.05, 0.5)
+</pre></div>
+</div>
+<img alt="../_images/01_Hypothesentests_28_1.png" src="../_images/01_Hypothesentests_28_1.png" />
+</div>
+</div>
+<p>Bei einem <strong>rechtsseitigen Test</strong> wird die Nullhypothese abgelehnt, wenn die Teststatistik zu groß ist. Der Ablehnungsbereich für einen solchen Test besteht also aus einem Teil, der sich rechts von der Mitte befindet.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">x_min</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
+<span class="n">x_max</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;C0&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="n">ticks</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">_x</span> <span class="ow">in</span> <span class="n">ticks</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">_x</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">where</span><span class="o">=</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">x_min</span><span class="p">,</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">range_brace</span><span class="p">(</span>
+    <span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">x_max</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Nicht ablehnen der $H_0$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="s2">&quot;Region der Nicht-Ablehnung&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.08</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$1-\alpha$&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;$\alpha$&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">2.4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">&quot;Kritischer Wert&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span>
+    <span class="c1"># textcoords=&quot;data&quot;,</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">headwidth</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headlength</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">),</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-0.05, 0.5)
+</pre></div>
+</div>
+<img alt="../_images/01_Hypothesentests_30_1.png" src="../_images/01_Hypothesentests_30_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="der-p-wert-ansatz">
+<h2>Der <span class="math notranslate nohighlight">\(p\)</span>-Wert-Ansatz<a class="headerlink" href="#der-p-wert-ansatz" title="Permalink to this headline">¶</a></h2>
+<p>Bei der <span class="math notranslate nohighlight">\(p\)</span>-Wert-Methode wird die Wahrscheinlichkeit (<span class="math notranslate nohighlight">\(p\)</span>-Wert) des numerischen Wertes der Teststatistik mit dem angegebenen Signifikanzniveau (<span class="math notranslate nohighlight">\(\alpha\)</span>) des Hypothesentests verglichen.</p>
+<p>Der <span class="math notranslate nohighlight">\(p\)</span>-Wert entspricht der Wahrscheinlichkeit, Stichprobendaten zu beobachten, die mindestens so extrem sind wie die tatsächlich erhaltene Teststatistik. Kleine <span class="math notranslate nohighlight">\(p\)</span>-Werte sind ein Beweis gegen die Nullhypothese. Je kleiner (näher an <span class="math notranslate nohighlight">\(0\)</span>) der <span class="math notranslate nohighlight">\(p\)</span>-Wert ist, desto stärker ist der Beweis gegen die Nullhypothese.</p>
+<p>Ist der <span class="math notranslate nohighlight">\(p\)</span>-Wert kleiner als oder gleich dem angegebenen Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> ist, wird die Nullhypothese abgelehnt; andernfalls wird die Nullhypothese nicht abgelehnt. Mit anderen Worten: wenn <span class="math notranslate nohighlight">\(p \le \alpha\)</span>, wird <span class="math notranslate nohighlight">\(H_0\)</span> abgelehnt; andernfalls, wenn <span class="math notranslate nohighlight">\(p \gt \alpha\)</span>, wird <span class="math notranslate nohighlight">\(H_0\)</span> nicht abgelehnt.</p>
+<p>Folglich kann durch die Kenntnis des <span class="math notranslate nohighlight">\(p\)</span>-Wertes jedes gewünschte Signifikanzniveau bewertet werden. Beträgt der <span class="math notranslate nohighlight">\(p\)</span>-Wert eines Hypothesentests beispielsweise <span class="math notranslate nohighlight">\(0,01\)</span>, kann die Nullhypothese auf jedem Signifikanzniveau größer oder gleich <span class="math notranslate nohighlight">\(0,01\)</span> abgelehnt werden. Bei einem Signifikanzniveau kleiner als <span class="math notranslate nohighlight">\(0,01\)</span> wird sie nicht verworfen. Daher wird der <span class="math notranslate nohighlight">\(p\)</span>-Wert in der Regel verwendet, um die Stärke des Beweises gegen die Nullhypothese ohne Bezug auf das Signifikanzniveau zu bewerten.</p>
+<p>Die folgende Tabelle enthält Leitlinien für die Verwendung des <span class="math notranslate nohighlight">\(p\)</span>-Werts zur Bewertung der Beweise gegen die Nullhypothese (<em><span id="id4">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.388</em>).</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{l|l}
+\hline
+ \text{$p$-Wert} &amp; \text{Hinweise gegen  } H_0   \\
+\hline
+\ p &gt; 0,10 &amp;  \text{Schwache oder keine Hinweise }   \\
+\ 0,05 &lt; p \le 0,10 &amp; \text{Mäßiger Hinweis }    \\
+\ 0,01 &lt; p \le 0,05 &amp; \text{Starker Hinweis}    \\
+\  p \le 0,01 &amp; \text{Sehr starker Hinweis}    \\
+\hline 
+\end{array}
+\end{split}\]</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ixianslab/srh-data-science",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Kapitel06"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../Lernziele/Kapitel6_Lernziele.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Lernziele</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="02_Hypothesentests_Mittelwert_einer_Grundgesamtheit.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hypothesentests für den Mittelwert einer Grundgesamtheit</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By ixians<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
