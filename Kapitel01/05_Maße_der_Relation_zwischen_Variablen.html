@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lernziele" href="../Lernziele/Kapitel2_Lernziele.html" />
+    <link rel="next" title="Übungsaufgaben" href="../Aufgaben/Kapitel01/Aufgaben.html" />
     <link rel="prev" title="Das Positionsmaß" href="04_Ma%C3%9Fe_der_Position.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -135,6 +135,43 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="current reference internal" href="#">
    Maße für die Relation zwischen Variablen
   </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -1289,13 +1326,13 @@ ein anschauliches Maß für die Qualität von linearen Modellen. Es besteht eine
 </div>
 <div class="section" id="rangkorrelationskoeffizient-nach-spearman">
 <h3>Rangkorrelationskoeffizient nach Spearman<a class="headerlink" href="#rangkorrelationskoeffizient-nach-spearman" title="Permalink to this headline">¶</a></h3>
-<p>Der Rangkorrelationskoeffizient nach Spearman (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.133), auch bekannt als Spearmans <span class="math notranslate nohighlight">\(\rho\)</span>, ist ein nichtparametrischer Rangkorrelationskoeffizient. Er wurde von <a href="https://de.wikipedia.org/wiki/Charles_Spearman">Charles Spearman</a> entwickelt und ist eine Alternative zum Produkt-Moment-Korrelationskoeffizienten von Pearson. Der Spearman <span class="math notranslate nohighlight">\(\rho\)</span> Rangkorrelationskoeffizient wird für Stichprobendaten mit <span class="math notranslate nohighlight">\(r_s\)</span> und für Grundgesamtheitsdaten mit <span class="math notranslate nohighlight">\(\rho_s\)</span> bezeichnet (Mann 2012). Der Korrelationskoeffizient bewertet die monotone Beziehung zwischen zwei Variablen und liegt zwischen <span class="math notranslate nohighlight">\(-1\)</span> und <span class="math notranslate nohighlight">\(1\)</span>. Er beschreibt die lineare Korrelation zwischen den Rängen der Daten zu den Variablen <span class="math notranslate nohighlight">\(x\)</span> und <span class="math notranslate nohighlight">\(y\)</span>. Die Spearman-Korrelation ist hoch, wenn die Variablen einen ähnlichen Rang haben, und niedrig, wenn die Variablen einen ungleichen Rang haben.</p>
+<p>Der Rangkorrelationskoeffizient nach Spearman (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.133), auch bekannt als Spearmans <span class="math notranslate nohighlight">\(\rho\)</span>, ist ein nichtparametrischer Rangkorrelationskoeffizient. Er wurde von <a href="https://de.wikipedia.org/wiki/Charles_Spearman">Charles Spearman</a> entwickelt und ist eine Alternative zum Produkt-Moment-Korrelationskoeffizienten von Pearson. Der Spearman <span class="math notranslate nohighlight">\(\rho\)</span> Rangkorrelationskoeffizient wird für Stichprobendaten mit <span class="math notranslate nohighlight">\(r_s\)</span> und für Grundgesamtheitsdaten mit <span class="math notranslate nohighlight">\(\rho_s\)</span> bezeichnet (Mann 2012). Der Korrelationskoeffizient bewertet die monotone Beziehung zwischen zwei Variablen und liegt zwischen <span class="math notranslate nohighlight">\(-1\)</span> und <span class="math notranslate nohighlight">\(1\)</span>. Er beschreibt die lineare Korrelation zwischen den Rängen der Daten zu den Variablen <span class="math notranslate nohighlight">\(x\)</span> und <span class="math notranslate nohighlight">\(y\)</span>. Die Spearman-Korrelation ist hoch, wenn die Variablen einen ähnlichen Rang haben, und niedrig, wenn die Variablen einen ungleichen Rang haben.</p>
 <p>Um <span class="math notranslate nohighlight">\(r_s\)</span> zu berechnen, werden die Daten für jede Variable, <span class="math notranslate nohighlight">\(x\)</span> und <span class="math notranslate nohighlight">\(y\)</span>, getrennt eingestuft. Die Differenz zwischen jedem Paar von Rängen bezeichnen wir mit <span class="math notranslate nohighlight">\(d\)</span>. Für eine gegebene bivariate Sequenz <span class="math notranslate nohighlight">\((x_1,y_1),(x_2,y_2), \dots,(x_n,y_n)\)</span> ist Spearmans <span class="math notranslate nohighlight">\(r_s\)</span> gegeben durch</p>
 <div class="math notranslate nohighlight">
 \[ r_s = 1 - \frac{6 \sum_{i=1}^n (r_{xi} - r_{yi})^2}{n(n^2 -1)} \]</div>
 <p>wobei <span class="math notranslate nohighlight">\(r_{xi}=Rank(x_i)\)</span> , <span class="math notranslate nohighlight">\(r_{yi}=Rank(y_i)\)</span> , und <span class="math notranslate nohighlight">\(n\)</span>
 die Stichprobengröße ist.</p>
-<p>Im Gegensatz zum linearen Korrelationskoeffizienten von Pearson ist der lineare Koeffizient von Spearman sowohl für quantitative als auch für ordinale Variablen geeignet. Außerdem sind rangbasierte Korrelationen nicht von der Normalverteilungsannahme abhängig und resistenter gegenüber Ausreißern (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.135).</p>
+<p>Im Gegensatz zum linearen Korrelationskoeffizienten von Pearson ist der lineare Koeffizient von Spearman sowohl für quantitative als auch für ordinale Variablen geeignet. Außerdem sind rangbasierte Korrelationen nicht von der Normalverteilungsannahme abhängig und resistenter gegenüber Ausreißern (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.135).</p>
 </div>
 <div class="section" id="spearman-s-rangkorrelationskoeffizient-ein-beispiel">
 <h3>Spearman’s Rangkorrelationskoeffizient: Ein Beispiel<a class="headerlink" href="#spearman-s-rangkorrelationskoeffizient-ein-beispiel" title="Permalink to this headline">¶</a></h3>
@@ -1855,10 +1892,10 @@ Zeilensummen:  [63 47 38]
             <p class="prev-next-title">Das Positionsmaß</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../Lernziele/Kapitel2_Lernziele.html" title="next page">
+    <a class='right-next' id="next-link" href="../Aufgaben/Kapitel01/Aufgaben.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lernziele</p>
+        <p class="prev-next-title">Übungsaufgaben</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

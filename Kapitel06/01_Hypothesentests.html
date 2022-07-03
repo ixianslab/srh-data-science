@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -599,7 +636,7 @@ wird ausgedrückt als</p>
 <div class="math notranslate nohighlight">
 \[ H_0: \mu = \mu_0, \]</div>
 <p>wobei <span class="math notranslate nohighlight">\(\mu_0\)</span> eine Zahl ist.</p>
-<p>Die Formulierung der Alternativhypothese hängt vom Zweck des Hypothesentests ab. Es gibt drei Möglichkeiten, eine Alternativhypothese zu formulieren (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.369, <span id="id2">P. Bruce [<a class="reference internal" href="../Literaturverzeichnis.html#id13" title="P. Gedeck P. Bruce, A. Bruce. Praktische Statistik für Data Scientists. dpunkt.verlag, 2021.">2021</a>]</span> s.97).</p>
+<p>Die Formulierung der Alternativhypothese hängt vom Zweck des Hypothesentests ab. Es gibt drei Möglichkeiten, eine Alternativhypothese zu formulieren (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.369, <span id="id2">Bruce and Bruce [<a class="reference internal" href="../Literaturverzeichnis.html#id13" title="Peter Bruce and Peter Bruce, Andrew und Gedeck. Praktische Statistik für Data Scientists. dpunkt.verlag, 2021.">2021</a>]</span> s.97).</p>
 <p>Wenn es bei dem Hypothesentest darum geht, zu entscheiden, ob ein Grundgesamtheitsmittelwert von dem angegebenen Wert <span class="math notranslate nohighlight">\(\mu_0\)</span> abweicht, wird die Alternativhypothese wie folgt formuliert</p>
 <div class="math notranslate nohighlight">
 \[H_A: \mu  \ne \mu_0\text{.}\]</div>
@@ -636,7 +673,7 @@ H_0 \text{ ablehnen }  &amp; \text{Typ I Fehler} &amp; \text{korrekte Entscheidu
 \hline
 \end{array}</p>
 <p>Wenn Sie sich nicht sicher sind, ob es sich um einen Fehler des Typs I oder des Typs II handelt, hilft Ihnen vielleicht diese Illustration (<a href="https://effectsizefaq.com/2010/05/31/i-always-get-confused-about-type-i-and-ii-errors-can-you-show-me-something-to-help-me-remember-the-difference/">hier</a>).</p>
-<p>Die Durchführung eines Hypothesentests bedeutet immer, dass die Möglichkeit besteht, eine falsche Entscheidung zu treffen. Die Wahrscheinlichkeit eines Fehlers vom Typ I (eine wahre Nullhypothese wird abgelehnt) wird allgemein als <a href="https://de.wikipedia.org/wiki/Statistische_Signifikanz">Signifikanzniveau</a> des Hypothesentests bezeichnet und mit <span class="math notranslate nohighlight">\(\alpha\)</span> angegeben. Die Wahrscheinlichkeit eines Fehlers vom Typ II (eine falsche Nullhypothese wird nicht abgelehnt) wird mit <span class="math notranslate nohighlight">\(\beta\)</span> angegeben. Beachten Sie, dass bei einem festen Stichprobenumfang die Wahrscheinlichkeit <span class="math notranslate nohighlight">\(\beta\)</span> umso größer ist, je kleiner das Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> ist, eine falsche Nullhypothese nicht zurückzuweisen (<span id="id3">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.385).</p>
+<p>Die Durchführung eines Hypothesentests bedeutet immer, dass die Möglichkeit besteht, eine falsche Entscheidung zu treffen. Die Wahrscheinlichkeit eines Fehlers vom Typ I (eine wahre Nullhypothese wird abgelehnt) wird allgemein als <a href="https://de.wikipedia.org/wiki/Statistische_Signifikanz">Signifikanzniveau</a> des Hypothesentests bezeichnet und mit <span class="math notranslate nohighlight">\(\alpha\)</span> angegeben. Die Wahrscheinlichkeit eines Fehlers vom Typ II (eine falsche Nullhypothese wird nicht abgelehnt) wird mit <span class="math notranslate nohighlight">\(\beta\)</span> angegeben. Beachten Sie, dass bei einem festen Stichprobenumfang die Wahrscheinlichkeit <span class="math notranslate nohighlight">\(\beta\)</span> umso größer ist, je kleiner das Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> ist, eine falsche Nullhypothese nicht zurückzuweisen (<span id="id3">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.385).</p>
 <p>Das Ergebnis eines Hypothesentests ist eine Aussage zu Gunsten der Nullhypothese oder zu Gunsten der Alternativhypothese. Wenn die Nullhypothese abgelehnt wird, liefern die Daten genügend Beweise, um die Alternativhypothese zu stützen. Wenn die Nullhypothese nicht verworfen wird, liefern die Daten keine ausreichenden Beweise für die Alternativhypothese. Wenn der Hypothesentest auf dem Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> durchgeführt wird, kann man sagen, dass die Testergebnisse auf dem <strong><span class="math notranslate nohighlight">\(\alpha\)</span>-Niveau statistisch signifikant sind</strong>. Wenn die Nullhypothese auf dem Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> nicht abgelehnt wird, kann man sagen, dass die Testergebnisse auf dem <strong><span class="math notranslate nohighlight">\(\alpha\)</span>-Niveau statistisch nicht signifikant sind</strong>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1007,7 +1044,7 @@ Python interpreter: /opt/miniconda3/envs/srh/bin/python
 <p>Der <span class="math notranslate nohighlight">\(p\)</span>-Wert entspricht der Wahrscheinlichkeit, Stichprobendaten zu beobachten, die mindestens so extrem sind wie die tatsächlich erhaltene Teststatistik. Kleine <span class="math notranslate nohighlight">\(p\)</span>-Werte sind ein Beweis gegen die Nullhypothese. Je kleiner (näher an <span class="math notranslate nohighlight">\(0\)</span>) der <span class="math notranslate nohighlight">\(p\)</span>-Wert ist, desto stärker ist der Beweis gegen die Nullhypothese.</p>
 <p>Ist der <span class="math notranslate nohighlight">\(p\)</span>-Wert kleiner als oder gleich dem angegebenen Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha\)</span> ist, wird die Nullhypothese abgelehnt; andernfalls wird die Nullhypothese nicht abgelehnt. Mit anderen Worten: wenn <span class="math notranslate nohighlight">\(p \le \alpha\)</span>, wird <span class="math notranslate nohighlight">\(H_0\)</span> abgelehnt; andernfalls, wenn <span class="math notranslate nohighlight">\(p \gt \alpha\)</span>, wird <span class="math notranslate nohighlight">\(H_0\)</span> nicht abgelehnt.</p>
 <p>Folglich kann durch die Kenntnis des <span class="math notranslate nohighlight">\(p\)</span>-Wertes jedes gewünschte Signifikanzniveau bewertet werden. Beträgt der <span class="math notranslate nohighlight">\(p\)</span>-Wert eines Hypothesentests beispielsweise <span class="math notranslate nohighlight">\(0,01\)</span>, kann die Nullhypothese auf jedem Signifikanzniveau größer oder gleich <span class="math notranslate nohighlight">\(0,01\)</span> abgelehnt werden. Bei einem Signifikanzniveau kleiner als <span class="math notranslate nohighlight">\(0,01\)</span> wird sie nicht verworfen. Daher wird der <span class="math notranslate nohighlight">\(p\)</span>-Wert in der Regel verwendet, um die Stärke des Beweises gegen die Nullhypothese ohne Bezug auf das Signifikanzniveau zu bewerten.</p>
-<p>Die folgende Tabelle enthält Leitlinien für die Verwendung des <span class="math notranslate nohighlight">\(p\)</span>-Werts zur Bewertung der Beweise gegen die Nullhypothese (<em><span id="id4">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.388</em>).</p>
+<p>Die folgende Tabelle enthält Leitlinien für die Verwendung des <span class="math notranslate nohighlight">\(p\)</span>-Werts zur Bewertung der Beweise gegen die Nullhypothese (<em><span id="id4">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.388</em>).</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{l|l}

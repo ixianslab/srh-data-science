@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -557,7 +594,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<p>Die Maße der zentralen Tendenz, wie Mittelwert, Median und Modus, geben nicht das ganze Bild der Verteilung eines Datensatzes wieder. Zwei Datensätze mit demselben Mittelwert können völlig unterschiedliche Streuungen aufweisen. Die Streuung der Beobachtungswerte des einen Datensatzes kann viel größer oder kleiner sein als die des anderen Datensatzes. Daher ist der Mittelwert, Median oder Modus allein in der Regel kein ausreichendes Maß, um die Form der Verteilung eines Datensatzes aufzuzeigen. Wir benötigen auch ein Maß, das Informationen über die Variation zwischen den Datenwerten liefert. Diese Maße werden als <strong>Streuungsmaße</strong> bezeichnet. Die Maße der zentralen Tendenz und der Streuung ergeben zusammengenommen ein besseres Bild eines Datensatzes als die Maße der zentralen Tendenz allein (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.65).</p>
+<p>Die Maße der zentralen Tendenz, wie Mittelwert, Median und Modus, geben nicht das ganze Bild der Verteilung eines Datensatzes wieder. Zwei Datensätze mit demselben Mittelwert können völlig unterschiedliche Streuungen aufweisen. Die Streuung der Beobachtungswerte des einen Datensatzes kann viel größer oder kleiner sein als die des anderen Datensatzes. Daher ist der Mittelwert, Median oder Modus allein in der Regel kein ausreichendes Maß, um die Form der Verteilung eines Datensatzes aufzuzeigen. Wir benötigen auch ein Maß, das Informationen über die Variation zwischen den Datenwerten liefert. Diese Maße werden als <strong>Streuungsmaße</strong> bezeichnet. Die Maße der zentralen Tendenz und der Streuung ergeben zusammengenommen ein besseres Bild eines Datensatzes als die Maße der zentralen Tendenz allein (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.65).</p>
 <div class="section" id="varianz-und-standardabweichung">
 <h2>Varianz und Standardabweichung<a class="headerlink" href="#varianz-und-standardabweichung" title="Permalink to this headline">¶</a></h2>
 <p>Die <strong>Varianz</strong> ist die Summe der quadrierten Abweichungen vom Mittelwert. Die Varianz für Populationsdaten wird mit <span class="math notranslate nohighlight">\(\sigma^2\)</span> bezeichnet (gelesen als Sigma-Quadrat), und die für Stichprobendaten berechnete Varianz wird mit <span class="math notranslate nohighlight">\(s^2\)</span> bezeichnet.</p>
@@ -565,8 +602,8 @@ const thebe_selector_output = ".output, .cell_output"
 \[ \sigma^2 = \frac{\sum_{i=1}^n (x_i - \mu)^2}{N} \]</div>
 <p>und
 $<span class="math notranslate nohighlight">\( s^2 = \frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1} \)</span>$</p>
-<p>wobei <span class="math notranslate nohighlight">\(\sigma^2\)</span> die Varianz der Grundgesamtheit und <span class="math notranslate nohighlight">\(s^2\)</span> die Stichprobenvarianz ist. Die Größe <span class="math notranslate nohighlight">\(x_i-\mu\)</span> oder <span class="math notranslate nohighlight">\(x_i-\bar{x}\)</span> in den obigen Formeln wird als die Abweichung des <span class="math notranslate nohighlight">\(x_i\)</span>-Wertes <span class="math notranslate nohighlight">\((x_1,x_2, \dots ,x_n)\)</span> vom Mittelwert bezeichnet (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.64).</p>
-<p>Die <a href="https://de.wikipedia.org/wiki/Varianz_(Stochastik)">Standardabweichung</a> ist das gebräuchlichste Maß für die Streuung. Der Wert der Standardabweichung gibt an, wie eng die Werte eines Datensatzes um den Mittelwert herum gestreut sind. Im Allgemeinen zeigt ein niedriger Wert der Standardabweichung für einen Datensatz an, dass die Werte dieses Datensatzes über einen relativ kleineren Bereich um den Mittelwert herum verteilt sind. Im Gegensatz dazu zeigt ein größerer Wert der Standardabweichung für einen Datensatz an, dass die Werte dieses Datensatzes über einen relativ größeren Bereich um den Mittelwert herum gestreut sind (<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.65).</p>
+<p>wobei <span class="math notranslate nohighlight">\(\sigma^2\)</span> die Varianz der Grundgesamtheit und <span class="math notranslate nohighlight">\(s^2\)</span> die Stichprobenvarianz ist. Die Größe <span class="math notranslate nohighlight">\(x_i-\mu\)</span> oder <span class="math notranslate nohighlight">\(x_i-\bar{x}\)</span> in den obigen Formeln wird als die Abweichung des <span class="math notranslate nohighlight">\(x_i\)</span>-Wertes <span class="math notranslate nohighlight">\((x_1,x_2, \dots ,x_n)\)</span> vom Mittelwert bezeichnet (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.64).</p>
+<p>Die <a href="https://de.wikipedia.org/wiki/Varianz_(Stochastik)">Standardabweichung</a> ist das gebräuchlichste Maß für die Streuung. Der Wert der Standardabweichung gibt an, wie eng die Werte eines Datensatzes um den Mittelwert herum gestreut sind. Im Allgemeinen zeigt ein niedriger Wert der Standardabweichung für einen Datensatz an, dass die Werte dieses Datensatzes über einen relativ kleineren Bereich um den Mittelwert herum verteilt sind. Im Gegensatz dazu zeigt ein größerer Wert der Standardabweichung für einen Datensatz an, dass die Werte dieses Datensatzes über einen relativ größeren Bereich um den Mittelwert herum gestreut sind (<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.65).</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1001,7 +1038,7 @@ und
 <img alt="../_images/03_Streuungsmaße_18_0.png" src="../_images/03_Streuungsmaße_18_0.png" />
 </div>
 </div>
-<p>Das Theorem gilt sowohl für Stichproben- als auch für Grundgesamtheitsdaten. Das Tschebyscheffsche Theorem gilt für Verteilungen beliebiger Form. Es kann jedoch nur für <span class="math notranslate nohighlight">\(k &gt; 1\)</span> verwendet werden. Denn wenn <span class="math notranslate nohighlight">\(k=1\)</span> ist, ist der Wert von <span class="math notranslate nohighlight">\(1-\frac{1}{k^2}\)</span> Null, und wenn <span class="math notranslate nohighlight">\(k &lt; 1\)</span> ist, ist der Wert von <span class="math notranslate nohighlight">\(1-\frac{1}{k^2}\)</span> negativ (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.304).</p>
+<p>Das Theorem gilt sowohl für Stichproben- als auch für Grundgesamtheitsdaten. Das Tschebyscheffsche Theorem gilt für Verteilungen beliebiger Form. Es kann jedoch nur für <span class="math notranslate nohighlight">\(k &gt; 1\)</span> verwendet werden. Denn wenn <span class="math notranslate nohighlight">\(k=1\)</span> ist, ist der Wert von <span class="math notranslate nohighlight">\(1-\frac{1}{k^2}\)</span> Null, und wenn <span class="math notranslate nohighlight">\(k &lt; 1\)</span> ist, ist der Wert von <span class="math notranslate nohighlight">\(1-\frac{1}{k^2}\)</span> negativ (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.304).</p>
 </div>
 <div class="section" id="empirische-regel">
 <h4>Empirische Regel<a class="headerlink" href="#empirische-regel" title="Permalink to this headline">¶</a></h4>
@@ -1867,7 +1904,7 @@ $<span class="math notranslate nohighlight">\(\text{Range} = \text{kleinster Wer
 </table>
 </div></div></div>
 </div>
-<p>Die Spannweite hat wie der Mittelwert den Nachteil, dass sie durch Ausreißer beeinflusst wird. Daher ist die Spannweite kein gutes Streuungsmaß für einen Datensatz, der Ausreißer enthält. Ein weiterer Nachteil der Verwendung der Spannweite als Streuungsmaß ist, dass ihre Berechnung nur auf zwei Werten basiert: dem größten und dem kleinsten. Alle anderen Werte in einem Datensatz werden bei der Berechnung der Spanne ignoriert. Daher ist die Spannweite oftmals kein sehr zufriedenstellendes Maß für die Streuung (<span id="id5">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.62).</p>
+<p>Die Spannweite hat wie der Mittelwert den Nachteil, dass sie durch Ausreißer beeinflusst wird. Daher ist die Spannweite kein gutes Streuungsmaß für einen Datensatz, der Ausreißer enthält. Ein weiterer Nachteil der Verwendung der Spannweite als Streuungsmaß ist, dass ihre Berechnung nur auf zwei Werten basiert: dem größten und dem kleinsten. Alle anderen Werte in einem Datensatz werden bei der Berechnung der Spanne ignoriert. Daher ist die Spannweite oftmals kein sehr zufriedenstellendes Maß für die Streuung (<span id="id5">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.62).</p>
 </div>
 </div>
 

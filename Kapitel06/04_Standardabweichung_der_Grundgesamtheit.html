@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -1186,7 +1223,7 @@ Python interpreter: /opt/miniconda3/envs/srh/bin/python
 </div>
 </div>
 <p>In der obigen Abbildung ergibt <span class="math notranslate nohighlight">\(F_{0,05}\)</span> für <span class="math notranslate nohighlight">\(df=(9,14)\)</span> den Wert <span class="math notranslate nohighlight">\(\approx 2,6458\)</span>.</p>
-<p>Eine interessante Eigenschaft von <span class="math notranslate nohighlight">\(F\)</span>-Kurven ist die <strong>reziproke Charakteristik</strong>. Sie besagt, dass für eine <span class="math notranslate nohighlight">\(F\)</span>-Kurve mit <span class="math notranslate nohighlight">\(df=(v_1,v_2)\)</span> der <span class="math notranslate nohighlight">\(F\)</span>-Wert mit der Fläche <span class="math notranslate nohighlight">\(\alpha\)</span> auf der linken Seite gleich dem Kehrwert des <span class="math notranslate nohighlight">\(F\)</span>-Wertes mit der Fläche <span class="math notranslate nohighlight">\(\alpha\)</span> auf der rechten Seite für eine <span class="math notranslate nohighlight">\(F\)</span>-Kurve mit <span class="math notranslate nohighlight">\(df=(v_2,v_1)\)</span> ist (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.282). Übertragen auf das obige Beispiel, bei dem <span class="math notranslate nohighlight">\(F_{0,05}\)</span> für <span class="math notranslate nohighlight">\(df=(9,14) \approx 2,6458\)</span> beträgt, bedeutet dies, dass <span class="math notranslate nohighlight">\(F_{0,95}\)</span> für <span class="math notranslate nohighlight">\(df=(14,9) \ ; \  \frac{1}{2,6458}=0,378\)</span> beträgt.</p>
+<p>Eine interessante Eigenschaft von <span class="math notranslate nohighlight">\(F\)</span>-Kurven ist die <strong>reziproke Charakteristik</strong>. Sie besagt, dass für eine <span class="math notranslate nohighlight">\(F\)</span>-Kurve mit <span class="math notranslate nohighlight">\(df=(v_1,v_2)\)</span> der <span class="math notranslate nohighlight">\(F\)</span>-Wert mit der Fläche <span class="math notranslate nohighlight">\(\alpha\)</span> auf der linken Seite gleich dem Kehrwert des <span class="math notranslate nohighlight">\(F\)</span>-Wertes mit der Fläche <span class="math notranslate nohighlight">\(\alpha\)</span> auf der rechten Seite für eine <span class="math notranslate nohighlight">\(F\)</span>-Kurve mit <span class="math notranslate nohighlight">\(df=(v_2,v_1)\)</span> ist (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.282). Übertragen auf das obige Beispiel, bei dem <span class="math notranslate nohighlight">\(F_{0,05}\)</span> für <span class="math notranslate nohighlight">\(df=(9,14) \approx 2,6458\)</span> beträgt, bedeutet dies, dass <span class="math notranslate nohighlight">\(F_{0,95}\)</span> für <span class="math notranslate nohighlight">\(df=(14,9) \ ; \  \frac{1}{2,6458}=0,378\)</span> beträgt.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chi2</span>

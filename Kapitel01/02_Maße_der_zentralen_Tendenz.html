@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -1414,7 +1451,7 @@ Die Berechnung des Medians besteht aus den folgenden zwei Schritten:</p>
 <li><p>Ordnen Sie den Datensatz in aufsteigender Reihenfolge.</p></li>
 <li><p>Finden Sie den mittleren Term. Der Wert dieses Terms ist der Median.</p></li>
 </ol>
-<p>Wenn die Anzahl der Beobachtungen in einem Datensatz ungerade ist, wird der Median durch den Wert des mittleren Terms in den geordneten Daten bestimmt. Ist die Anzahl der Beobachtungen jedoch gerade, so wird der Median durch den Durchschnitt der Werte der beiden mittleren Terme bestimmt (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.52). <br> <br> Lassen Sie uns den Median für die Variable <code class="docutils literal notranslate"><span class="pre">age</span></code> des <code class="docutils literal notranslate"><span class="pre">students</span></code>datensatzes auswerten.</p>
+<p>Wenn die Anzahl der Beobachtungen in einem Datensatz ungerade ist, wird der Median durch den Wert des mittleren Terms in den geordneten Daten bestimmt. Ist die Anzahl der Beobachtungen jedoch gerade, so wird der Median durch den Durchschnitt der Werte der beiden mittleren Terme bestimmt (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.52). <br> <br> Lassen Sie uns den Median für die Variable <code class="docutils literal notranslate"><span class="pre">age</span></code> des <code class="docutils literal notranslate"><span class="pre">students</span></code>datensatzes auswerten.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -1461,7 +1498,7 @@ Mittelwert des Alters der Studenten: 22.541570578953756
 <img alt="../_images/02_Maße_der_zentralen_Tendenz_73_1.png" src="../_images/02_Maße_der_zentralen_Tendenz_73_1.png" />
 </div>
 </div>
-<p>Noch deutlicher veranschaulicht ein Histogram den Sachverhalt, dass das arithmetische Mittel stark durch Extremwertre und Ausreisser beeinflusst wird, der Median hingegen nicht. Daher wird der Median als Maß für die zentrale Tendenz bei Datensätzen, die Ausreißer enthalten, dem Mittelwert vorgezogen (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.54).</p>
+<p>Noch deutlicher veranschaulicht ein Histogram den Sachverhalt, dass das arithmetische Mittel stark durch Extremwertre und Ausreisser beeinflusst wird, der Median hingegen nicht. Daher wird der Median als Maß für die zentrale Tendenz bei Datensätzen, die Ausreißer enthalten, dem Mittelwert vorgezogen (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.54).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span>
@@ -1481,7 +1518,7 @@ Mittelwert des Alters der Studenten: 22.541570578953756
 </div>
 <div class="section" id="der-modalwert">
 <h2>Der Modalwert<a class="headerlink" href="#der-modalwert" title="Permalink to this headline">¶</a></h2>
-<p>In der Statistik stellt der <strong>Modus</strong> den häufigsten Wert in einem Datensatz dar. Der Modalwert ist also der Wert, der in einem Datensatz mit der größten Häufigkeit auftritt <em>(<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s. 53)</em>. In Bezug auf die graphische Häufigkeitsverteilung entspricht der Modus dem Scheitelpunkt bzw. den Scheitelpunkten des Diagramms. Ein großes Manko des Modus ist, dass ein Datensatz keinen oder mehr als einen Modalwert haben kann, während er nur einen Mittelwert und nur einen Median hat. Ein Datensatz, bei dem jeder Wert nur einmal vorkommt, hat zum Beispiel keinen Modus. Ein Datensatz, bei dem nur ein Wert mit der größten Häufigkeit vorkommt, hat nur einen Modus. Der Datensatz wird in diesem Fall als <strong>unimodal</strong> bezeichnet. Ein Datensatz mit zwei Werten, die am häufigsten vorkommen, hat zwei Modi. Die Verteilung wird in diesem Fall als <strong>bimodal</strong> bezeichnet. Wenn mehr als zwei Werte in einem Datensatz am häufigsten vorkommen, dann enthält der Datensatz mehr als zwei Modi und wird als <strong>multimodal</strong> bezeichnet (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s. 81,83).</p>
+<p>In der Statistik stellt der <strong>Modus</strong> den häufigsten Wert in einem Datensatz dar. Der Modalwert ist also der Wert, der in einem Datensatz mit der größten Häufigkeit auftritt <em>(<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s. 53)</em>. In Bezug auf die graphische Häufigkeitsverteilung entspricht der Modus dem Scheitelpunkt bzw. den Scheitelpunkten des Diagramms. Ein großes Manko des Modus ist, dass ein Datensatz keinen oder mehr als einen Modalwert haben kann, während er nur einen Mittelwert und nur einen Median hat. Ein Datensatz, bei dem jeder Wert nur einmal vorkommt, hat zum Beispiel keinen Modus. Ein Datensatz, bei dem nur ein Wert mit der größten Häufigkeit vorkommt, hat nur einen Modus. Der Datensatz wird in diesem Fall als <strong>unimodal</strong> bezeichnet. Ein Datensatz mit zwei Werten, die am häufigsten vorkommen, hat zwei Modi. Die Verteilung wird in diesem Fall als <strong>bimodal</strong> bezeichnet. Wenn mehr als zwei Werte in einem Datensatz am häufigsten vorkommen, dann enthält der Datensatz mehr als zwei Modi und wird als <strong>multimodal</strong> bezeichnet (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s. 81,83).</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>

@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -698,7 +735,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <p>In diesem Abschnitt wird eine Methode namens <a href="https://de.wikipedia.org/wiki/Varianzanalyse">Varianzanalyse</a> (englisch analysis of variance, kurz ANOVA) erörtert, mit der mehrere Mittelwerte einer Grundgesamtheit verglichen werden können.</p>
-<p>Genauer gesagt geht es um die sogenannte einfaktorielle Varianzanalyse (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.478). Bei dieser Art der ANOVA werden die Mittelwerte einer Variablen verglichen, die sich aus der Klassifizierung durch <em>eine</em> andere Variable, dem sogenannten <strong>Faktor</strong>, ergeben. Um das Konzept zu veranschaulichen, wollen wir ein einfaches Beispiel entwerfen. Angenommen, wir vergleichen die mittleren Jahresgehälter der in Deutschland lebenden Personen, gruppiert nach Bundesländern, dann erhalten wir <span class="math notranslate nohighlight">\(16\)</span> Mittelwerte der Jahresgehälter, einen für jedes Bundesland. In diesem Beispiel ist die Bundeslandvariable also eine Klassifikationsvariable, der so genannte Faktor.</p>
+<p>Genauer gesagt geht es um die sogenannte einfaktorielle Varianzanalyse (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.478). Bei dieser Art der ANOVA werden die Mittelwerte einer Variablen verglichen, die sich aus der Klassifizierung durch <em>eine</em> andere Variable, dem sogenannten <strong>Faktor</strong>, ergeben. Um das Konzept zu veranschaulichen, wollen wir ein einfaches Beispiel entwerfen. Angenommen, wir vergleichen die mittleren Jahresgehälter der in Deutschland lebenden Personen, gruppiert nach Bundesländern, dann erhalten wir <span class="math notranslate nohighlight">\(16\)</span> Mittelwerte der Jahresgehälter, einen für jedes Bundesland. In diesem Beispiel ist die Bundeslandvariable also eine Klassifikationsvariable, der so genannte Faktor.</p>
 <p>Bitte beachten Sie, dass die einfaktorielle Varianzanalyse die Verallgemeinerung des <span class="math notranslate nohighlight">\(2\)</span>-Stichproben <span class="math notranslate nohighlight">\(t\)</span>-Tests auf mehr als zwei Grundgesamtheiten ist.</p>
 <div class="section" id="einfaktorielle-anova">
 <h2>Einfaktorielle ANOVA<a class="headerlink" href="#einfaktorielle-anova" title="Permalink to this headline">¶</a></h2>
@@ -790,7 +827,7 @@ den Gesamtumfang der Stichprobe bezeichnet.</p>
 <h2>Einfaktorieller ANOVA-Hypothesentest<a class="headerlink" href="#einfaktorieller-anova-hypothesentest" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>Der Zweck eines <strong>einfaktoriellen ANOVA-Hypothesentests</strong> ist der Vergleich von <span class="math notranslate nohighlight">\(k\)</span> Grundgesamtheits-/Gruppenmittelwerten, <span class="math notranslate nohighlight">\(\mu_1, \mu_2,...,\mu_k\)</span>.
-Die folgenden Annahmen müssen erfüllt sein, damit eine einseitige ANOVA angewendet werden kann (<span id="id2">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.485):</p>
+Die folgenden Annahmen müssen erfüllt sein, damit eine einseitige ANOVA angewendet werden kann (<span id="id2">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.485):</p>
 <ul class="simple">
 <li><p>Zufällige Stichproben</p></li>
 <li><p>Unabhängige Stichproben</p></li>
@@ -1048,7 +1085,7 @@ Name: salary, dtype: float64
 </div>
 </div>
 <p>Das Verhältnis zwischen der größten und der kleinsten Standardabweichung der Stichprobe beträgt <span class="math notranslate nohighlight">\(1,59\)</span>. Das liegt nahe am Schwellenwert von <span class="math notranslate nohighlight">\(2\)</span>, ist aber für unser Musterbeispiel noch akzeptabel. Daraus können wir schließen, dass die Annahmen erfüllt sind.</p>
-<p>Beachten Sie, dass die einseitige ANOVA robust gegenüber moderaten Verstößen gegen die Normalitätsannahme und die Annahme gleicher Standardabweichungen ist (<span id="id3">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.486).</p>
+<p>Beachten Sie, dass die einseitige ANOVA robust gegenüber moderaten Verstößen gegen die Normalitätsannahme und die Annahme gleicher Standardabweichungen ist (<span id="id3">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.486).</p>
 </div>
 <div class="section" id="uberprufung-der-hypothesen">
 <h3>Überprüfung der Hypothesen<a class="headerlink" href="#uberprufung-der-hypothesen" title="Permalink to this headline">¶</a></h3>

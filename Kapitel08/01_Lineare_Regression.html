@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -830,7 +867,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="math notranslate nohighlight">
 \[y = a + b x + \epsilon\]</div>
 <p>wobei angenommen wird, dass der Fehlerterm <span class="math notranslate nohighlight">\(\epsilon_i\)</span> aus unabhängigen normalverteilten Werten besteht, <span class="math notranslate nohighlight">\(\epsilon_i \sim N(0,\sigma^2)\)</span>.</p>
-<p>Bei der linearen Regressionsmodellierung werden folgende Annahmen über das Modell getroffen (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.439, <span id="id2">Frost [<a class="reference internal" href="../Literaturverzeichnis.html#id12" title="Frost. Einfache lineare Regression - Die Grundlage für komplexe Regressionsmodelle verstehen. Springer Fachmedien Wiesbaden, 2018.">2018</a>]</span>).</p>
+<p>Bei der linearen Regressionsmodellierung werden folgende Annahmen über das Modell getroffen (<span id="id1">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.439, <span id="id2">Frost [<a class="reference internal" href="../Literaturverzeichnis.html#id12" title="Frost. Einfache lineare Regression - Die Grundlage für komplexe Regressionsmodelle verstehen. Springer, 2018.">2018</a>]</span>).</p>
 <ul class="simple">
 <li><p>Der zufällige Fehlerterm <span class="math notranslate nohighlight">\(\epsilon\)</span> hat für jedes <span class="math notranslate nohighlight">\(x\)</span> einen Mittelwert gleich Null.</p></li>
 <li><p>Die mit verschiedenen Beobachtungen verbundenen Fehler sind unabhängig.</p></li>
@@ -1331,7 +1368,7 @@ dtype: float64
 <img alt="../_images/01_Lineare_Regression_75_1.png" src="../_images/01_Lineare_Regression_75_1.png" />
 </div>
 </div>
-<p>Darüber hinaus bietet Python einen einfachen Ansatz zur Erstellung von Fehlerbereichen um die angepasste Regressionslinie. Es gibt zwei Arten von Bändern, die als <em>schmale</em> und <em>breite</em> Bänder bezeichnet werden. Die schmalen Bänder, die so genannten <a href="https://de.wikipedia.org/wiki/Konfidenzintervall">Konfidenzbänder</a>, spiegeln die Unsicherheit über die Linie selbst wider. Die Bänder sind schmal, wenn es viele Beobachtungen gibt, und spiegeln eine gut bestimmte Linie wider. Die breiten Banden, die so genannten <a href="https://de.wikipedia.org/wiki/Konfidenzintervall">Prognosebänder</a> (<span id="id3">Frost [<a class="reference internal" href="../Literaturverzeichnis.html#id12" title="Frost. Einfache lineare Regression - Die Grundlage für komplexe Regressionsmodelle verstehen. Springer Fachmedien Wiesbaden, 2018.">2018</a>]</span> s.27), beinhalten die Unsicherheit über zukünftige Beobachtungen. Diese Bänder erfassen die Mehrheit der beobachteten Punkte und fallen nicht zu einer Linie zusammen, wenn die Anzahl der Beobachtungen zunimmt.</p>
+<p>Darüber hinaus bietet Python einen einfachen Ansatz zur Erstellung von Fehlerbereichen um die angepasste Regressionslinie. Es gibt zwei Arten von Bändern, die als <em>schmale</em> und <em>breite</em> Bänder bezeichnet werden. Die schmalen Bänder, die so genannten <a href="https://de.wikipedia.org/wiki/Konfidenzintervall">Konfidenzbänder</a>, spiegeln die Unsicherheit über die Linie selbst wider. Die Bänder sind schmal, wenn es viele Beobachtungen gibt, und spiegeln eine gut bestimmte Linie wider. Die breiten Banden, die so genannten <a href="https://de.wikipedia.org/wiki/Konfidenzintervall">Prognosebänder</a> (<span id="id3">Frost [<a class="reference internal" href="../Literaturverzeichnis.html#id12" title="Frost. Einfache lineare Regression - Die Grundlage für komplexe Regressionsmodelle verstehen. Springer, 2018.">2018</a>]</span> s.27), beinhalten die Unsicherheit über zukünftige Beobachtungen. Diese Bänder erfassen die Mehrheit der beobachteten Punkte und fallen nicht zu einer Linie zusammen, wenn die Anzahl der Beobachtungen zunimmt.</p>
 <p>Um diese Unsicherheitsbänder zu berechnen, wenden wir die Methode <code class="docutils literal notranslate"><span class="pre">get_prediction()</span></code> an und fügen die Methode <code class="docutils literal notranslate"><span class="pre">summary_frame()</span></code> hinzu, um den Vektor der vorhergesagten Werte zu erhalten, der mit Grenzwerten ergänzt wird.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1884,8 +1921,8 @@ r2: 0.667
 <p>Die beiden obigen Diagramme zeigen, dass ein Datenpunkt in Anscombes Datensatz Nr. <span class="math notranslate nohighlight">\(3\)</span> (rechtes Diagramm) ein ungewöhnlich großes Residuum aufweist. Ein solcher Datenpunkt erfordert besondere Aufmerksamkeit, da er die Regressionsanalyse beeinflusst. Es gibt keine allgemeingültige Regel, wie mit Ausreißern umzugehen ist, aber je nach den Fachkenntnissen des Forschers kann es Fälle geben, in denen man beschließt, einen solchen Ausreißer aus der Analyse auszuschließen.</p>
 <p>Darüber hinaus können wir die Residuen analysieren, um zu prüfen, ob die Annahmen der linearen Regression erfüllt sind. Regressionsresiduen sollten annähernd normalverteilt sein, d. h. die Regression sollte die Struktur erklären, und was übrig bleibt, sollte nur Rauschen sein, das durch Messfehler oder viele kleine unkorrelierte Faktoren verursacht wird. Die Normalität der Residuen kann grafisch überprüft werden, indem man die Residuen gegen die Werte der Prädiktorvariablen aufträgt. In einem solchen <strong>Residuen-Plot</strong> sollten die Residuen zufällig um <span class="math notranslate nohighlight">\(0\)</span> streuen
 und die Variation um <span class="math notranslate nohighlight">\(0\)</span> sollte gleich sein.</p>
-<p>Vor der Darstellung der Residuen ist es üblich, die Residuen zu standardisieren. Python bietet die Möglichkeit mit <code class="docutils literal notranslate"><span class="pre">get_influence()</span></code> auf die standardisierten Residuen zuzugreifen (<code class="docutils literal notranslate"><span class="pre">influence</span> <span class="pre">=</span> <span class="pre">model.get_influence()</span> </code> und <code class="docutils literal notranslate"><span class="pre">standardized_residuals</span> <span class="pre">=</span> <span class="pre">influence.resid_studentized_internal</span></code>) und alternativ kann man mit <code class="docutils literal notranslate"><span class="pre">stud_res</span> <span class="pre">=</span> <span class="pre">model.outlier_test()</span></code> die studentisierten Residuen (<span id="id4">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.152) berechnen.</p>
-<p>Wenn die Annahmen für Regressionsschlussfolgerungen erfüllt sind, sollten die folgenden zwei Bedingungen gelten (<span id="id5">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.443):</p>
+<p>Vor der Darstellung der Residuen ist es üblich, die Residuen zu standardisieren. Python bietet die Möglichkeit mit <code class="docutils literal notranslate"><span class="pre">get_influence()</span></code> auf die standardisierten Residuen zuzugreifen (<code class="docutils literal notranslate"><span class="pre">influence</span> <span class="pre">=</span> <span class="pre">model.get_influence()</span> </code> und <code class="docutils literal notranslate"><span class="pre">standardized_residuals</span> <span class="pre">=</span> <span class="pre">influence.resid_studentized_internal</span></code>) und alternativ kann man mit <code class="docutils literal notranslate"><span class="pre">stud_res</span> <span class="pre">=</span> <span class="pre">model.outlier_test()</span></code> die studentisierten Residuen (<span id="id4">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.152) berechnen.</p>
+<p>Wenn die Annahmen für Regressionsschlussfolgerungen erfüllt sind, sollten die folgenden zwei Bedingungen gelten (<span id="id5">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.443):</p>
 <ul class="simple">
 <li><p>Eine Darstellung der Residuen (Residuenplot) gegen die Werte der Prädiktorvariablen sollte ungefähr in ein horizontales Band fallen, das um die <span class="math notranslate nohighlight">\(x\)</span>-Achse zentriert und symmetrisch ist.</p></li>
 <li><p>Eine Normalwahrscheinlichkeitsdarstellung der Residuen sollte in etwa linear sein.</p></li>

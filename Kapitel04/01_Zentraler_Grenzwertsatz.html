@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -606,10 +643,10 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<p>Der <strong><a href="https://de.wikipedia.org/wiki/Zentraler_Grenzwertsatz">zentrale Grenzwertsatz</a></strong> ist eines der nützlichsten Konzepte der Statistik. Bei diesem Theorem geht es um die Ziehung von Stichproben einer endlichen Größe <span class="math notranslate nohighlight">\(n\)</span> aus einer Grundgesamtheit. Das Theorem besagt, dass, wenn man Stichproben mit einem ausreichend großen Stichprobenumfang <span class="math notranslate nohighlight">\(n\)</span> sammelt und den Mittelwert jeder Stichprobe berechnet, die Form des Histogramms dieser Mittelwerte sich einer Gauß-Verteilung annähert. Die Nützlichkeit des zentralen Grenzwertsatzes ergibt sich aus der Tatsache, dass <strong>die Verteilung der Stichprobenmittelwerte unabhängig von der Verteilung der ursprünglichen Verteilung der Zufallsvariablen der Normalverteilung folgt</strong> <span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id8" title="Papula. Mathematik für Ingenieure und Naturwissenschaftler Band 3. Teubner Verlag |Springer Fachmedien Wiesbaden, 2011.">Papula, 2011</a>]</span> s.436.</p>
+<p>Der <strong><a href="https://de.wikipedia.org/wiki/Zentraler_Grenzwertsatz">zentrale Grenzwertsatz</a></strong> ist eines der nützlichsten Konzepte der Statistik. Bei diesem Theorem geht es um die Ziehung von Stichproben einer endlichen Größe <span class="math notranslate nohighlight">\(n\)</span> aus einer Grundgesamtheit. Das Theorem besagt, dass, wenn man Stichproben mit einem ausreichend großen Stichprobenumfang <span class="math notranslate nohighlight">\(n\)</span> sammelt und den Mittelwert jeder Stichprobe berechnet, die Form des Histogramms dieser Mittelwerte sich einer Gauß-Verteilung annähert. Die Nützlichkeit des zentralen Grenzwertsatzes ergibt sich aus der Tatsache, dass <strong>die Verteilung der Stichprobenmittelwerte unabhängig von der Verteilung der ursprünglichen Verteilung der Zufallsvariablen der Normalverteilung folgt</strong> <span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id8" title="Lothar Papula. Mathematik für Ingenieure und Naturwissenschaftler Band 3. Springer, 2016.">Papula, 2016</a>]</span> s.436.</p>
 <div class="section" id="die-grundgesamtheitsverteilung">
 <h2>Die Grundgesamtheitsverteilung<a class="headerlink" href="#die-grundgesamtheitsverteilung" title="Permalink to this headline">¶</a></h2>
-<p>Die <strong>Grundgesamtheitsverteilung</strong> ist die Wahrscheinlichkeitsverteilung, die sich aus der Kenntnis aller Elemente einer Grundgesamtheit ergibt (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.302). Wir wissen, dass die interessierende Zufallsvariable je nach der betrachteten Grundgesamtheit eine diskrete Variable sein kann, d. h. eine Variable, die zumindest im Prinzip abzählbar ist (abzählbar unendlich), oder die Zufallsvariable kann eine kontinuierliche Variable sein, d. h. eine Variable, die jeden Wert innerhalb eines bestimmten Intervalls annehmen kann (überabzählbar unendlich). Sowohl die diskrete als auch die kontinuierliche Wahrscheinlichkeitsverteilung kann durch statistische Parameter wie den Mittelwert, die Standardabweichung, den Median, den Modalwert und andere beschrieben werden. Diese Parameter, die die Grundgesamtheit beschreiben, sind jedoch <strong>immer konstant</strong>, da die Grundgesamtheit die Menge aller Elemente ist und sich somit die Grundgesamtheitsstatistik nicht ändert. So gibt es beispielsweise für jeden Populationsdatensatz <strong>nur einen Wert</strong> für den Populationsmittelwert, <strong>einen Wert</strong> für die Standardabweichung usw.</p>
+<p>Die <strong>Grundgesamtheitsverteilung</strong> ist die Wahrscheinlichkeitsverteilung, die sich aus der Kenntnis aller Elemente einer Grundgesamtheit ergibt (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.302). Wir wissen, dass die interessierende Zufallsvariable je nach der betrachteten Grundgesamtheit eine diskrete Variable sein kann, d. h. eine Variable, die zumindest im Prinzip abzählbar ist (abzählbar unendlich), oder die Zufallsvariable kann eine kontinuierliche Variable sein, d. h. eine Variable, die jeden Wert innerhalb eines bestimmten Intervalls annehmen kann (überabzählbar unendlich). Sowohl die diskrete als auch die kontinuierliche Wahrscheinlichkeitsverteilung kann durch statistische Parameter wie den Mittelwert, die Standardabweichung, den Median, den Modalwert und andere beschrieben werden. Diese Parameter, die die Grundgesamtheit beschreiben, sind jedoch <strong>immer konstant</strong>, da die Grundgesamtheit die Menge aller Elemente ist und sich somit die Grundgesamtheitsstatistik nicht ändert. So gibt es beispielsweise für jeden Populationsdatensatz <strong>nur einen Wert</strong> für den Populationsmittelwert, <strong>einen Wert</strong> für die Standardabweichung usw.</p>
 </div>
 <div class="section" id="grundgesamtheitsstatistiken-und-stichprobenstatistiken">
 <h2>Grundgesamtheitsstatistiken und Stichprobenstatistiken<a class="headerlink" href="#grundgesamtheitsstatistiken-und-stichprobenstatistiken" title="Permalink to this headline">¶</a></h2>
@@ -731,7 +768,7 @@ Stichprobenfehler (n=50): 2.339
 </div>
 <div class="section" id="die-stichprobenverteilung">
 <h2>Die Stichprobenverteilung<a class="headerlink" href="#die-stichprobenverteilung" title="Permalink to this headline">¶</a></h2>
-<p>Ausgehend von unserer Intuition der Zufälligkeit im Stichprobenprozess führen wir die <strong><a href="https://de.wikipedia.org/wiki/Sch%C3%A4tzfunktion">Stichprobenverteilung</a></strong> ein. Die Stichprobenverteilung ist eine Verteilung einer Stichprobenstatistik <em>(<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.337)</em>. Oft wird der Name der berechneten Statistik als Teil des Titels hinzugefügt. Wenn es sich bei der berechneten Statistik beispielsweise um den Stichprobenmittelwert handelt, würde die Stichprobenverteilung den Titel <strong>Stichprobenverteilung des Stichprobenmittelwerts</strong> tragen.</p>
+<p>Ausgehend von unserer Intuition der Zufälligkeit im Stichprobenprozess führen wir die <strong><a href="https://de.wikipedia.org/wiki/Sch%C3%A4tzfunktion">Stichprobenverteilung</a></strong> ein. Die Stichprobenverteilung ist eine Verteilung einer Stichprobenstatistik <em>(<span id="id3">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.337)</em>. Oft wird der Name der berechneten Statistik als Teil des Titels hinzugefügt. Wenn es sich bei der berechneten Statistik beispielsweise um den Stichprobenmittelwert handelt, würde die Stichprobenverteilung den Titel <strong>Stichprobenverteilung des Stichprobenmittelwerts</strong> tragen.</p>
 <p>Erinnern wir uns an das einfache Beispiel aus dem vorigen Abschnitt, bei dem die Grundgesamtheit durch die ersten <span class="math notranslate nohighlight">\(100\)</span> ganzen Zahlen <span class="math notranslate nohighlight">\(\{ 1,2,3,\dots,100 \}\)</span> repräsentiert wurde. Wenn wir wiederholt Stichproben aus dieser Grundgesamtheit ziehen und jedes Mal die Stichprobenstatistik (z. B. <span class="math notranslate nohighlight">\(\bar{x}\)</span> oder <span class="math notranslate nohighlight">\(s\)</span>,…) berechnen, wird <strong>die resultierende Verteilung der Stichprobenstatistik als Stichprobenverteilung dieser Statistik</strong> bezeichnet.</p>
 <p>Aus dieser Grundgesamtheit nehmen wir wiederholt Zufallsstichproben <span class="math notranslate nohighlight">\((x)\)</span> ohne Ersetzung mit der Größe <span class="math notranslate nohighlight">\(n=30\)</span>. Die Zufallsstichproben könnten Mengen erzeugen, die wie folgt aussehen :</p>
 <div class="math notranslate nohighlight">
@@ -812,7 +849,7 @@ Stichprobenfehler (n=50): 2.339
 <p>Wenn wir aus einer Grundgesamtheit eine ausreichend große Anzahl von Stichproben (mit gleichem Umfang) auswählen und deren Mittelwerte berechnen, dann nähert sich der Mittelwert (<span class="math notranslate nohighlight">\(\mu_{\bar{x}}\)</span>) all dieser Stichprobenmittelwerte dem Mittelwert (<span class="math notranslate nohighlight">\(\mu\)</span>) der Grundgesamtheit an. Deshalb wird der Stichprobenmittelwert <span class="math notranslate nohighlight">\(\bar{x}\)</span> als Schätzer des Populationsmittelwertes <span class="math notranslate nohighlight">\(\mu\)</span> bezeichnet. Somit ist der Mittelwert der Stichprobenverteilung gleich dem Mittelwert der Grundgesamtheit.</p>
 <div class="math notranslate nohighlight">
 \[\mu_{\bar{x}} = \mu\]</div>
-<p>Für die Standardabweichung einer Stichprobenverteilung gibt es eine besondere Bezeichnung, den <strong><a href="https://de.wikipedia.org/wiki/Standardfehler">Standardfehler</a></strong>. Der Standardfehler der Stichprobenverteilung einer Statistik, bezeichnet als <span class="math notranslate nohighlight">\(\sigma_{\bar{x}}\)</span>, beschreibt das Ausmaß, in dem die berechneten Statistiken erwartungsgemäß voneinander abweichen, wenn sie anhand einer Stichprobe ähnlichen Umfangs berechnet und aus ähnlichen Grundgesamtheitsmodellen ausgewählt werden. Je größer der Standardfehler einer bestimmten Statistik ist, desto größer sind die Unterschiede zwischen den berechneten Statistiken für die verschiedenen Stichproben (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id10" title="Udo Kuckartz, Stefan Rädiker, Thomas Ebert, and Julia Schehl. Statistik: eine verständliche Einführung. Springer-Verlag, 2010.">Kuckartz <em>et al.</em>, 2010</a>]</span> s.133).</p>
+<p>Für die Standardabweichung einer Stichprobenverteilung gibt es eine besondere Bezeichnung, den <strong><a href="https://de.wikipedia.org/wiki/Standardfehler">Standardfehler</a></strong>. Der Standardfehler der Stichprobenverteilung einer Statistik, bezeichnet als <span class="math notranslate nohighlight">\(\sigma_{\bar{x}}\)</span>, beschreibt das Ausmaß, in dem die berechneten Statistiken erwartungsgemäß voneinander abweichen, wenn sie anhand einer Stichprobe ähnlichen Umfangs berechnet und aus ähnlichen Grundgesamtheitsmodellen ausgewählt werden. Je größer der Standardfehler einer bestimmten Statistik ist, desto größer sind die Unterschiede zwischen den berechneten Statistiken für die verschiedenen Stichproben (<span id="id4">[<a class="reference internal" href="../Literaturverzeichnis.html#id10" title="Udo Kuckartz, Stefan Rädiker, Thomas Ebert, and Julia Schehl. Statistik: eine verständliche Einführung. Springer-Verlag, 2013.">Kuckartz <em>et al.</em>, 2013</a>]</span> s.133).</p>
 <p>Es ist jedoch zu beachten, dass der Standardfehler <span class="math notranslate nohighlight">\(\sigma_{\bar{x}}\)</span> nicht gleich der Standardabweichung <span class="math notranslate nohighlight">\(\sigma\)</span> der Verteilung der Grundgesamtheit ist (es sei denn, <span class="math notranslate nohighlight">\(n=1\)</span>). Der Standardfehler ist gleich der Standardabweichung der Grundgesamtheit geteilt durch die Quadratwurzel des Stichprobenumfangs :</p>
 <div class="math notranslate nohighlight">
 \[\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\]</div>
@@ -992,7 +1029,7 @@ ist normal, unabhängig vom Wert von <span class="math notranslate nohighlight">
 \[\mu_{\bar{x}} = \mu \text{ und } \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\]</div>
 <p>Der Stichprobenumfang wird gewöhnlich als groß angesehen, wenn <span class="math notranslate nohighlight">\(n \geq 30\)</span> ist.</p>
 <p>Da die Stichprobenverteilung eine Normalverteilung approximiert, liefert die Fläche unter der Kurve der Stichprobenverteilung probabilistische Informationen über die Stichprobenstatistik.</p>
-<p>Erinnern Sie sich an die <strong>empirische Regel</strong> (<span id="id8">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.86), auch bekannt als die <strong>68-95-99,7-Regel</strong>. Auf die Stichprobenverteilung angewandt bedeutet die <span class="math notranslate nohighlight">\(68-95-99,7\)</span>-Regel folglich, dass</p>
+<p>Erinnern Sie sich an die <strong>empirische Regel</strong> (<span id="id8">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.86), auch bekannt als die <strong>68-95-99,7-Regel</strong>. Auf die Stichprobenverteilung angewandt bedeutet die <span class="math notranslate nohighlight">\(68-95-99,7\)</span>-Regel folglich, dass</p>
 <ul class="simple">
 <li><p>etwa <span class="math notranslate nohighlight">\(68,26\)</span>% der Stichprobenmittelwerte innerhalb einer Standardabweichung des Populationsmittelwerts liegen werden,</p></li>
 <li><p><span class="math notranslate nohighlight">\(95,44\)</span>% der Stichprobenmittelwerte innerhalb von zwei Standardabweichungen des Populationsmittelwertes liegen und</p></li>

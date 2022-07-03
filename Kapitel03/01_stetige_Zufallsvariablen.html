@@ -136,6 +136,43 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe1_Lehrbeispiel_Pandas.html">
+     Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe2_Pandas_Dataframes.html">
+     Übung zu Pandas Dataframes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe3_Fuenf_Punkte.html">
+     Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe4_Arithmetisches_Mittel.html">
+     Arithmetisches Mittel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/Aufgabe5_Median.html">
+     Median berechnen
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -497,12 +534,12 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="stetige-zufallsvariablen-und-ihre-wahrscheinlichkeitsverteilungen">
 <h1>Stetige Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen<a class="headerlink" href="#stetige-zufallsvariablen-und-ihre-wahrscheinlichkeitsverteilungen" title="Permalink to this headline">¶</a></h1>
-<p>Eine <a href="https://de.wikipedia.org/wiki/Zufallsvariable">Zufallsvariable</a>, deren Werte nicht abzählbar sind, nennt man eine <strong>stetige Zufallsvariable</strong>. D.h. eine kontinuierliche Zufallsvariable kann jeden Wert annehmen (z.B. reelle Zahlenwerte), der in einem oder mehreren Intervallen enthalten ist. Da die Anzahl der in einem Intervall enthaltenen Werte unendlich ist, ist auch die mögliche Anzahl der Werte, die eine kontinuierliche Zufallsvariable annehmen kann, unendlich (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.251).</p>
+<p>Eine <a href="https://de.wikipedia.org/wiki/Zufallsvariable">Zufallsvariable</a>, deren Werte nicht abzählbar sind, nennt man eine <strong>stetige Zufallsvariable</strong>. D.h. eine kontinuierliche Zufallsvariable kann jeden Wert annehmen (z.B. reelle Zahlenwerte), der in einem oder mehreren Intervallen enthalten ist. Da die Anzahl der in einem Intervall enthaltenen Werte unendlich ist, ist auch die mögliche Anzahl der Werte, die eine kontinuierliche Zufallsvariable annehmen kann, unendlich (<span id="id1">[<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">Fahrmeir <em>et al.</em>, 2016</a>]</span> s.251).</p>
 <p>Es gibt viel mehr <a href="https://de.wikipedia.org/wiki/Liste_univariater_Wahrscheinlichkeitsverteilungen">kontinuierliche Wahrscheinlichkeitsverteilungen</a>, als wir hier besprechen können. Beachten Sie jedoch, dass in Python mittlerweile eine große Anzahl verschiedener diskreter und kontinuierlicher Wahrscheinlichkeitsverteilungen implementiert sind, siehe <a href="https://docs.scipy.org/doc/scipy/reference/stats.html">hier</a>.</p>
 <p>In Python sind Wahrscheinlichkeitsfunktionen durch allgemeine Methoden wie <code class="docutils literal notranslate"><span class="pre">rvs</span></code>, <code class="docutils literal notranslate"><span class="pre">pdf</span></code>, <code class="docutils literal notranslate"><span class="pre">cdf</span></code> und <code class="docutils literal notranslate"><span class="pre">ppf</span></code> zugänglich. <code class="docutils literal notranslate"><span class="pre">rvs</span></code> ist das allgemeine Syntax für Zufallsvariablengeneratoren wie <code class="docutils literal notranslate"><span class="pre">uniform.rvs()</span></code> für die Gleichverteilung oder <code class="docutils literal notranslate"><span class="pre">norm.rvs()</span></code> für die Normalverteilung. <code class="docutils literal notranslate"><span class="pre">pdf</span></code> ist Methode für die Wahrscheinlichkeitsdichtefunktion wie <code class="docutils literal notranslate"><span class="pre">uniform.pdf</span></code> und <code class="docutils literal notranslate"><span class="pre">norm.pdf()</span></code>. Das <code class="docutils literal notranslate"><span class="pre">cdf</span></code> ist der Syntax für die kumulative Dichtefunktion wie <code class="docutils literal notranslate"><span class="pre">uniform.cdf()</span></code> und <code class="docutils literal notranslate"><span class="pre">norm.cdf()</span></code>. Das <code class="docutils literal notranslate"><span class="pre">ppf</span></code> ist der allgemeine Syntax für die Quantilfunktion, wie <code class="docutils literal notranslate"><span class="pre">uniform.ppf()</span></code> und <code class="docutils literal notranslate"><span class="pre">norm.ppf()</span></code>. Behalten Sie das im Hinterkopf, wenn wir die Kapazitäten in Python weiter erforschen.</p>
 <div class="section" id="wahrscheinlichkeitsdichtefunktionen">
 <h2>Wahrscheinlichkeitsdichtefunktionen<a class="headerlink" href="#wahrscheinlichkeitsdichtefunktionen" title="Permalink to this headline">¶</a></h2>
-<p>Die Form der Verteilung einer Zufallsvariablen kann durch eine glatte Kurve veranschaulicht werden. Solche Kurven, die die Verteilung von kontinuierlichen Variablen darstellen, werden <strong>Wahrscheinlichkeitsdichtefunktionen (PDF)</strong> oder einfach <strong>Dichtefunktionen</strong> genannt. <a href="https://de.wikipedia.org/wiki/Wahrscheinlichkeitsdichtefunktion">Wahrscheinlichkeitsdichtefunktionen</a> haben drei Haupteigenschaften (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id8" title="Papula. Mathematik für Ingenieure und Naturwissenschaftler Band 3. Teubner Verlag |Springer Fachmedien Wiesbaden, 2011.">Papula, 2011</a>]</span> s.327):</p>
+<p>Die Form der Verteilung einer Zufallsvariablen kann durch eine glatte Kurve veranschaulicht werden. Solche Kurven, die die Verteilung von kontinuierlichen Variablen darstellen, werden <strong>Wahrscheinlichkeitsdichtefunktionen (PDF)</strong> oder einfach <strong>Dichtefunktionen</strong> genannt. <a href="https://de.wikipedia.org/wiki/Wahrscheinlichkeitsdichtefunktion">Wahrscheinlichkeitsdichtefunktionen</a> haben drei Haupteigenschaften (<span id="id2">[<a class="reference internal" href="../Literaturverzeichnis.html#id8" title="Lothar Papula. Mathematik für Ingenieure und Naturwissenschaftler Band 3. Springer, 2016.">Papula, 2016</a>]</span> s.327):</p>
 <ol class="simple">
 <li><p>Eine PDF wird immer auf oder über der horizontalen Achse gezeichnet</p></li>
 <li><p>Die Gesamtfläche zwischen einer PDF und der horizontalen Achse ist gleich <span class="math notranslate nohighlight">\(1\)</span> und somit liegt  jeder Wert in jedem Teilintervall der PDF im Bereich von <span class="math notranslate nohighlight">\(0\)</span> bis <span class="math notranslate nohighlight">\(1\)</span></p></li>
