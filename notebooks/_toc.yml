@@ -75,6 +75,11 @@ parts:
     chapters:   
     - file: Lernziele/Kapitel7_Lernziele
     - file: Kapitel07/01_Analyse_der_Varianz_ANOVA
+    - file: Aufgaben/Kapitel07/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel07/ANOVA_basics
+      - file: Aufgaben/Kapitel07/Einfache_ANOVA
+      - file: Aufgaben/Kapitel07/Bonferroni
   - caption: Lineare Regression
     chapters:  
     - file: Lernziele/Kapitel8_Lernziele
