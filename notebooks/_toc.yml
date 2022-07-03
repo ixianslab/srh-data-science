@@ -85,6 +85,11 @@ parts:
     - file: Lernziele/Kapitel8_Lernziele
     - file: Kapitel08/01_Lineare_Regression
     - file: Kapitel08/02_Polynomiale_Regression
+    - file: Aufgaben/Kapitel08/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel08/LinReg_basics
+      - file: Aufgaben/Kapitel08/LineareReg
+      - file: Aufgaben/Kapitel08/PolyReg
   - caption: Logistische Regression
     chapters:   
     - file: Lernziele/Kapitel9_Lernziele
