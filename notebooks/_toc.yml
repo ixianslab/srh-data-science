@@ -12,6 +12,11 @@ parts:
     - file: Kapitel01/03_Streuungsmaße
     - file: Kapitel01/04_Maße_der_Position
     - file: Kapitel01/05_Maße_der_Relation_zwischen_Variablen
+    - file: Aufgaben/Kapitel01/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel01/Pandas_Dataframes
+      - file: Aufgaben/Kapitel01/Fuenf_Punkte
+      - file: Aufgaben/Kapitel01/Arithmetisches_Mittel
   - caption: Diskrete Zufallsvariablen
     chapters: 
     - file: Lernziele/Kapitel2_Lernziele
@@ -27,6 +32,11 @@ parts:
     - file: Kapitel03/04_Die_Student_t_Verteilung
     - file: Kapitel03/05_Die_Chi_Quadrat_Verteilung
     - file: Kapitel03/06_Die_F_Verteilung
+    - file: Aufgaben/Kapitel03/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel03/PDF
+      - file: Aufgaben/Kapitel03/689599_Regel
+      - file: Aufgaben/Kapitel03/Normalverteilung
   - caption: Der Zentrale Grenzwertsatz
     chapters:   
     - file: Lernziele/Kapitel4_Lernziele
