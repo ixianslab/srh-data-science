@@ -19,6 +19,7 @@ Work in progress
 - Check Zitate Formatierung (https://jupyterbook.org/en/stable/content/citations.html?highlight=citation#change-the-in-line-citation-style) @Jan
 - Formulierungen ändern, verbesserter Stil @jan
 - Aufgaben review @jan
+- review tables (https://jupyterbook.org/en/stable/reference/cheatsheet.html?highlight=tables#tables) @jan
 
 - verstecken von code Blöcken @joe
 - interaktiver Run @joe
