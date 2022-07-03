@@ -99,7 +99,7 @@ parts:
       - file: Aufgaben/Kapitel09/LogReg_basics
       - file: Aufgaben/Kapitel09/logit_funktion
       - file: Aufgaben/Kapitel09/logodds
-      - file: Aufgaben/Kapitel09/LogReg_basics
+      - file: Aufgaben/Kapitel09/logregmodell
   - caption: Literaturverzeichnis
     chapters:
     - file:  Literaturverzeichnis
