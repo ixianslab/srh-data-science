@@ -1,16 +1,6 @@
 
 # Modul Statistik und Machine Learning Modelle
 
-Work in progress
-
-## Offene Fragen/Abstimmungsbedarf
-
--   Umfang und Struktur Lernziele
--   Code in Deutsch?
--   Bedienelemente von JupyterBook in Deutsch
--   Interaktive Code Inhalte via Thebe
--   Binder
--   lab vs classic
 
 ## ToDos
 - Bibliography uneiheitlich (https://scholar.google.com/) @jan 
