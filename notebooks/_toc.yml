@@ -41,10 +41,21 @@ parts:
     chapters:   
     - file: Lernziele/Kapitel4_Lernziele
     - file: Kapitel04/01_Zentraler_Grenzwertsatz
+    - file: Aufgaben/Kapitel04/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel04/CLT
+      - file: Aufgaben/Kapitel04/Schaetzfehler
+      - file: Aufgaben/Kapitel04/Wuerfel
+      - file: Aufgaben/Kapitel04/Test_auf_Normalverteilung
   - caption: Inferenzstatistik und Konfidenzintervalle
     chapters:   
     - file: Lernziele/Kapitel5_Lernziele
     - file: Kapitel05/01_Inferenzstatistik_und_Konfidenzintervalle
+    - file: Aufgaben/Kapitel05/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel05/Konfidenzintervall
+      - file: Aufgaben/Kapitel05/Punkschaetzer
+      - file: Aufgaben/Kapitel05/Punkt_Intervall
   - caption: Hypothesentests
     chapters:   
     - file: Lernziele/Kapitel6_Lernziele
