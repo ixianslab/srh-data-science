@@ -66,6 +66,11 @@ parts:
     - file: Kapitel06/05_Chi_Quadrat_Tests
     - file: Kapitel06/06_Inferenz_Regression_und_Korrelation
     - file: Kapitel06/07_Wahrscheinlichkeitstabellen
+    - file: Aufgaben/Kapitel06/Aufgaben
+      sections:
+      - file: Aufgaben/Kapitel06/Fehler_1ter_2ter_Art
+      - file: Aufgaben/Kapitel06/hypo_unabhSt
+      - file: Aufgaben/Kapitel06/pooled_t
   - caption: Varianzanalyse - ANOVA
     chapters:   
     - file: Lernziele/Kapitel7_Lernziele
