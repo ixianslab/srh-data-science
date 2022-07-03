@@ -1,10 +1,10 @@
-name: srh-poc
+name: srh
 channels:
 - conda-forge
 - default
 
 dependencies:
-- python=3
+- python=3.10
 - numpy
 - matplotlib
 - pandas
@@ -14,6 +14,9 @@ dependencies:
 - seaborn
 - scipy
 - pip
+- scikit-learn
+- folium
+- openpyxl
 
 - pip:
   - jupyter-book

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Der Zentrale Grenzwertsatz</title>
+    <title>Search &#8212; Modul Statistik und Machine Learning Modelle</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -38,11 +38,20 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="_static/searchtools.js"></script>
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -75,10 +84,10 @@
         
       
       
-      <img src="_static/ixians.png" class="logo" alt="logo">
+      <img src="_static/srh_logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Der Zentrale Grenzwertsatz</h1>
+      <h1 class="site-logo" id="site-title">Modul Statistik und Machine Learning Modelle</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="#" method="get">
@@ -89,19 +98,113 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Proof of concept Kapitel Zentraler Grenzwertsatz
+   Modul Statistik und Machine Learning Modelle
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Lernziele
+  Einführung in die Statistik
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="00_Lernziele.html">
-   Lernziele Kapitel Zentraler Grenzwertsatz
+  <a class="reference internal" href="Lernziele/Kapitel1_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel01/01_Deskriptive_Statistik.html">
+   Deskriptive Statistik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel01/02_Ma%C3%9Fe_der_zentralen_Tendenz.html">
+   Maße der zentralen Tendenz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel01/03_Streuungsma%C3%9Fe.html">
+   Streuungsmaße
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel01/04_Ma%C3%9Fe_der_Position.html">
+   Das Positionsmaß
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel01/05_Ma%C3%9Fe_der_Relation_zwischen_Variablen.html">
+   Maße für die Relation zwischen Variablen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Diskrete Zufallsvariablen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lernziele/Kapitel2_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel02/01_Diskrete_Zufallsvariablen.html">
+   Diskrete Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel02/02_Die_Binomialverteilung.html">
+   Die Binomialverteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel02/03_Die_Poisson_Verteilung.html">
+   Die Poisson-Verteilung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Stetige Zufallsvariablen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lernziele/Kapitel3_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel03/01_stetige_Zufallsvariablen.html">
+   Stetige Zufallsvariablen und ihre Wahrscheinlichkeitsverteilungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel03/02_Die%20Normalverteilung.html">
+   Die Normalverteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel03/03_Die_kontinuierliche_gleichm%C3%A4%C3%9Fige_Verteilung.html">
+   Die kontinuierliche gleichmäßige Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel03/04_Die_Student_t_Verteilung.html">
+   Die Student t-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel03/05_Die_Chi_Quadrat_Verteilung.html">
+   Die Chi-Quadrat-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel03/06_Die_F_Verteilung.html">
+   Die F-Verteilung
   </a>
  </li>
 </ul>
@@ -112,45 +215,128 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Zentraler_Grenzwertsatz.html">
+  <a class="reference internal" href="Lernziele/Kapitel4_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel04/01_Zentraler_Grenzwertsatz.html">
    Der zentrale Grenzwertsatz
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_Grundgesamtheitsverteilung.html">
-   Die Grundgesamtheitsverteilung
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="03_Stichprobenverteilung.html">
-   Die Stichprobenverteilung
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="04_Standardfehler.html">
-   Der Standardfehler
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_Stichproben_normalverteilte_Grundgesamtheit.html">
-   Stichproben aus einer normalverteilten Grundgesamtheit
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_Stichproben_nicht-normalverteilte_Grundgesamtheit.html">
-   Stichproben aus einer nicht normalverteilten Grundgesamtheit
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Übungsaufgaben
+  Inferenzstatistik und Konfidenzintervalle
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="90_Aufgaben.html">
-   Übungsaufgaben Kapitel Zentraler Grenzwertsatz
+  <a class="reference internal" href="Lernziele/Kapitel5_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel05/01_Inferenzstatistik_und_Konfidenzintervalle.html">
+   Inferenzstatistik und Konfidenzintervalle
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Hypothesentests
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lernziele/Kapitel6_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/01_Hypothesentests.html">
+   Hypothesentests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/02_Hypothesentests_Mittelwert_einer_Grundgesamtheit.html">
+   Hypothesentests für den Mittelwert einer Grundgesamtheit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/03_Hypothesentests_zwei_Grundgesamtheitsmittelwerte.html">
+   Hypothesentests für zwei Grundgesamtheitsmittelwerte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/04_Standardabweichung_der_Grundgesamtheit.html">
+   Inferenz für die Standardabweichung der Grundgesamtheit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/05_Chi_Quadrat_Tests.html">
+   Chi-Quadrat-Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/06_Inferenz_Regression_und_Korrelation.html">
+   Inferenzmethoden in Regression und Korrelation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel06/07_Wahrscheinlichkeitstabellen.html">
+   Wahrscheinlichkeits-Tabellen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Varianzanalyse - ANOVA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lernziele/Kapitel7_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel07/01_Analyse_der_Varianz_ANOVA.html">
+   Varianzanalyse - ANOVA
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lineare Regression
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel08/01_Lineare_Regression.html">
+   Lineare Regression
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel08/02_Polynomiale_Regression.html">
+   Polynomiale Regression
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Logistische Regression
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lernziele/Kapitel9_Lernziele.html">
+   Lernziele
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Kapitel09/01_Logistische_Regression.html">
+   Logistische Regression
   </a>
  </li>
 </ul>
@@ -161,7 +347,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="99_Literaturverzeichnis.html">
+  <a class="reference internal" href="Literaturverzeichnis.html">
    Literaturverzeichnis
   </a>
  </li>
@@ -205,11 +391,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ixianslab/proof_of_concept_CLT"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ixianslab/srh-data-science"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ixianslab/proof_of_concept_CLT/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ixianslab/srh-data-science/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         

@@ -1,19 +1,19 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Der Zentrale Grenzwertsatz
+title: Modul Statistik und Machine Learning Modelle
 author: ixians
 logo: _img/srh_logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: cache
 
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: CLT_poc.tex
+    targetname: module_StMLM.tex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
@@ -25,9 +25,9 @@ sphinx:
     
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/ixianslab/proof_of_concept_CLT  # Online location of your book
+  url: https://github.com/ixianslab/srh-data-science  # Online location of your book
   path_to_book: notebooks  # Optional path to your book, relative to the repository root
-  branch: refactoring_poc  # Which branch of the repository should be used when creating links (optional)
+  branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
