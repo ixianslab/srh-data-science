@@ -989,36 +989,7 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="c1"># Load the &quot;autoreload&quot; extension</span>
-<span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="c1"># always reload modules</span>
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># black formatter for jupyter notebooks</span>
-<span class="c1">#%load_ext nb_black</span>
-<span class="c1"># black formatter for jupyter lab</span>
-<span class="o">%</span><span class="k">load_ext</span> lab_black
-
-<span class="o">%</span><span class="k">run</span> ../../../src/notebook_env.py
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: Joachims-MacBook-Pro.local
-
----------------------------------
-Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
-
----------------------------------
-Python interpreter: /opt/miniconda3/envs/srh/bin/python
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="die-pandas-bibliothek">
+  <div class="tex2jax_ignore mathjax_ignore section" id="die-pandas-bibliothek">
 <h1>Die Pandas Bibliothek<a class="headerlink" href="#die-pandas-bibliothek" title="Permalink to this headline">¶</a></h1>
 <p>Die <a href="https://pandas.pydata.org//">Pandas-Bibliothek</a> wurde 2010 von <a href="https://wesmckinney.com/">Wes McKinney</a> entwickelt. pandas bietet <strong>Datenstrukturen</strong> und <strong>Funktionen</strong> für die Manipulation, Verarbeitung, Bereinigung und Verwertung von Daten. Im Python-Ökosystem ist pandas das modernste Werkzeug für die Arbeit mit tabellarischen oder tabellenähnlichen Daten, bei denen jede Spalte von einem anderen Typ sein kann (<code class="docutils literal notranslate"><span class="pre">String</span></code>, <code class="docutils literal notranslate"><span class="pre">numerisch</span></code>, <code class="docutils literal notranslate"><span class="pre">Datum</span></code> oder andere). pandas bietet ausgefeilte Indizierungsfunktionen, die das Umformen, Zerlegen, Aggregieren und Auswählen von Teilmengen von Daten erleichtern. pandas stützt sich auf andere Pakete, wie <a href="https://numpy.org/">NumPy</a> und <a href="https://scipy.org/">SciPy</a>. Außerdem integriert pandas <a href="https://matplotlib.org/">matplotlib</a> zum Plotten.</p>
 <p>Wenn Sie neu im Umgang mit pandas sind, empfehlen wir Ihnen dringend, die sehr gut geschriebenen <a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html">pandas-Tutorials</a> zu besuchen, die alle relevanten Abschnitte für neue Benutzer abdecken, um richtig loszulegen.</p>
@@ -2273,7 +2244,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/4l/3kysx_3j3vj4h8l26gg_1q8c0000gn/T/ipykernel_30111/1459321664.py:1: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with &#39;numeric_only=None&#39;) is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/4l/3kysx_3j3vj4h8l26gg_1q8c0000gn/T/ipykernel_30458/1459321664.py:1: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with &#39;numeric_only=None&#39;) is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
   df.sum(axis=1)
 </pre></div>
 </div>
@@ -2376,7 +2347,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x168990d60&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x16af0dd80&gt;
 </pre></div>
 </div>
 </div>
@@ -3187,7 +3158,7 @@ Name: no_of_songs, dtype: bool
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/4l/3kysx_3j3vj4h8l26gg_1q8c0000gn/T/ipykernel_30111/1527406442.py:3: FutureWarning: Behavior when concatenating bool-dtype and numeric-dtype arrays is deprecated; in a future version these will cast to object dtype (instead of coercing bools to numeric values). To retain the old behavior, explicitly cast bool-dtype arrays to numeric dtype.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/4l/3kysx_3j3vj4h8l26gg_1q8c0000gn/T/ipykernel_30458/1527406442.py:3: FutureWarning: Behavior when concatenating bool-dtype and numeric-dtype arrays is deprecated; in a future version these will cast to object dtype (instead of coercing bools to numeric values). To retain the old behavior, explicitly cast bool-dtype arrays to numeric dtype.
   df.loc[5] = [&quot;Mickey&quot;, &quot;Mouse&quot;, nan, 1928, nan]
 </pre></div>
 </div>
@@ -3297,7 +3268,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2022, 7, 4, 9, 55, 15, 962725)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2022, 7, 4, 10, 0, 50, 976363)
 </pre></div>
 </div>
 </div>
