@@ -14,6 +14,7 @@ parts:
     - file: Kapitel01/05_Maße_der_Relation_zwischen_Variablen
     - file: Aufgaben/Kapitel01/Aufgaben
       sections:
+      - file: Aufgaben/Kapitel01/pandas
       - file: Aufgaben/Kapitel01/Pandas_Dataframes
       - file: Aufgaben/Kapitel01/Fuenf_Punkte
       - file: Aufgaben/Kapitel01/Arithmetisches_Mittel
