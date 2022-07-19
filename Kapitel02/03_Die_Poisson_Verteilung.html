@@ -943,11 +943,9 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="math notranslate nohighlight">
 \[P(X = x) = {n \choose x}p^x(1-p)^{n-x}, \qquad x = 0, 1, 2, \dots , n \]</div>
 <p>Wie im früheren Beispiel “Jahrhunderthochwasser” ist <span class="math notranslate nohighlight">\(n\)</span> eine große Zahl <span class="math notranslate nohighlight">\((100)\)</span> und <span class="math notranslate nohighlight">\(p\)</span> eine kleine Zahl <span class="math notranslate nohighlight">\((0,01)\)</span>. Einsetzen in die Gleichung von oben <span class="math notranslate nohighlight">\(P(x=1)\)</span> ergibt</p>
-<p>\begin{align}
-\ P(X = 1) &amp; = {100 \choose 1}\times 0,01^1\times (1 - 0,01)^{100 -1} \
-&amp; = 100\times 0,01\times 0,3697296  \
-&amp; = 0,3697296
-\end{align}</p>
+<p><span class="math notranslate nohighlight">\( P(X = 1)  = {100 \choose 1}\times 0,01^1\times (1 - 0,01)^{100 -1} \)</span></p>
+<p><span class="math notranslate nohighlight">\( = 100\times 0,01\times 0,3697296 \)</span></p>
+<p><span class="math notranslate nohighlight">\( = 0,3697296 \)</span></p>
 <p>Das Ergebnis kommt dem oben ermittelten Ergebnis sehr nahe <code class="docutils literal notranslate"><span class="pre">poisson.pmf(1,1)</span></code> <span class="math notranslate nohighlight">\(= 0,3678794\)</span>. Die geeignete Poisson-Verteilung ist diejenige, deren Mittelwert gleich dem der Binomialverteilung ist, d. h. <span class="math notranslate nohighlight">\(\lambda=np\)</span>, was in unserem Beispiel <span class="math notranslate nohighlight">\(\lambda=100×0,01=1\)</span> ist.</p>
 <p>Zum Abschluss dieses Abschnitts und um Ihnen eine Vorstellung von den Formen der verschiedenen Poisson-Wahrscheinlichkeitsverteilungen zu geben, werden im Folgenden drei verschiedene Poisson-Wahrscheinlichkeitsverteilungen und die entsprechenden kumulativen Poisson-Wahrscheinlichkeitsverteilungen für <span class="math notranslate nohighlight">\(\lambda=2,5, \lambda=7\)</span> und <span class="math notranslate nohighlight">\(\lambda=12\)</span> angegeben.</p>
 <div class="cell docutils container">

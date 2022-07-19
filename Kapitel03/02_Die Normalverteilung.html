@@ -195,6 +195,33 @@ const thebe_selector_output = ".output, .cell_output"
    Die Poisson-Verteilung
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Aufgaben/Kapitel02/Aufgaben.html">
+   Übungsaufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel02/Hewert.html">
+     Häufigkeiten und Erwartungswert
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel02/Normierung.html">
+     Normierung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel02/binomial.html">
+     Binomialverteilung
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -241,8 +268,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel03/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -285,8 +312,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel04/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -334,8 +361,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel05/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -411,8 +438,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel06/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -473,8 +500,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel07/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -517,8 +544,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel08/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -561,8 +588,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../Aufgaben/Kapitel09/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -1290,11 +1317,9 @@ f(x)&amp; = \frac{1}{\sigma \sqrt{2 \pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigm
 </div>
 <p>Perfekt! Wir haben einige der oben genannten Eigenschaften einer Standardnormalkurve bestätigt. Wir erinnern uns, dass wir die Fläche unter der Kurve für das Intervall <span class="math notranslate nohighlight">\(]-\infty \ \)</span>,<span class="math notranslate nohighlight">\( \ z]\)</span> berechnet haben. Der Aufruf von <code class="docutils literal notranslate"><span class="pre">norm.cdf(-3)</span></code> ergibt eine sehr geringe Zahl. Nur etwa <span class="math notranslate nohighlight">\(0,1 \%\)</span> der gesamten Fläche unter der Kurve befinden sich links von <span class="math notranslate nohighlight">\(z=-3\)</span>, was dem Abstand der dreifachen Standardabweichung vom Mittelwert entspricht. Außerdem ergibt <code class="docutils literal notranslate"><span class="pre">norm.cdf(0)</span></code>  <span class="math notranslate nohighlight">\(50 \%\)</span>. Fantastisch! Daraus schließen wir, dass die Fläche unter der Kurve für das Intervall <span class="math notranslate nohighlight">\(]-\infty \ \)</span>,<span class="math notranslate nohighlight">\( \ 0]\)</span> die gleiche ist wie die Fläche unter der Kurve für das Intervall <span class="math notranslate nohighlight">\([0 \ \)</span>,<span class="math notranslate nohighlight">\( \ \infty[\)</span> und dass die Fläche unter der Kurve sich zu <span class="math notranslate nohighlight">\(1\)</span> aufsummiert. Auch hier haben wir eine der oben genannten Eigenschaften einer Standardnormalkurve bestätigt. Und schließlich ergibt der Aufruf von <code class="docutils literal notranslate"><span class="pre">norm.cdf(3)</span></code>  eine hohe Zahl nahe bei <span class="math notranslate nohighlight">\(1\)</span>. Somit sind etwa <span class="math notranslate nohighlight">\(99,9 \%\)</span> der Fläche unter der Kurve im Intervall <span class="math notranslate nohighlight">\(]-\infty \ \)</span>,<span class="math notranslate nohighlight">\( \ 3]\)</span> zu finden. Für den Bereich jenseits von <span class="math notranslate nohighlight">\(z=3\)</span> bleibt nur wenig übrig.</p>
 <p>Es sei daran erinnert, dass wir die Fläche unter der Kurve für jedes beliebige Intervall explizit berechnen können</p>
-<p><span class="math notranslate nohighlight">\( \begin{align}
-P(a \le z \le b) &amp; = P(z \le b) - P(z \le a)  \\
- &amp; =\int_{a}^{b}f(z)dz \\
- &amp; = \int_{-\infty}^{b}f(z)dz - \int_{-\infty}^{a}f(z)dz 
-\end{align}\)</span></p>
+<p><span class="math notranslate nohighlight">\( P(a \le z \le b) = P(z \le b) - P(z \le a) \)</span></p>
+<p><span class="math notranslate nohighlight">\( =\int_{a}^{b}f(z)dz\)</span></p>
+<p><span class="math notranslate nohighlight">\( = \int_{-\infty}^{b}f(x)dx - \int_{-\infty}^{a}f(x)dx \)</span></p>
 <p>Berechnen wir die Fläche unter der Kurve für die folgenden Intervalle: <span class="math notranslate nohighlight">\([−1 \ \)</span>,<span class="math notranslate nohighlight">\( \ 1],[−2 \ \)</span>,<span class="math notranslate nohighlight">\( \ 2],[−3 \ \)</span>,<span class="math notranslate nohighlight">\( \ 3]\)</span>. Oder in Worten: Bestimmen wir die Fläche unter der Kurve für <span class="math notranslate nohighlight">\(±1\)</span> Standardabweichung, für <span class="math notranslate nohighlight">\(±2\)</span> Standardabweichungen und für <span class="math notranslate nohighlight">\(±3\)</span> Standardabweichungen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1567,7 +1592,7 @@ P(a \le z \le b) &amp; = P(z \le b) - P(z \le a)  \\
 <img alt="../_images/02_Die Normalverteilung_54_1.png" src="../_images/02_Die Normalverteilung_54_1.png" />
 </div>
 </div>
-<p>Um den entsprechenden <span class="math notranslate nohighlight">\(z\)</span>-Score zu erhalten, kann man ihn in einer <a href="https://de.wikipedia.org/wiki/Standardnormalverteilungstabelle">Wahrscheinlichkeitstabelle</a> nachschlagen oder Python verwenden. Daher wenden wir die Funktion <code class="docutils literal notranslate"><span class="pre">norm.ppf</span></code> an. Die <code class="docutils literal notranslate"><span class="pre">norm.ppf</span></code>-Funktion wird geschrieben als <code class="docutils literal notranslate"><span class="pre">norm.ppf(p,</span> <span class="pre">mean</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">loc</span> <span class="pre">=</span> <span class="pre">0)</span></code>. Wir behalten die Standardwerte für die Argumente <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">sd</span></code> und <code class="docutils literal notranslate"><span class="pre">loc</span></code> bei. Allerdings müssen wir vorsichtig sein auf welchen Bereich der Fläche unter der Normalverteilung wir uns beziehen. Für <code class="docutils literal notranslate"><span class="pre">norm.ppf(p)</span></code> erhalten wir den z-Score, bei dem das p-Argument der Bereich links von z ist. Wenn wir dagegen <code class="docutils literal notranslate"><span class="pre">norm.ppf(1-p)</span></code> berechnen, erhalten wir den z-Score, bei dem das p-Argument der Bereich rechts von z ist. Wenden wir uns an Python um dies zu verdeutlichen.</p>
+<p>Um den entsprechenden <span class="math notranslate nohighlight">\(z\)</span>-Score zu erhalten, kann man ihn in einer <a href="https://de.wikipedia.org/wiki/Standardnormalverteilungstabelle">Wahrscheinlichkeitstabelle</a> nachschlagen oder Python verwenden. Daher wenden wir die Funktion <code class="docutils literal notranslate"><span class="pre">norm.ppf</span></code> an. Die <code class="docutils literal notranslate"><span class="pre">norm.ppf</span></code>-Funktion wird geschrieben als <code class="docutils literal notranslate"><span class="pre">norm.ppf(p,</span> <span class="pre">mean</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">loc</span> <span class="pre">=</span> <span class="pre">0)</span></code>. Wir behalten die Standardwerte für die Argumente <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">sd</span></code> und <code class="docutils literal notranslate"><span class="pre">loc</span></code> bei. Allerdings müssen wir vorsichtig sein auf welchen Bereich der Fläche unter der Normalverteilung wir uns beziehen. Für <code class="docutils literal notranslate"><span class="pre">norm.ppf(p)</span></code> erhalten wir den <span class="math notranslate nohighlight">\(z\)</span>-Score, bei dem das p-Argument der Bereich links von <span class="math notranslate nohighlight">\(z\)</span> ist. Wenn wir dagegen <code class="docutils literal notranslate"><span class="pre">norm.ppf(1-p)</span></code> berechnen, erhalten wir den <span class="math notranslate nohighlight">\(z\)</span>-Score, bei dem das p-Argument der Bereich rechts von <span class="math notranslate nohighlight">\(z\)</span> ist. Wenden wir uns an Python um dies zu verdeutlichen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
@@ -1605,7 +1630,7 @@ P(a \le z \le b) &amp; = P(z \le b) - P(z \le a)  \\
 </div>
 </div>
 </div>
-<p>Da die Standardnormalverteilung symmetrisch ist, erhalten wir zweimal die gleiche Zahl, aber mit einem anderen Vorzeichen. Das bedeutet, dass bei einem z-Wert von etwa <span class="math notranslate nohighlight">\(1,64 \ \)</span>  <span class="math notranslate nohighlight">\( 95 \%\)</span> aller Werte links von <span class="math notranslate nohighlight">\(z_{0,05}\)</span> und <span class="math notranslate nohighlight">\(5 \%\)</span> aller Werte rechts davon liegen. Im Gegensatz dazu liegen für einen <span class="math notranslate nohighlight">\(z\)</span>-Wert von etwa <span class="math notranslate nohighlight">\(-1,64 \ \)</span> <span class="math notranslate nohighlight">\(5 \%\)</span> aller Werte links von <span class="math notranslate nohighlight">\(z_{0,05}\)</span> und 95% aller Werte rechts davon. Kombiniert man diese, erhält man das Intervall <span class="math notranslate nohighlight">\(z \in [-1,64 \ \)</span>,<span class="math notranslate nohighlight">\( \ 1,64 ]\)</span>, das <span class="math notranslate nohighlight">\(90 \%\)</span> aller Werte abdeckt.</p>
+<p>Da die Standardnormalverteilung symmetrisch ist, erhalten wir zweimal die gleiche Zahl, aber mit einem anderen Vorzeichen. Das bedeutet, dass bei einem z-Wert von etwa <span class="math notranslate nohighlight">\(1,64 \ \)</span>  <span class="math notranslate nohighlight">\( 95 \%\)</span> aller Werte links von <span class="math notranslate nohighlight">\(z_{0,05}\)</span> und <span class="math notranslate nohighlight">\(5 \%\)</span> aller Werte rechts davon liegen. Im Gegensatz dazu liegen für einen <span class="math notranslate nohighlight">\(z\)</span>-Wert von etwa <span class="math notranslate nohighlight">\(-1,64 \ \)</span> <span class="math notranslate nohighlight">\(5 \%\)</span> aller Werte links von <span class="math notranslate nohighlight">\(z_{0,05}\)</span> und <span class="math notranslate nohighlight">\(95 \%\)</span> aller Werte rechts davon. Kombiniert man diese, erhält man das Intervall <span class="math notranslate nohighlight">\(z \in [-1,64 \ \)</span>,<span class="math notranslate nohighlight">\( \ 1,64 ]\)</span>, das <span class="math notranslate nohighlight">\(90 \%\)</span> aller Werte abdeckt.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -2193,11 +2218,9 @@ P(a \le z \le b) &amp; = P(z \le b) - P(z \le a)  \\
 </div>
 </div>
 <p>Da wir nun <span class="math notranslate nohighlight">\(z\)</span> kennen, können wir in die Gleichung von oben einsetzen</p>
-<p>\begin{align}
-x &amp; = z \sigma + \mu \
-&amp; = 0,25 \times 7,9 + 163,7 \
-&amp; \approx 165,66
-\end{align}</p>
+<p><span class="math notranslate nohighlight">\( x = z \sigma + \mu \)</span></p>
+<p><span class="math notranslate nohighlight">\( = 0,25 \times 7,9 + 163,7 \)</span></p>
+<p><span class="math notranslate nohighlight">\( \approx 165,66 \)</span></p>
 <p>Perfekt, wir sind fertig: <span class="math notranslate nohighlight">\(P(X&lt;165,66)=0,60\)</span></p>
 <p>Nun gehen wir den zweiten Ansatz durch, bei dem wir den Schritt der <span class="math notranslate nohighlight">\(z\)</span>-Berechnung überspringen. Alles, was wir tun müssen, ist, die <code class="docutils literal notranslate"><span class="pre">norm.ppf()</span></code>-Funktion mit dem Mittelwert und der Standardabweichung unserer Variablen <code class="docutils literal notranslate"><span class="pre">height</span></code> zu füttern.</p>
 <div class="cell docutils container">
