@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arithmetisches Mittel &#8212; Modul Statistik und Machine Learning Modelle</title>
+    <title>Normierung &#8212; Modul Statistik und Machine Learning Modelle</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,10 +51,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Lernziele" href="../../Lernziele/Kapitel2_Lernziele.html" />
-    <link rel="prev" title="Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung" href="Fuenf_Punkte.html" />
+    <link rel="next" title="Binomialverteilung" href="binomial.html" />
+    <link rel="prev" title="Häufigkeiten und Erwartungswert" href="Hewert.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,7 +105,7 @@ const thebe_selector_output = ".output, .cell_output"
   Einführung in die Statistik
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../Lernziele/Kapitel1_Lernziele.html">
    Lernziele
@@ -134,33 +136,33 @@ const thebe_selector_output = ".output, .cell_output"
    Maße für die Relation zwischen Variablen
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="Aufgaben.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Kapitel01/Aufgaben.html">
    Übungsaufgaben
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="pandas.html">
+    <a class="reference internal" href="../Kapitel01/pandas.html">
      Die Pandas Bibliothek
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Pandas_Dataframes.html">
+    <a class="reference internal" href="../Kapitel01/Pandas_Dataframes.html">
      Übung zu Pandas Dataframes
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Fuenf_Punkte.html">
+    <a class="reference internal" href="../Kapitel01/Fuenf_Punkte.html">
      Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Kapitel01/Arithmetisches_Mittel.html">
      Arithmetisches Mittel
     </a>
    </li>
@@ -172,7 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
   Diskrete Zufallsvariablen
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../Lernziele/Kapitel2_Lernziele.html">
    Lernziele
@@ -188,28 +190,28 @@ const thebe_selector_output = ".output, .cell_output"
    Die Binomialverteilung
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../../Kapitel02/03_Die_Poisson_Verteilung.html">
    Die Poisson-Verteilung
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../Kapitel02/Hewert.html">
+    <a class="reference internal" href="Hewert.html">
      Häufigkeiten und Erwartungswert
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Kapitel02/Normierung.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Normierung
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Kapitel02/binomial.html">
+    <a class="reference internal" href="binomial.html">
      Binomialverteilung
     </a>
    </li>
@@ -662,7 +664,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/Aufgaben/Kapitel01/Arithmetisches_Mittel.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/Aufgaben/Kapitel02/Normierung.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -682,7 +684,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ixianslab/srh-data-science/issues/new?title=Issue%20on%20page%20%2FAufgaben/Kapitel01/Arithmetisches_Mittel.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ixianslab/srh-data-science/issues/new?title=Issue%20on%20page%20%2FAufgaben/Kapitel02/Normierung.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -703,7 +705,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ixianslab/srh-data-science/main?urlpath=tree/notebooks/Aufgaben/Kapitel01/Arithmetisches_Mittel.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ixianslab/srh-data-science/main?urlpath=tree/notebooks/Aufgaben/Kapitel02/Normierung.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -743,7 +745,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Arithmetisches Mittel</h1>
+                <h1>Normierung</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -767,19 +769,44 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="arithmetisches-mittel">
-<h1>Arithmetisches Mittel<a class="headerlink" href="#arithmetisches-mittel" title="Permalink to this headline">¶</a></h1>
-<p>Schreiben Sie eine Funktion (<code class="docutils literal notranslate"><span class="pre">arithmic_average</span></code>) die den Mittelwert einer Liste/ eines Arrays berechnet. Vergleichen Sie Ihre Implementierung mit einer <em>built-in</em> Funktion von Python.
-Verwenden Sie die Funktion auf die folgenden Daten an.</p>
-<div class="cell docutils container">
+  <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="c1"># Load the &quot;autoreload&quot; extension</span>
+<span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="c1"># always reload modules</span>
+<span class="o">%</span><span class="k">autoreload</span> 2
+<span class="c1"># black formatter for jupyter notebooks</span>
+<span class="c1">#%load_ext nb_black</span>
+<span class="c1"># black formatter for jupyter lab</span>
+<span class="o">%</span><span class="k">load_ext</span> lab_black
+
+<span class="o">%</span><span class="k">run</span> ../../../src/notebook_env.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
+Working on the host: Joachims-MacBook-Pro.local
+
+---------------------------------
+Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
+
+---------------------------------
+Python interpreter: /opt/miniconda3/envs/srh/bin/python
 </pre></div>
 </div>
 </div>
 </div>
-<hr class="docutils" />
+<div class="tex2jax_ignore mathjax_ignore section" id="normierung">
+<h1>Normierung<a class="headerlink" href="#normierung" title="Permalink to this headline">¶</a></h1>
+<p>Eine Zufallsvariable <span class="math notranslate nohighlight">\(X\)</span> kann die Werte <span class="math notranslate nohighlight">\(1,2,3,4\)</span> annehmen. Angenommen <span class="math notranslate nohighlight">\(f(x) = P(X = x)\)</span> ist die dazugehörige Wahrscheinlichkeitsfunktion und ist gegeben durch:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+     f(x)=\left\{\begin{array}{ll} \frac{x (b - x)}{10}, &amp; x\in \{ 1,2,3,4 \} \\
+         0, &amp; \text{sonst}\end{array}\right. .
+  \end{split}\]</div>
+<p>Wie muß <span class="math notranslate nohighlight">\(b\)</span> gewählt werden um die Normierung der Wahrscheinlichkeitsfunktion zu gewährleisten ?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Frage 1 ...</span>
@@ -789,36 +816,20 @@ Verwenden Sie die Funktion auf die folgenden Daten an.</p>
 </div>
 <div class="section" id="losungen">
 <h2>Lösungen<a class="headerlink" href="#losungen" title="Permalink to this headline">¶</a></h2>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arithmic_average</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Function to compute the arithmic average&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Self implementation&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arithmic_average</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arithmic_average</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">numpy built-in function&quot;</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Self implementation
-5.5
--5.0
-
-numpy built-in function
-5.5
--5.0
-</pre></div>
-</div>
-</div>
-</div>
+<p>Um die Wahrscheinlichkeitsfunktion zu normieren muß</p>
+<div class="math notranslate nohighlight">
+\[\sum_{i=1}^n f(x_i) = 1\]</div>
+<p>gelten.</p>
+<div class="math notranslate nohighlight">
+\[\sum_{i=1}^4 f(x_i) = \frac{1 \cdot (b-1)}{10} + \frac{2 \cdot (b-2)}{10} + \frac{3 \cdot (b-3)}{10} + \frac{4 \cdot (b-4)}{10} = 1\]</div>
+<div class="math notranslate nohighlight">
+\[ (b-1)+ (2b-4) + (3b-9) + (4b - 16)  = 10\]</div>
+<div class="math notranslate nohighlight">
+\[ b + 2b + 3b + 4b-1-4-9-16  = 10\]</div>
+<div class="math notranslate nohighlight">
+\[  10b-30  = 10 \]</div>
+<div class="math notranslate nohighlight">
+\[\Rightarrow b = 4\]</div>
 </div>
 </div>
 
@@ -835,7 +846,7 @@ numpy built-in function
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Aufgaben/Kapitel01"
+            path: "./Aufgaben/Kapitel02"
         },
         predefinedOutput: true
     }
@@ -847,17 +858,17 @@ numpy built-in function
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="Fuenf_Punkte.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Hewert.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Maße der zentralen Tendenz, Streumaße und Fünf-Punkte Zusammenfassung</p>
+            <p class="prev-next-title">Häufigkeiten und Erwartungswert</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../Lernziele/Kapitel2_Lernziele.html" title="next page">
+    <a class='right-next' id="next-link" href="binomial.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lernziele</p>
+        <p class="prev-next-title">Binomialverteilung</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
