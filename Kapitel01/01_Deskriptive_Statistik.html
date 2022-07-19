@@ -147,6 +147,11 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../Aufgaben/Kapitel01/pandas.html">
+     Die Pandas Bibliothek
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../Aufgaben/Kapitel01/Pandas_Dataframes.html">
      Übung zu Pandas Dataframes
     </a>
@@ -249,11 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Aufgaben/Kapitel03/689599_Regel.html">
-     Die
-     <span class="math notranslate nohighlight">
-      \(68-95-99,7\)
-     </span>
-     -Regel
+     Die 68-95-99,7-Regel
     </a>
    </li>
    <li class="toctree-l2">
@@ -792,7 +793,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <p>Angewandte Statistik lässt sich in zwei Bereiche unterteilen: <a href="https://de.wikipedia.org/wiki/Deskriptive_Statistik">deskriptive Statistik</a> und <a href="https://de.wikipedia.org/wiki/Statistische_Inferenz">Inferenzstatistik</a>. Die deskriptive Statistik umfasst Methoden zur Organisation, Darstellung und Beschreibung von Daten mit Hilfe von Tabellen, Diagrammen und Streuungsmaße. Im Gegensatz dazu besteht die inferentielle Statistik aus Methoden, die Stichprobenergebnisse verwenden, um Entscheidungen oder Vorhersagen über eine Grundgesamtheit zu treffen (<span id="id1">Cramer [<a class="reference internal" href="../Literaturverzeichnis.html#id6" title="Udo Cramer, Erhard und Kamps. Grundlagen der Wahrscheinlichkeitsrechnung und Statistik: Eine Einführung für Studierende der Informatik, der Ingenieur-und Wirtschaftswissenschaften. Springer-Verlag, 2017.">2017</a>]</span> s.1–151, 231–312, <span id="id2">Fahrmeir <em>et al.</em> [<a class="reference internal" href="../Literaturverzeichnis.html#id3" title="Ludwig Fahrmeir, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik : Der Weg zur Datenanalyse. Springer-Verlag, 2016.">2016</a>]</span> s.10, 12 ).</p>
-<p>Das Wort <a href="https://de.wikipedia.org/wiki/Univariat">univariat</a> bezieht sich auf die Tatsache, dass nur eine Variable betrachtet wird. Der Hauptzweck der univariaten Statistik besteht darin, die Daten zu beschreiben und zusammenzufassen. Wenn zwei oder mehr Variablen analysiert werden, spricht man von <a href="https://en.wikipedia.org/wiki/Bivariate_analysis">bivariater </a> oder <a href="https://de.wikipedia.org/wiki/Multivariate_Verfahren">multivariater Analyse</a> bzw. Statistik. In diesem Fall sind wir in erster Linie an den Beziehungen zwischen und unter einer Reihe von Variablen interessiert.</p>
+<p>Das Wort <a class="reference external" href="https://de.wikipedia.org/wiki/Univariat">univariat</a> bezieht sich auf die Tatsache, dass nur eine Variable betrachtet wird. Der Hauptzweck der univariaten Statistik besteht darin, die Daten zu beschreiben und zusammenzufassen. Wenn zwei oder mehr Variablen analysiert werden, spricht man von <a class="reference external" href="https://de.wikipedia.org/wiki/Univariat#Verwendung_in_der_Mathematik">bivariater</a> oder <a class="reference external" href="https://de.wikipedia.org/wiki/Multivariate_Verfahren">multivariater Analyse</a> bzw. Statistik. In diesem Fall sind wir in erster Linie an den Beziehungen zwischen und unter einer Reihe von Variablen interessiert.</p>
 <div class="section" id="strukturierte-datensatze">
 <h2>Strukturierte Datensätze<a class="headerlink" href="#strukturierte-datensatze" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="strukturierte-daten">
@@ -834,40 +835,40 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lese Datei students.csv als Dataframe ein</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/students.csv&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-Int64Index: 8239 entries, 1 to 8239
+RangeIndex: 8239 entries, 0 to 8238
 Data columns (total 16 columns):
  #   Column           Non-Null Count  Dtype  
 ---  ------           --------------  -----  
- 0   stud.id          8239 non-null   int64  
+ 0   stud_id          8239 non-null   int64  
  1   name             8239 non-null   object 
  2   gender           8239 non-null   object 
  3   age              8239 non-null   int64  
  4   height           8239 non-null   int64  
  5   weight           8239 non-null   float64
  6   religion         8239 non-null   object 
- 7   nc.score         8239 non-null   float64
+ 7   nc_score         8239 non-null   float64
  8   semester         8239 non-null   object 
  9   major            8239 non-null   object 
  10  minor            8239 non-null   object 
  11  score1           4892 non-null   float64
  12  score2           4892 non-null   float64
- 13  online.tutorial  8239 non-null   int64  
+ 13  online_tutorial  8239 non-null   int64  
  14  graduated        8239 non-null   int64  
  15  salary           1753 non-null   float64
 dtypes: float64(5), int64(5), object(6)
-memory usage: 1.1+ MB
+memory usage: 1.0+ MB
 </pre></div>
 </div>
 </div>
 </div>
-<p>Der Studentendatensatz besteht aus <span class="math notranslate nohighlight">\(8239\)</span> Zeilen, von denen jede einen bestimmten Studenten repräsentiert, und <span class="math notranslate nohighlight">\(16\)</span> Spalten, von denen jede einer Variable/einem Merkmal entspricht, das sich auf diesen bestimmten Studenten bezieht. Diese selbsterklärenden Variablen sind: <em><a class="reference external" href="http://stud.id">stud.id</a>, name, gender, age, height, weight, religion, nc.score, semester, major, minor, score1, score2, online.tutorial, graduated, salary</em>. Neben dem jeweiligen Variablennamen listet die Methode <code class="docutils literal notranslate"><span class="pre">info()</span></code> die <code class="docutils literal notranslate"><span class="pre">Klasse</span></code> jeder einzelnen Variablen auf. Alle Objekte in Python haben eine Klasse, z. B. <code class="docutils literal notranslate"><span class="pre">numerische</span></code> Datentypen , die in die Unterklassen <code class="docutils literal notranslate"><span class="pre">(int)</span></code> Ganzzahlen , <code class="docutils literal notranslate"><span class="pre">(float)</span></code> Gleitkommazahlen und <code class="docutils literal notranslate"><span class="pre">(imag)</span></code> komplexe Zahlen, eingeteilt werden.</p>
+<p>Der Studentendatensatz besteht aus <span class="math notranslate nohighlight">\(8239\)</span> Zeilen, von denen jede einen bestimmten Studenten repräsentiert, und <span class="math notranslate nohighlight">\(16\)</span> Spalten, von denen jede einer Variable/einem Merkmal entspricht, das sich auf diesen bestimmten Studenten bezieht. Diese selbsterklärenden Variablen sind: <em>stud_id, name, gender, age, height, weight, religion, nc_score, semester, major, minor, score1, score2, online_tutorial, graduated, salary</em>. Neben dem jeweiligen Variablennamen listet die Methode <code class="docutils literal notranslate"><span class="pre">info()</span></code> die <code class="docutils literal notranslate"><span class="pre">Klasse</span></code> jeder einzelnen Variablen auf. Alle Objekte in Python haben eine Klasse, z. B. <code class="docutils literal notranslate"><span class="pre">numerische</span></code> Datentypen , die in die Unterklassen <code class="docutils literal notranslate"><span class="pre">(int)</span></code> Ganzzahlen , <code class="docutils literal notranslate"><span class="pre">(float)</span></code> Gleitkommazahlen und <code class="docutils literal notranslate"><span class="pre">(imag)</span></code> komplexe Zahlen, eingeteilt werden.</p>
 <p>In den nächsten Abschnitten werden wir die deskriptiven Statistiken des <code class="docutils literal notranslate"><span class="pre">students</span></code> Datensatzes genauer untersuchen.</p>
 </div>
 </div>
