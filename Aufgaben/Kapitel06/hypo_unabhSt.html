@@ -779,18 +779,16 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Bei <span class="math notranslate nohighlight">\(2\)</span> Stichproben aus <span class="math notranslate nohighlight">\(2\)</span> Grundgesamtheiten erhalten Sie folgende Mittelwerte und Standardabweichungen: <span class="math notranslate nohighlight">\(\mu_1=61\)</span>, <span class="math notranslate nohighlight">\(\sigma_1=15,5\)</span>, <span class="math notranslate nohighlight">\(n_1=15\)</span>, <span class="math notranslate nohighlight">\(\mu_2=48,4\)</span> <span class="math notranslate nohighlight">\(\sigma_2=18,1\)</span>, <span class="math notranslate nohighlight">\(n_2 =12\)</span> . Welchen Hypothesentest müssen Sie anwenden um zu prüfen ob <span class="math notranslate nohighlight">\(\mu_1 \gt \mu_2\)</span> gilt?</p>
 <ol class="simple">
 <li><p>Formulieren Sie die geeignete Null- und Alternativhypothese.</p></li>
-<li><p>Berechnen Sie die Teststatistik.
-Die gewichtete Standardabweichung ergibt sich zu:</p></li>
+<li><p>Berechnen Sie die Teststatistik.</p></li>
+<li><p>Berechnen Sie den kritischen Wert (entweder mit Python oder Wahrscheinlichkeitstabelle) bei einem Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha = 0,01\)</span>. Wird <span class="math notranslate nohighlight">\(H_0\)</span> abgelehnt? Hierbei ergint sich der kritische Wert bei <span class="math notranslate nohighlight">\(\alpha = 0,01\)</span> für einen rechtseitigen Test <span class="math notranslate nohighlight">\(\mu_1 \gt \mu_2\)</span> mit der <span class="math notranslate nohighlight">\(t\)</span>-Verteilung (<span class="math notranslate nohighlight">\(1- \alpha, t_{df}\)</span>).</p></li>
+<li><p>Interpretieren Sie das Ergebnis</p></li>
 </ol>
+<p>Die gewichtete Standardabweichung ergibt sich zu:</p>
 <div class="math notranslate nohighlight">
 \[s_g = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2 }{n_1+n_2-2}}\text{,}\]</div>
 <p>Die Teststatistik ist <span class="math notranslate nohighlight">\(t\)</span>-verteilt und ergibt sich für <span class="math notranslate nohighlight">\((\mu_1-\mu_2)=0\)</span> zu:</p>
 <div class="math notranslate nohighlight">
 \[t =  \frac{(\bar x_1 - \bar x_2)}{s_g \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}\]</div>
-<ol class="simple">
-<li><p>Berechnen Sie den kritischen Wert (entweder mit Python oder Wahrscheinlichkeitstabelle) bei einem Signifikanzniveau <span class="math notranslate nohighlight">\(\alpha = 0,01\)</span>. Wird <span class="math notranslate nohighlight">\(H_0\)</span> abgelehnt? Hierbei ergint sich der kritische Wert bei <span class="math notranslate nohighlight">\(\alpha = 0,01\)</span> für einen rechtseitigen Test <span class="math notranslate nohighlight">\(\mu_1 \gt \mu_2\)</span> mit der <span class="math notranslate nohighlight">\(t\)</span>-Verteilung (<span class="math notranslate nohighlight">\(1- \alpha, t_{df}\)</span>).</p></li>
-<li><p>Interpretieren Sie das Ergebnis</p></li>
-</ol>
 <hr class="docutils" />
 <div class="cell docutils container">
 <div class="cell_input docutils container">
