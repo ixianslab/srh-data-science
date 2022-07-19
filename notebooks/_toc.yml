@@ -24,6 +24,7 @@ parts:
     - file: Kapitel02/01_Diskrete_Zufallsvariablen
     - file: Kapitel02/02_Die_Binomialverteilung
     - file: Kapitel02/03_Die_Poisson_Verteilung
+    - file: Aufgaben/Kapitel02/Aufgaben
       sections:
       - file: Aufgaben/Kapitel02/Hewert
       - file: Aufgaben/Kapitel02/Normierung
