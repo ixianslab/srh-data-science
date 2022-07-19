@@ -190,9 +190,14 @@ const thebe_selector_output = ".output, .cell_output"
    Die Binomialverteilung
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="../../Kapitel02/03_Die_Poisson_Verteilung.html">
    Die Poisson-Verteilung
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Aufgaben.html">
+   Übungsaufgaben
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -769,36 +774,7 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="c1"># Load the &quot;autoreload&quot; extension</span>
-<span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="c1"># always reload modules</span>
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># black formatter for jupyter notebooks</span>
-<span class="c1">#%load_ext nb_black</span>
-<span class="c1"># black formatter for jupyter lab</span>
-<span class="o">%</span><span class="k">load_ext</span> lab_black
-
-<span class="o">%</span><span class="k">run</span> ../../../src/notebook_env.py
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: Joachims-MacBook-Pro.local
-
----------------------------------
-Python version: 3.10.2 | packaged by conda-forge | (main, Feb  1 2022, 19:30:18) [Clang 11.1.0 ]
-
----------------------------------
-Python interpreter: /opt/miniconda3/envs/srh/bin/python
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="binomialverteilung">
+  <div class="tex2jax_ignore mathjax_ignore section" id="binomialverteilung">
 <h1>Binomialverteilung<a class="headerlink" href="#binomialverteilung" title="Permalink to this headline">¶</a></h1>
 <p>In einer Fabrik werden serienmäßig Tübel mit einem Ausschussanteil von 4,5% hergestellt, d. h. unter 1000 hergestellten Tübel befinden sich im Mittel genau 45 unbrauchbareTübel.</p>
 <ol class="simple">
@@ -821,10 +797,11 @@ Python interpreter: /opt/miniconda3/envs/srh/bin/python
 </div>
 <div class="section" id="losungen">
 <h2>Lösungen<a class="headerlink" href="#losungen" title="Permalink to this headline">¶</a></h2>
-<p>Es handelt sich hier um ein Bernoulli-Experiment. Die Wahrscheinlichkeit, beim Ziehen eines Tübels einen unbrauchbaren Tübels zu erhalten, liegt bei <span class="math notranslate nohighlight">\(p=0,04. Die Zufallsvariable folgt der Binomialverteilung mit den Parametern \)</span>n=10<span class="math notranslate nohighlight">\( und \)</span>p=0,4$.</p>
-<p>Somit ergbit sich
-$<span class="math notranslate nohighlight">\(P(X=x)= \binom{10}{x} \times 0,04^x \times (1-0,04)^{(10-x)} \qquad (x=0,1,3,5,8)\)</span>$</p>
-<div class="cell docutils container">
+<p>Es handelt sich hier um ein Bernoulli-Experiment. Die Wahrscheinlichkeit, beim Ziehen eines Tübels einen unbrauchbaren Tübels zu erhalten, liegt bei <span class="math notranslate nohighlight">\(p=0,04\)</span>. Die Zufallsvariable folgt der Binomialverteilung mit den Parametern <span class="math notranslate nohighlight">\(n=10\)</span> und <span class="math notranslate nohighlight">\(p=0,4\)</span>.</p>
+<p>Somit ergbit sich</p>
+<div class="math notranslate nohighlight">
+\[P(X=x)= \binom{10}{x} \times 0,04^x \times (1-0,04)^{(10-x)} \qquad (x=0,1,3,5,8)\]</div>
+<div class="cell tag_hide-cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">binom</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]:</span>
@@ -845,7 +822,7 @@ For x=8 the probabilty is 2.7179089920000016e-10
 </div>
 <div class="math notranslate nohighlight">
 \[P(X \geq3) = 1 - P(X =0) - P(X =1) - P(X =2)\]</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">binom</span>
 <span class="c1"># version 1</span>
