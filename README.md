@@ -48,3 +48,5 @@ In order to build a jupyter book run the folloing command:
 
 Make sure that you are in the right directory so that `mybookname/` yields to the place where the `_config.yml` and `_toc.yml` are found. E.g., in our case with the folder structure as outlined above and given that the working directory you are in is `repo-name/`, then the command to fire up the build of `Kapitel_00` is `jupyter-book build notebooks/Kapitel_00/`. Then, after the successful build you find the hmtl files in `repo-name/notebooks/Kapitel_00/_build/html/`
  
+### Push to repo
+`ghp-import -n -p -f notebooks/_build/html`
