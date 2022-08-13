@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Vorwort
+    chapters:
+    - file: Vorwort
   - caption: Einführung in die Statistik
     chapters:
     - file: Lernziele/Kapitel1_Lernziele
