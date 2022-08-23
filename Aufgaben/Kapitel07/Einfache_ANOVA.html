@@ -821,35 +821,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">sample_dat5</span></code> und</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">sample_dat6</span></code></p></li>
 </ul>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p></p></th>
-<th class="head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Schritt 1</p></td>
-<td><p>Geben Sie die Nullhypothese <span class="math notranslate nohighlight">\(H_0\)</span> und alternative Hypothese <span class="math notranslate nohighlight">\(H_A\)</span> an</p></td>
-</tr>
-<tr class="row-odd"><td><p>Schritt 2</p></td>
-<td><p>Legen Sie das Signifikanzniveau,<span class="math notranslate nohighlight">\(\alpha\)</span> fest</p></td>
-</tr>
-<tr class="row-even"><td><p>Schritt 3</p></td>
-<td><p>Berechnen Sie den Wert der Teststatistik</p></td>
-</tr>
-<tr class="row-odd"><td><p>Schritt 4</p></td>
-<td><p>Bestimmen Sie den p-Wert</p></td>
-</tr>
-<tr class="row-even"><td><p>Schritt 5</p></td>
-<td><p>Wenn <span class="math notranslate nohighlight">\(p \le \alpha\)</span>, <span class="math notranslate nohighlight">\(H_0\)</span> ablehnen; ansonsten <span class="math notranslate nohighlight">\(H_0\)</span> nicht ablehnen</p></td>
-</tr>
-<tr class="row-odd"><td><p>Schritt 6</p></td>
-<td><p>Interpretieren Sie das Ergebnis des Hypothesentests</p></td>
-</tr>
-</tbody>
-</table>
-<p>Benutzen Sie für Schritte <span class="math notranslate nohighlight">\(3\)</span> und <span class="math notranslate nohighlight">\(4\)</span> die Funktion <code class="docutils literal notranslate"><span class="pre">f_oneway()</span></code> die Sie mit <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">scipy.stats</span> <span class="pre">import</span> <span class="pre">f_oneway</span></code> importieren können</p>
-<p>Interpretieren Sie das Ergebnis</p>
+<p>\begin{array}{l}
+\hline
+\ \text{Schritt 1}  &amp; \text{Geben Sie die Nullhypothese } H_0 \text{ und alternative Hypothese } H_A \text{ an.}\
+\ \text{Schritt 2}  &amp; \text{Legen Sie das Signifikanzniveau, } \alpha\text{ fest.} \
+\ \text{Schritt 3}  &amp; \text{Berechnen Sie den Wert der Teststatistik.} \
+\ \text{Schritt 4} &amp;\text{Bestimmen Sie den p-Wert.} \
+\ \text{Schritt 5} &amp; \text{Wenn }p\le \alpha \text{, } H_0 \text{ ablehnen } \text{; ansonsten } H_0 \text{ nicht ablehnen} \text{.} \
+\ \text{Schritt 6} &amp;\text{Interpretieren Sie das Ergebnis des Hypothesentests.} \
+\hline
+\end{array}</p>
+<ul class="simple">
+<li><p>Benutzen Sie für Schritte <span class="math notranslate nohighlight">\(3\)</span> und <span class="math notranslate nohighlight">\(4\)</span> die Funktion <code class="docutils literal notranslate"><span class="pre">f_oneway()</span></code> die Sie mit <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">scipy.stats</span> <span class="pre">import</span> <span class="pre">f_oneway</span></code> importieren können</p></li>
+</ul>
+<ol class="simple">
+<li><p>Interpretieren Sie das Ergebnis</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span><span class="p">,</span> <span class="n">t</span>
