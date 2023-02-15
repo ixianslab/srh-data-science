@@ -17,6 +17,7 @@ dependencies:
 - scikit-learn
 - folium
 - openpyxl
+- pyppeteer
 
 - pip:
   - jupyter-book
