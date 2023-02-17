@@ -43,7 +43,8 @@ The repository should have the following structure:
         └── notebook_env.py  # A file with basic settings when working with Jupyter notebooks.
         
 ## Build a jupyter book
-In order to build a jupyter book run the folloing command:
+
+AN **HTML version** of the book can be built using the following command:
 
 `jupyter-book build mybookname/` 
 
@@ -53,7 +54,7 @@ A ***PDF version*** of the book can be built with the following command:
 
 `jupyter-book build notebooks/ --builder pdfhtml`
 
-This builds a pdf vesion from the previously created html files by emulating a browser (chromium).After the build completes, the pdf can be found in `repo-name/notebooks/_build/pdf/`
+This builds a pdf version from the previously created html files by emulating a browser (chromium).After the build completes, the pdf can be found in `repo-name/notebooks/_build/pdf/`
  
 ## Push to repo
 `ghp-import -n -p -f notebooks/_build/html`
