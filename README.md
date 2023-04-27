@@ -10,6 +10,10 @@ Repo: https://github.com/ixianslab/srh-data-science
 
 Run the command `conda env create -f environment.yml` to install the conda env named `srh`.
 
+To activate the environment run `conda activate srh`.
+
+To deactivate the environment run `conda deactivate`.
+
 
 ## Development of new content
 
